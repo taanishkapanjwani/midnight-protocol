@@ -59,11 +59,11 @@ const PEARLS = `<div class="pearls" aria-hidden="true">${Array.from({ length: 9 
 const divider = `<div class="divider" aria-hidden="true"><span class="line"></span>${BOW}<span class="line"></span></div>`;
 const CREST = `<svg viewBox="0 0 64 64" class="crest" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#FFF9F5" stroke="#C6A66B" stroke-width="2.5"/><path d="M17 42 l4-17 11 10 11-10 4 17 z" fill="#C6A66B"/><circle cx="21" cy="24" r="2.6" fill="#F4DCE4"/><circle cx="32" cy="18" r="3" fill="#F4DCE4"/><circle cx="43" cy="24" r="2.6" fill="#F4DCE4"/></svg>`;
 
-const section = (num, eyebrow, title, body, { pageBreak = true } = {}) => `
+const section = (num, eyebrow, title, body, { pageBreak = true, lead = "" } = {}) => `
 <section class="chapter${pageBreak ? " break" : ""}" id="s${num}">
-  <div class="head"><p class="eyebrow">Section ${num} · ${eyebrow}</p>
+  <div class="${lead ? "keep" : ""}"><div class="head"><p class="eyebrow">Section ${num} · ${eyebrow}</p>
   <h2>${title}</h2>
-  ${divider}</div>
+  ${divider}</div>${lead}</div>
   ${body}
 </section>`;
 
@@ -206,6 +206,7 @@ footer{text-align:center;margin-top:44px;color:var(--mauve);font-size:12px}
   .chapter{margin-top:22px}
   .chapter.break{break-before:auto}
   #s2{break-before:page}
+  .keep{break-inside:avoid}
   h2{font-size:26pt}
   h3{font-size:17pt;margin-top:14px}
   .head{break-inside:avoid;break-after:avoid}
@@ -217,7 +218,8 @@ footer{text-align:center;margin-top:44px;color:var(--mauve);font-size:12px}
   .grid2 figure.shot img{max-height:2.7in}
   figure.cover-shot{margin-top:8px}
   figure.cover-shot img{max-height:2.35in}
-  figure.phone img{max-height:2.7in}
+  figure.phone img{max-height:2.05in}
+  .phones figure{flex:0 0 180px}
   .sources li{font-size:8.6pt;margin:1px 0;line-height:1.35}
   #sources{break-before:auto}
   footer{margin-top:8px}
@@ -265,7 +267,7 @@ ${fig("01-landing", "The live app’s landing page. The whole experience is them
 
 ${section(2, "Motivation", "Dressing for a real event is a small, stressful planning problem", `
 <p><b>Who has the problem.</b> Students and young professionals who need one outfit for one occasion (a wedding, a gala, a college formal, a garden party) on a fixed budget. They shop online across many brands, and their plans change: the dress sells out, it rains, the budget shrinks, the shoes turn out to be unwalkable.</p>
-<p><b>How they handle it now.</b> Hours of tabs across retailer sites and Pinterest, ordering several sizes or options and returning most, or asking a general chatbot that sounds confident but can invent products, prices and links. When something changes the night before, they start over.</p>
+<p><b>How they handle it now.</b> Hours of tabs across retailer sites and Pinterest, ordering several sizes or options and sending back the rest, or asking a general chatbot that sounds confident but can invent products, prices and links. When something changes the night before, they start over.</p>
 <div class="grid3">
   <div class="panel stat"><b>19.3%</b><span>of online sales are expected to be returned in 2025, a cost retailers pass back through prices<sup><a href="#src1">[1]</a></sup></span></div>
   <div class="panel stat"><b>53%</b><span>of apparel decision-makers name size/fit as the top return reason; color is next at 16%<sup><a href="#src2">[2]</a></sup></span></div>
@@ -332,7 +334,7 @@ ${section(4, "The agents", "The Royal Council: two language-model agents and two
   ${fig("06-council-minutes-styling", "Council Minutes, styling: the injection warning, the shortlist, the measured tokens and the Treasurer’s approval, exactly as streamed by the server.", { width: 1300 })}
   <div class="step"><div class="num">4</div><div><h4>Royal Treasurer audits every coin</h4><p>Code re-prices each ID from the catalog: <b>$318.89 of $340</b>, every item real and in stock, complete structure, dress code met. Approved on the first try.</p></div></div>
   ${fig("07-enchanted-wardrobe", "The Enchanted Wardrobe: real product photos, retailer, recorded price and check date, the Godmother’s reasons, and the Treasurer’s certified total.", { width: 1500 })}
-  <div class="step"><div class="num">5</div><div><h4>The clock strikes twelve</h4><p>The Stepmother picks the most realistic crisis that threatens this outfit and can still be fixed: <b>The Long Walk</b>. The carriage is gone, and the 3–4 inch heels must survive a 20-minute walk.</p></div></div>
+  <div class="step"><div class="num">5</div><div><h4>The clock strikes twelve</h4><p>The Stepmother picks the most realistic crisis that threatens this outfit and can still be fixed: <b>The Long Walk</b>. The carriage is gone, and the high heels must survive a 20-minute walk.</p></div></div>
   ${fig("10-midnight-crisis", "The midnight crisis screen with the Stepmother’s narration and the exact new constraint.", { width: 1300 })}
   <div class="step"><div class="num">6</div><div><h4>Midnight Guardian repairs only what broke</h4><p>Impact analysis in code: 1 affected piece, 3 kept, 6 legal replacements. One call: ${int(T.uIn)} input (${int(T.uCached)} cached), ${T.uOut} output. The plan swaps the heels for Dolce Vita rhinestone ballet flats ($99.90) and is validated on attempt 1. Survival score: 92 before, 49 at midnight (hard-rule fail), 99 after the rescue.</p></div></div>
   ${fig("14-before-and-after", "Before vs after: three pieces kept, one replaced, total unchanged at $318.89, with the Guardian’s reason for the new flats.", { width: 1500 })}
@@ -378,7 +380,7 @@ ${section(5, "Tokenomics", "Measured tokens and what it costs at scale", `
 <tr><td>Aesthetic score after rescue (rule-based)</td><td class="n">${resOff.avgAesthetic.toFixed(1)}</td><td class="n">${resOn.avgAesthetic.toFixed(1)}</td></tr>
 <tr><td>Cost per full journey</td><td class="n">${tiny(journeyOff)}</td><td class="n">${tiny(journeyOn)}</td></tr>
 </tbody></table>
-${fig("24-royal-treasury", "The Royal Treasury page: per-agent ledger, projections and the configured prices, computed from logged token counts.", { width: 1400 })}
+${fig("24-royal-treasury", "The Royal Treasury page in the app: the cumulative ledger of every model call logged during development and testing (both configurations), re-priced at current list prices. Its $0.00082 per journey is close to the $0.00078 measured in the controlled runs above.", { width: 1400 })}
 `)}
 
 ${section(6, "Safety", "What could go wrong, and the defenses that caught it", `
@@ -398,13 +400,6 @@ ${fig("23-safety-tests", "Safety defenses, tested live: these 8 tests run on the
 `)}
 
 ${section(7, "Impact", "What it changes, measured", `
-<div class="legend"><span><i style="background:var(--council)"></i>Royal Council (this project)</span><span><i style="background:var(--base)"></i>Single general AI call with the full catalog</span></div>
-<div class="panel">
-${bar(`Crises fixed (${N.feasible} solvable scenarios)`, resOn.recoveryRate, base.recoveryRate)}
-${bar(`Impossible requests refused honestly (${N.impossible})`, resOn.honestRefusalRate, base.honestRefusalRate)}
-${bar("Recommendations within budget", resOn.budgetComplianceRate, base.budgetComplianceRate)}
-<p class="small" style="margin-top:10px">Same outfits, same crises, one deterministic grader (<code>eval/results/latest.json</code>, the live run that included the baseline; prompt caching was on in that run, which does not change outcomes, see Section 5). The baseline also changed ${base.avgUnnecessaryReplacements.toFixed(2)} unaffected pieces per rescue on average; the council changed ${resOn.avgUnnecessaryReplacements.toFixed(2)}.</p>
-</div>
 <table>
 <thead><tr><th>Benefit</th><th>Measured</th><th>Compared with</th></tr></thead>
 <tbody>
@@ -416,8 +411,15 @@ ${bar("Recommendations within budget", resOn.budgetComplianceRate, base.budgetCo
 </tbody></table>
 <h3>A real user’s experience</h3>
 ${feedbackHtml}
-<div class="phones">${fig("27-phone-enchanted-wardrobe", "On a phone: the total comes first.", { width: 560, cls: "phone" })}${fig("29-phone-shop", "Shop the Royal Look on a phone.", { width: 560, cls: "phone" })}</div>
-`)}
+<p class="small">The app is tested from 320 px phones to 1536 px desktops; phone screenshots are in <code>docs/screenshots/</code> (25–29).</p>
+`, { lead: `<div class="legend"><span><i style="background:var(--council)"></i>Royal Council (this project)</span><span><i style="background:var(--base)"></i>Single general AI call with the full catalog</span></div>
+<div class="panel">
+${bar(`Crises fixed (${N.feasible} solvable scenarios)`, resOn.recoveryRate, base.recoveryRate)}
+${bar(`Impossible requests refused honestly (${N.impossible})`, resOn.honestRefusalRate, base.honestRefusalRate)}
+${bar("Recommendations within budget", resOn.budgetComplianceRate, base.budgetComplianceRate)}
+<p class="small" style="margin-top:10px">Same outfits, same crises, one deterministic grader (<code>eval/results/latest.json</code>, the live run that included the baseline; prompt caching was on in that run, which does not change outcomes, see Section 5). The baseline also changed ${base.avgUnnecessaryReplacements.toFixed(2)} unaffected pieces per rescue on average; the council changed ${resOn.avgUnnecessaryReplacements.toFixed(2)}.</p>
+</div>
+` })}
 
 ${section(8, "Limits and next steps", "What does not work yet, and what I would build next", `
 <div class="grid2">
