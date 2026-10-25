@@ -6,9 +6,12 @@ A multi-agent AI stylist that builds a princess-inspired outfit within a real bu
 
 ![The Midnight Protocol](docs/screenshots/01-landing.jpg)
 
+**Live app: https://midnight-protocol-jm71.onrender.com**
+(Hosted on Render's free plan. If it has been idle, the first visit takes about 30–60 seconds to wake up.)
+
 ---
 
-## Quick start (under 5 minutes)
+## Run it locally (under 5 minutes)
 
 Requirements: **Node.js 18.18 or newer** (check with `node -v`). Nothing else.
 
