@@ -13,6 +13,8 @@ import { runSafetyTests } from "./selftest";
 import { CRISIS_IDS, PreferencesSchema, type TraceEvent } from "../shared/types";
 
 const app = express();
+// Behind a hosting proxy (e.g. Render), use the real client IP for rate limiting.
+app.set("trust proxy", 1);
 app.use(express.json({ limit: "50kb" }));
 
 app.use("/api", (req, res, next) => {
@@ -38,6 +40,8 @@ app.get("/api/crises", (_req, res) => res.json(CRISIS_IDS.map((id) => ({ id, ...
 function stream(res: express.Response) {
   res.setHeader("Content-Type", "application/x-ndjson");
   res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("X-Accel-Buffering", "no"); // keep live status updates streaming through proxies
+  res.flushHeaders();
   return (e: Omit<TraceEvent, "ts">) => res.write(JSON.stringify({ ...e, ts: Date.now() }) + "\n");
 }
 

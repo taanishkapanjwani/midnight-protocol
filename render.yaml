@@ -1,0 +1,20 @@
+# One-click deploy on Render (https://render.com): New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: midnight-protocol
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: LLM_MODEL
+        value: gpt-6-luna
+      - key: PORTKEY_API_KEY
+        sync: false # entered privately in the Render dashboard, never committed
+      - key: DAILY_SPEND_CAP_USD
+        value: "3"
+      - key: MAX_LLM_CALLS_PER_RUN
+        value: "6"
