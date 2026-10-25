@@ -176,4 +176,4 @@ eval/             scenarios.json, run.ts (Royal Laboratory), safety.test.ts, res
 
 ## Accessibility
 
-Keyboard navigable, semantic roles and labels, visible focus rings, `prefers-reduced-motion` respected (animations off), color is never the only signal, and layouts are responsive down to 375 px.
+Keyboard navigable, semantic roles and labels, visible focus rings, `prefers-reduced-motion` respected (animations off), color is never the only signal, and layouts are tested from 320 px phones to 1536 px desktops (two independent responsive audits). Add `?instant` to the URL to turn off animations for testing.
