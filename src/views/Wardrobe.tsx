@@ -23,7 +23,7 @@ export default function Wardrobe({ prefs, style, onMidnight, onRestyle, onShop }
       </div>
 
       <div className="mt-10 grid items-start gap-8 lg:grid-cols-[1.6fr_1fr]">
-        <FramedPanel className="min-w-0 p-4 sm:p-8">
+        <FramedPanel className="order-2 min-w-0 p-3 sm:p-8 lg:order-none">
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 sm:[&>*:last-child:nth-child(odd)]:col-span-2 xl:[&>*:last-child:nth-child(odd)]:col-span-1">
             {o.items.map((item, i) => (
               <motion.div key={item.id} initial={{ opacity: 0, y: 20, rotate: -1 }} animate={{ opacity: 1, y: 0, rotate: 0 }} transition={{ delay: 0.25 + i * 0.12 }}>
@@ -33,8 +33,8 @@ export default function Wardrobe({ prefs, style, onMidnight, onRestyle, onShop }
           </div>
         </FramedPanel>
 
-        <div className="space-y-6">
-          <div className="parchment gilded relative rounded-[26px] p-7 text-center">
+        <div className="order-1 space-y-6 lg:order-none">
+          <div className="parchment gilded relative rounded-[26px] p-6 text-center sm:p-7">
             <Bow size={70} className="absolute -top-6 left-1/2 -translate-x-1/2" />
             <p className="eyebrow mt-3">The Royal Treasurer certifies</p>
             <p className="mt-2 font-serif text-6xl text-burgundy">{money(v.total)}</p>

@@ -47,7 +47,7 @@ export default function Council(props: {
   const mode = result?.mode ?? props.health?.mode;
 
   return (
-    <section className="relative mx-auto max-w-7xl px-5 py-12">
+    <section className="relative mx-auto max-w-7xl px-5 pb-28 pt-12 sm:pb-12">
       <div className="text-center">
         <p className="eyebrow">{phase === "style" ? "Chapter III" : "Chapter IV"} · Live agent workflow</p>
         <h1 className="mt-2 text-5xl">The Royal Council Chamber</h1>
@@ -146,6 +146,13 @@ export default function Council(props: {
           )}
         </div>
       </div>
+      {!busy && !error && result && (
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-gold/40 bg-ivory/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur sm:hidden">
+          <button className="btn-royal w-full justify-center" onClick={result.ok ? props.onContinue : props.onBack}>
+            {result.ok ? (phase === "style" ? "Open the Enchanted Wardrobe" : "See Happily Ever After") : "Adjust your wishes"}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

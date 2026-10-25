@@ -7,14 +7,14 @@ import { money, niceDate, titleCase } from "../lib/format";
 export function ItemCard({ item, badge, compact = false, showReason = true }: { item: OutfitItem; badge?: { label: string; tone: "keep" | "new" | "out" }; compact?: boolean; showReason?: boolean }) {
   const tones = { keep: "bg-parchment text-burgundy border-gold/50", new: "bg-burgundy text-ivory border-burgundy", out: "bg-blush text-burgundy border-rose/50" };
   return (
-    <article className={`relative flex h-full flex-col overflow-hidden rounded-[22px] border border-gold/45 bg-ivory ${badge?.tone === "out" ? "opacity-70" : ""}`}>
+    <article className={`relative flex h-full overflow-hidden rounded-[22px] border border-gold/45 bg-ivory ${compact ? "flex-col" : "flex-row sm:flex-col"} ${badge?.tone === "out" ? "opacity-70" : ""}`}>
       {badge && <span className={`absolute right-3 top-3 z-10 rounded-full border px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.16em] ${tones[badge.tone]}`}>{badge.label}</span>}
-      <div className={`relative m-2 overflow-hidden rounded-[16px] border border-gold/30 bg-white ${compact ? "aspect-square" : "aspect-[4/5]"}`}>
+      <div className={`relative m-2 overflow-hidden rounded-[16px] border border-gold/30 bg-white ${compact ? "aspect-square" : "aspect-[4/5] w-28 shrink-0 self-start sm:w-auto sm:self-stretch"}`}>
         <ProductImage item={item} className="h-full w-full" fit={["dress", "outerwear", "top", "skirt", "trousers"].includes(item.category) ? "cover" : "contain"} />
       </div>
-      <div className={`flex flex-1 flex-col ${compact ? "px-3 pb-3" : "px-4 pb-4"}`}>
+      <div className={`flex min-w-0 flex-1 flex-col ${compact ? "px-3 pb-3" : "py-3 pr-3 sm:px-4 sm:pb-4 sm:pt-0"}`}>
         <p className="text-[0.62rem] uppercase tracking-[0.18em] text-mauve">{item.retailer} · {item.category}</p>
-        <h3 className={`${compact ? "text-[0.95rem]" : "text-lg"} leading-snug ${badge?.tone === "out" ? "line-through decoration-rose/70" : ""}`}>{titleCase(item.name)}</h3>
+        <h3 className={`${compact ? "text-[0.95rem]" : "text-base sm:text-lg"} leading-snug ${badge?.tone === "out" ? "line-through decoration-rose/70" : ""}`}>{titleCase(item.name)}</h3>
         <div className="mt-1 flex items-center justify-between gap-2 text-sm">
           <span className="font-serif text-xl text-burgundy">{money(item.price)}</span>
           {!compact && <span className="text-[0.62rem] text-mauve">{item.id}</span>}
@@ -25,7 +25,7 @@ export function ItemCard({ item, badge, compact = false, showReason = true }: { 
             {item.heel ? ` · ${item.heel === "flat" ? "flat" : `${item.heel} heel`}` : ""}
           </p>
         )}
-        {showReason && item.reason && !compact && <p className="mt-3 border-t border-gold/25 pt-3 font-serif text-[1.02rem] italic leading-snug text-burgundy">“{item.reason}”</p>}
+        {showReason && item.reason && !compact && <p className="mt-2 border-t border-gold/25 pt-2 font-serif text-[0.95rem] italic leading-snug text-burgundy sm:mt-3 sm:pt-3 sm:text-[1.02rem]">“{item.reason}”</p>}
         {!compact && (
           <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex min-h-11 items-center gap-1.5 pt-2 text-xs font-semibold uppercase tracking-[0.16em] text-burgundy underline-offset-4 hover:underline">
             View at {item.retailer} <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
