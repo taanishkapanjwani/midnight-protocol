@@ -1,0 +1,2920 @@
+{
+ "notice": "Demonstration catalog for The Midnight Protocol. Products and prices are illustrative and not offered by any real retailer.",
+ "currency": "USD",
+ "items": [
+  {
+   "id": "MP-D01",
+   "name": "Moonlit Satin Slip Gown",
+   "category": "dress",
+   "price": 68,
+   "color": "Powder blue",
+   "colorHex": "#AFC8E0",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D02",
+   "name": "Glass Ballroom Midi Dress",
+   "category": "dress",
+   "price": 54,
+   "color": "Pearl white",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "romantic",
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "wedding",
+    "romantic",
+    "birthday",
+    "gala"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D03",
+   "name": "Silver Mist Tulle Gown",
+   "category": "dress",
+   "price": 96,
+   "color": "Silver",
+   "colorHex": "#C9CDD3",
+   "styleTags": [
+    "dramatic",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D04",
+   "name": "Library Gold Tea Dress",
+   "category": "dress",
+   "price": 46,
+   "color": "Champagne",
+   "colorHex": "#EED9A0",
+   "styleTags": [
+    "vintage",
+    "romantic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "garden",
+    "romantic",
+    "birthday",
+    "college",
+    "wedding"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D05",
+   "name": "Ballroom Gold Off-Shoulder Gown",
+   "category": "dress",
+   "price": 88,
+   "color": "Warm gold",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "dramatic",
+    "vintage"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D06",
+   "name": "Rose Tulle Ballet Midi",
+   "category": "dress",
+   "price": 58,
+   "color": "Dusty pink",
+   "colorHex": "#D9A5B3",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "birthday",
+    "wedding",
+    "garden",
+    "romantic",
+    "gala"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D07",
+   "name": "Blush Ribbon-Strap Mini",
+   "category": "dress",
+   "price": 38,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic",
+    "modern"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "birthday",
+    "college",
+    "casual",
+    "romantic"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D08",
+   "name": "Lilac Floral Wrap Dress",
+   "category": "dress",
+   "price": 42,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "birthday",
+    "college",
+    "casual",
+    "wedding"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D09",
+   "name": "Lavender Pleated Maxi",
+   "category": "dress",
+   "price": 64,
+   "color": "Lavender",
+   "colorHex": "#C3B1DA",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "wedding",
+    "gala",
+    "romantic",
+    "garden"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D10",
+   "name": "Ruby Velvet Fit-and-Flare",
+   "category": "dress",
+   "price": 62,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage",
+    "dramatic"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D11",
+   "name": "Navy Collared Shirt Dress",
+   "category": "dress",
+   "price": 44,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage",
+    "minimal"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday",
+    "garden"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D12",
+   "name": "Seafoam Bias-Cut Slip",
+   "category": "dress",
+   "price": 52,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D13",
+   "name": "Turquoise Draped Column Gown",
+   "category": "dress",
+   "price": 92,
+   "color": "Turquoise",
+   "colorHex": "#4FA7A5",
+   "styleTags": [
+    "dramatic",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D14",
+   "name": "Ivory Corset Midi",
+   "category": "dress",
+   "price": 74,
+   "color": "Ivory",
+   "colorHex": "#FFF5EC",
+   "styleTags": [
+    "vintage",
+    "romantic"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "belle",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D15",
+   "name": "Champagne Pleated Midi",
+   "category": "dress",
+   "price": 36,
+   "color": "Champagne",
+   "colorHex": "#E9D6AE",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle",
+    "aurora"
+   ],
+   "occasions": [
+    "wedding",
+    "birthday",
+    "garden",
+    "romantic",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D16",
+   "name": "Pearl Knit Day Dress",
+   "category": "dress",
+   "price": 29,
+   "color": "Pearl",
+   "colorHex": "#EDE6DD",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel",
+    "belle"
+   ],
+   "occasions": [
+    "casual",
+    "college",
+    "garden"
+   ],
+   "formality": 1,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D17",
+   "name": "Midnight Blue Velvet Gown",
+   "category": "dress",
+   "price": 118,
+   "color": "Midnight blue",
+   "colorHex": "#2E3A66",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D18",
+   "name": "Sea-Glass Smocked Sundress",
+   "category": "dress",
+   "price": 34,
+   "color": "Sea glass",
+   "colorHex": "#BFE3D8",
+   "styleTags": [
+    "romantic",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel",
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "casual",
+    "birthday",
+    "college"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-D19",
+   "name": "Blush Satin Cocktail Dress",
+   "category": "dress",
+   "price": 48,
+   "color": "Blush rose",
+   "colorHex": "#E7B9C6",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "gala"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": false,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T01",
+   "name": "Pearl-Button Cardigan",
+   "category": "top",
+   "price": 28,
+   "color": "Pearl",
+   "colorHex": "#EFE7DC",
+   "styleTags": [
+    "vintage",
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella",
+    "belle",
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "garden",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T02",
+   "name": "Puff-Sleeve Blouse",
+   "category": "top",
+   "price": 26,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora",
+    "rapunzel"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday",
+    "garden",
+    "romantic"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T03",
+   "name": "Ballet Wrap Top",
+   "category": "top",
+   "price": 24,
+   "color": "Dusty pink",
+   "colorHex": "#D9A5B3",
+   "styleTags": [
+    "romantic",
+    "modern"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "casual",
+    "college",
+    "birthday"
+   ],
+   "formality": 1,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T05",
+   "name": "Ruby Bow Blouse",
+   "category": "top",
+   "price": 32,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "romantic",
+    "birthday",
+    "casual"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T06",
+   "name": "Lilac Embroidered Peasant Top",
+   "category": "top",
+   "price": 27,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "casual",
+    "garden",
+    "college"
+   ],
+   "formality": 1,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T07",
+   "name": "Seafoam Silk Shell",
+   "category": "top",
+   "price": 30,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "college",
+    "birthday",
+    "wedding"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-T09",
+   "name": "Powder-Blue Satin Blouse",
+   "category": "top",
+   "price": 34,
+   "color": "Powder blue",
+   "colorHex": "#AFC8E0",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "wedding",
+    "birthday",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S01",
+   "name": "Tulle Ballet Midi Skirt",
+   "category": "skirt",
+   "price": 36,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella"
+   ],
+   "occasions": [
+    "birthday",
+    "garden",
+    "romantic",
+    "wedding",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S02",
+   "name": "Champagne Satin Midi Skirt",
+   "category": "skirt",
+   "price": 34,
+   "color": "Champagne",
+   "colorHex": "#E9D6AE",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "belle",
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "wedding",
+    "birthday",
+    "gala"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S03",
+   "name": "Pleated Navy Skirt",
+   "category": "skirt",
+   "price": 30,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S04",
+   "name": "Floral Lilac Midi Skirt",
+   "category": "skirt",
+   "price": 32,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "birthday",
+    "casual",
+    "college"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S05",
+   "name": "Seafoam Satin Slip Skirt",
+   "category": "skirt",
+   "price": 38,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-S06",
+   "name": "Ruby Velvet Midi Skirt",
+   "category": "skirt",
+   "price": 40,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage",
+    "dramatic"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-P01",
+   "name": "Ivory Wide-Leg Trousers",
+   "category": "trousers",
+   "price": 44,
+   "color": "Ivory",
+   "colorHex": "#FBF3EA",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel",
+    "belle"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-P02",
+   "name": "Camel Tailored Trousers",
+   "category": "trousers",
+   "price": 39,
+   "color": "Camel",
+   "colorHex": "#C8A27A",
+   "styleTags": [
+    "vintage",
+    "minimal"
+   ],
+   "princessTags": [
+    "belle",
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "casual"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-P03",
+   "name": "Navy Sailor Trousers",
+   "category": "trousers",
+   "price": 36,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage",
+    "modern"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "ariel"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "garden"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H01",
+   "name": "Crystal Glass Heels",
+   "category": "shoes",
+   "price": 64,
+   "color": "Silver crystal",
+   "colorHex": "#DDE3EA",
+   "styleTags": [
+    "dramatic",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H02",
+   "name": "Silver Ballet Flats",
+   "category": "shoes",
+   "price": 29,
+   "color": "Silver",
+   "colorHex": "#C9CDD3",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora"
+   ],
+   "occasions": [
+    "wedding",
+    "romantic",
+    "birthday",
+    "college",
+    "casual",
+    "garden"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H03",
+   "name": "Pearl-Embellished Ballet Flats",
+   "category": "shoes",
+   "price": 38,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora",
+    "ariel",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday",
+    "garden"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H04",
+   "name": "Blush Satin Pointe-Style Flats",
+   "category": "shoes",
+   "price": 34,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "birthday",
+    "wedding",
+    "romantic",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H05",
+   "name": "Rose Kitten Heels",
+   "category": "shoes",
+   "price": 42,
+   "color": "Rose",
+   "colorHex": "#D9A5B3",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "aurora",
+    "belle"
+   ],
+   "occasions": [
+    "wedding",
+    "romantic",
+    "gala",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H06",
+   "name": "Gold Block-Heel Mary Janes",
+   "category": "shoes",
+   "price": 46,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "belle",
+    "snowwhite"
+   ],
+   "occasions": [
+    "wedding",
+    "romantic",
+    "gala",
+    "birthday",
+    "college"
+   ],
+   "formality": 4,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H07",
+   "name": "Gold Strappy Stilettos",
+   "category": "shoes",
+   "price": 58,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H08",
+   "name": "Lilac Embroidered Espadrilles",
+   "category": "shoes",
+   "price": 32,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "casual",
+    "college",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H09",
+   "name": "Ruby Patent Mary Janes",
+   "category": "shoes",
+   "price": 44,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "birthday",
+    "college"
+   ],
+   "formality": 4,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H10",
+   "name": "Navy Pointed Pumps",
+   "category": "shoes",
+   "price": 52,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "minimal",
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H11",
+   "name": "Seafoam Strappy Sandals",
+   "category": "shoes",
+   "price": 36,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "wedding",
+    "romantic",
+    "birthday",
+    "garden"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H12",
+   "name": "Pearl Strap Heeled Sandals",
+   "category": "shoes",
+   "price": 49,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "dramatic",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H13",
+   "name": "Ivory Leather Ankle Boots",
+   "category": "shoes",
+   "price": 58,
+   "color": "Ivory",
+   "colorHex": "#EFE4D6",
+   "styleTags": [
+    "minimal",
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday",
+    "garden",
+    "romantic"
+   ],
+   "formality": 2,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H14",
+   "name": "Blush Rain-Ready Ballet Loafers",
+   "category": "shoes",
+   "price": 44,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella",
+    "rapunzel"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday",
+    "garden",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H16",
+   "name": "Pearl Satin Weatherproof Flats",
+   "category": "shoes",
+   "price": 56,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora",
+    "ariel",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-H17",
+   "name": "Navy Velvet Block-Heel Boots",
+   "category": "shoes",
+   "price": 68,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage",
+    "dramatic"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B01",
+   "name": "Ivory Pearl Mini Bag",
+   "category": "bag",
+   "price": 19,
+   "color": "Ivory",
+   "colorHex": "#FFF5EC",
+   "styleTags": [
+    "romantic",
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora",
+    "belle",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "college",
+    "romantic",
+    "wedding",
+    "birthday",
+    "garden",
+    "casual"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B02",
+   "name": "Silver Crystal Clutch",
+   "category": "bag",
+   "price": 34,
+   "color": "Silver",
+   "colorHex": "#C9CDD3",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B03",
+   "name": "Gold Book Clutch",
+   "category": "bag",
+   "price": 28,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "vintage",
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B04",
+   "name": "Blush Bow Shoulder Bag",
+   "category": "bag",
+   "price": 26,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "birthday",
+    "college",
+    "romantic",
+    "garden",
+    "casual",
+    "wedding"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B05",
+   "name": "Lilac Woven Basket Bag",
+   "category": "bag",
+   "price": 24,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "casual",
+    "college"
+   ],
+   "formality": 1,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B06",
+   "name": "Ruby Structured Top-Handle Bag",
+   "category": "bag",
+   "price": 38,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "birthday",
+    "college"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B07",
+   "name": "Seashell Pearl Clutch",
+   "category": "bag",
+   "price": 32,
+   "color": "Pearl",
+   "colorHex": "#EAF2F0",
+   "styleTags": [
+    "modern",
+    "dramatic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B09",
+   "name": "Satin Ribbon Wristlet",
+   "category": "bag",
+   "price": 16,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic",
+    "minimal"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella",
+    "rapunzel"
+   ],
+   "occasions": [
+    "birthday",
+    "wedding",
+    "romantic",
+    "college",
+    "garden"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-B10",
+   "name": "Gilded Mirror Minaudiere",
+   "category": "bag",
+   "price": 72,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "belle"
+   ],
+   "occasions": [
+    "gala"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": false,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J01",
+   "name": "Pearl Drop Earrings",
+   "category": "jewelry",
+   "price": 12,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora",
+    "ariel",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "college",
+    "romantic",
+    "wedding",
+    "birthday",
+    "garden",
+    "casual"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J02",
+   "name": "Crystal Tiara Headband",
+   "category": "jewelry",
+   "price": 24,
+   "color": "Crystal",
+   "colorHex": "#DDE3EA",
+   "styleTags": [
+    "dramatic",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J03",
+   "name": "Gold Rose Pendant",
+   "category": "jewelry",
+   "price": 22,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "belle",
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "gala"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J04",
+   "name": "Lilac Flower Hair Clips",
+   "category": "jewelry",
+   "price": 10,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "garden",
+    "birthday",
+    "college",
+    "casual"
+   ],
+   "formality": 1,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J05",
+   "name": "Ruby Crystal Studs",
+   "category": "jewelry",
+   "price": 18,
+   "color": "Ruby red",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J06",
+   "name": "Seafoam Shell Necklace",
+   "category": "jewelry",
+   "price": 16,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "garden",
+    "casual",
+    "birthday",
+    "romantic"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J07",
+   "name": "Blush Satin Hair Bow",
+   "category": "jewelry",
+   "price": 9,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella"
+   ],
+   "occasions": [
+    "birthday",
+    "college",
+    "garden",
+    "casual",
+    "romantic"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J08",
+   "name": "Antique Gold Locket",
+   "category": "jewelry",
+   "price": 28,
+   "color": "Gold",
+   "colorHex": "#C6A66B",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "belle",
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "wedding",
+    "gala",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J09",
+   "name": "Pearl Collar Necklace",
+   "category": "jewelry",
+   "price": 34,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "dramatic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel",
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-J10",
+   "name": "Iridescent Pearl Hair Comb",
+   "category": "jewelry",
+   "price": 14,
+   "color": "Iridescent",
+   "colorHex": "#EAF2F0",
+   "styleTags": [
+    "romantic",
+    "modern"
+   ],
+   "princessTags": [
+    "ariel",
+    "cinderella"
+   ],
+   "occasions": [
+    "wedding",
+    "gala",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O01",
+   "name": "Powder-Blue Wool Cape",
+   "category": "outerwear",
+   "price": 72,
+   "color": "Powder blue",
+   "colorHex": "#AFC8E0",
+   "styleTags": [
+    "dramatic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O02",
+   "name": "Ivory Water-Resistant Satin Trench",
+   "category": "outerwear",
+   "price": 68,
+   "color": "Ivory",
+   "colorHex": "#FBF3EA",
+   "styleTags": [
+    "minimal",
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "belle",
+    "ariel",
+    "aurora"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "romantic",
+    "birthday",
+    "wedding",
+    "gala"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O03",
+   "name": "Blush Cropped Cardigan",
+   "category": "outerwear",
+   "price": 28,
+   "color": "Blush",
+   "colorHex": "#F4DCE4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "birthday",
+    "garden"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O04",
+   "name": "Camel Wool Coat",
+   "category": "outerwear",
+   "price": 84,
+   "color": "Camel",
+   "colorHex": "#C8A27A",
+   "styleTags": [
+    "minimal",
+    "vintage"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "college",
+    "casual",
+    "romantic",
+    "gala",
+    "wedding"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O05",
+   "name": "Lilac Clear Rain Cape",
+   "category": "outerwear",
+   "price": 26,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "modern",
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel",
+    "aurora"
+   ],
+   "occasions": [
+    "casual",
+    "college",
+    "garden",
+    "birthday",
+    "wedding"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O06",
+   "name": "Navy Double-Breasted Coat",
+   "category": "outerwear",
+   "price": 78,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "romantic",
+    "wedding",
+    "college"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O07",
+   "name": "Seafoam Light Trench",
+   "category": "outerwear",
+   "price": 48,
+   "color": "Seafoam",
+   "colorHex": "#A9D8C8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "casual",
+    "college",
+    "romantic",
+    "birthday",
+    "garden"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O08",
+   "name": "Ivory Faux-Fur Stole",
+   "category": "outerwear",
+   "price": 38,
+   "color": "Ivory",
+   "colorHex": "#FFF5EC",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "belle",
+    "snowwhite",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  },
+  {
+   "id": "MP-O09",
+   "name": "Pearl-Button Velvet Bolero",
+   "category": "outerwear",
+   "price": 42,
+   "color": "Dusty rose",
+   "colorHex": "#B98598",
+   "styleTags": [
+    "vintage",
+    "romantic"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "belle",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L"
+   ],
+   "image": null
+  }
+ ]
+}

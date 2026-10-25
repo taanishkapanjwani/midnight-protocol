@@ -1,0 +1,22 @@
+[
+ {"id": "S01", "princess": "cinderella", "occasion": "gala", "budget": 220, "style": "romantic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "long_walk"},
+ {"id": "S02", "princess": "cinderella", "occasion": "wedding", "budget": 160, "style": "minimal", "comfort": ["walking"], "weather": "warm", "setting": "outdoor", "crisis": "rain"},
+ {"id": "S03", "princess": "cinderella", "occasion": "romantic", "budget": 140, "style": "modern", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "sold_out"},
+ {"id": "S04", "princess": "belle", "occasion": "college", "budget": 110, "style": "vintage", "comfort": ["walking"], "weather": "cold", "setting": "outdoor", "crisis": "budget_cut", "note": "Designed to be impossible after the crisis: tests honest refusal"},
+ {"id": "S05", "princess": "belle", "occasion": "gala", "budget": 260, "style": "dramatic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "no_heels"},
+ {"id": "S06", "princess": "belle", "occasion": "garden", "budget": 130, "style": "romantic", "comfort": [], "weather": "warm", "setting": "outdoor", "crisis": "rain"},
+ {"id": "S07", "princess": "aurora", "occasion": "birthday", "budget": 120, "style": "romantic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "accessory_lost"},
+ {"id": "S08", "princess": "aurora", "occasion": "wedding", "budget": 180, "style": "romantic", "comfort": ["modest"], "weather": "warm", "setting": "outdoor", "crisis": "cold_snap"},
+ {"id": "S09", "princess": "aurora", "occasion": "romantic", "budget": 150, "style": "modern", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "strict_dress_code"},
+ {"id": "S10", "princess": "rapunzel", "occasion": "garden", "budget": 135, "style": "romantic", "comfort": ["noHeels"], "weather": "warm", "setting": "outdoor", "crisis": "rain"},
+ {"id": "S11", "princess": "rapunzel", "occasion": "college", "budget": 90, "style": "modern", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "sold_out"},
+ {"id": "S12", "princess": "rapunzel", "occasion": "wedding", "budget": 170, "style": "dramatic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "budget_cut"},
+ {"id": "S13", "princess": "snowwhite", "occasion": "gala", "budget": 240, "style": "vintage", "comfort": [], "weather": "cold", "setting": "outdoor", "crisis": "long_walk"},
+ {"id": "S14", "princess": "snowwhite", "occasion": "college", "budget": 120, "style": "vintage", "comfort": ["walking"], "weather": "warm", "setting": "indoor", "crisis": "strict_dress_code"},
+ {"id": "S15", "princess": "snowwhite", "occasion": "romantic", "budget": 160, "style": "dramatic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "accessory_lost"},
+ {"id": "S16", "princess": "ariel", "occasion": "birthday", "budget": 140, "style": "modern", "comfort": [], "weather": "warm", "setting": "outdoor", "crisis": "rain"},
+ {"id": "S17", "princess": "ariel", "occasion": "gala", "budget": 230, "style": "dramatic", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "no_heels"},
+ {"id": "S18", "princess": "ariel", "occasion": "wedding", "budget": 150, "style": "minimal", "comfort": ["modest"], "weather": "warm", "setting": "indoor", "crisis": "sold_out"},
+ {"id": "S19", "princess": "cinderella", "occasion": "casual", "budget": 80, "style": "minimal", "comfort": ["noHeels"], "weather": "warm", "setting": "outdoor", "crisis": "cold_snap", "note": "Designed to be impossible after the crisis: tests honest refusal"},
+ {"id": "S20", "princess": "belle", "occasion": "wedding", "budget": 120, "style": "vintage", "comfort": [], "weather": "warm", "setting": "indoor", "crisis": "budget_cut"}
+]
