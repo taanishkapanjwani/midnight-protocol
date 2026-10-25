@@ -91,11 +91,11 @@ function Results({ lab }: { lab: Lab }) {
         <span className={`rounded-full px-3 py-1 text-xs uppercase tracking-[0.16em] ${lab.mode === "live" ? "bg-ivory" : "bg-blush"}`}>{lab.mode === "live" ? "Live AI measurements" : "Demo run: rule-based only, no baseline"}</span>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-        <FramedPanel className="p-6 sm:p-8">
+      <div className="mt-8 grid items-start gap-6 lg:grid-cols-[1.4fr_1fr]">
+        <FramedPanel className="min-w-0 p-5 sm:p-8">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 className="text-3xl">Council vs single agent</h2>
-            <div className="flex gap-4 text-sm" aria-label="Legend">
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm [&>span]:whitespace-nowrap" aria-label="Legend">
               <span className="flex items-center gap-2"><span className="h-3 w-3 rounded-sm" style={{ background: COUNCIL }} />Royal Council</span>
               {b && <span className="flex items-center gap-2"><span className="h-3 w-3 rounded-sm" style={{ background: BASELINE }} />Single-agent baseline</span>}
             </div>
@@ -124,6 +124,7 @@ function Results({ lab }: { lab: Lab }) {
 
       <div className="mt-8 overflow-x-auto rounded-[24px] border border-gold/40 bg-ivory p-5">
         <h2 className="text-2xl">Every scenario</h2>
+        <p className="text-xs text-mauve sm:hidden">Swipe sideways to see every column.</p>
         <table className="mt-4 w-full min-w-[760px] text-sm">
           <thead>
             <tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve">
@@ -160,7 +161,7 @@ function Bar({ value, max, color, label, title }: { value: number; max: number; 
   return (
     <div className="mt-1.5 flex items-center gap-3" title={title}>
       <div className="h-4 flex-1 rounded-full bg-blush/40">
-        <div className="h-4 rounded-r-[4px] rounded-l-full transition-all duration-1000" style={{ width: `${Math.max(1, (value / max) * 100)}%`, background: color }} />
+        <div className="h-4 rounded-full transition-all duration-1000" style={{ width: `${Math.max(1, (value / max) * 100)}%`, background: color }} />
       </div>
       <span className="w-12 text-right font-serif text-lg text-burgundy">{label}</span>
     </div>

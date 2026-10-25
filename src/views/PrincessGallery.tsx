@@ -9,7 +9,7 @@ export default function PrincessGallery({ selected, onSelect, onContinue }: { se
   return (
     <section className="mx-auto max-w-7xl px-6 py-14">
       <div className="text-center">
-        <p className="eyebrow">Chapter II</p>
+        <p className="eyebrow">Chapter I</p>
         <h1 className="mt-2 text-5xl">Choose Your Princess</h1>
         <p className="mx-auto mt-3 max-w-2xl text-mauve">Each aesthetic carries its own palette and spirit. The whole atelier will take on her colors.</p>
       </div>
@@ -35,17 +35,17 @@ export default function PrincessGallery({ selected, onSelect, onContinue }: { se
                   <Check className="h-4 w-4" />
                 </span>
               )}
-              <div className="relative h-64" style={{ background: `radial-gradient(circle at 50% 40%, #fff 0%, ${p.accentSoft} 55%, ${p.colors[0].hex}55 100%)` }}>
+              <div className="relative h-48 sm:h-64" style={{ background: `radial-gradient(circle at 50% 40%, #fff 0%, ${p.accentSoft} 55%, ${p.colors[0].hex}55 100%)` }}>
                 {active && <SparkleBurst />}
                 <PrincessGown princess={p.id} className="mx-auto h-full py-3" />
               </div>
               <div className="border-t border-gold/30 p-6">
                 <p className="script text-2xl" style={{ color: p.accent }}>{p.epithet}</p>
                 <h2 className="text-3xl leading-tight">{p.name}</h2>
-                <div className="mt-3 flex items-center gap-2" aria-label="Signature palette">
+                <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1.5" aria-label="Signature palette">
                   {p.colors.map((c) => (
-                    <span key={c.hex} className="flex items-center gap-1.5 text-xs text-mauve">
-                      <span className="h-4 w-4 rounded-full border border-gold/50" style={{ background: c.hex }} />
+                    <span key={c.hex} className="flex items-center gap-1.5 whitespace-nowrap text-xs text-mauve">
+                      <span className="h-4 w-4 shrink-0 rounded-full border border-gold/50" style={{ background: c.hex }} />
                       {c.name}
                     </span>
                   ))}
@@ -61,7 +61,7 @@ export default function PrincessGallery({ selected, onSelect, onContinue }: { se
           );
         })}
       </div>
-      <div className="mt-12 text-center">
+      <div className={`mt-12 text-center ${selected ? "sticky bottom-4 z-30 sm:static" : ""}`}>
         <button className="btn-royal" disabled={!selected} onClick={onContinue}>
           Open your royal invitation
           <Bow size={34} className="-my-3 -mr-3" />

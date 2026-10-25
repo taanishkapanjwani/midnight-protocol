@@ -90,14 +90,14 @@ export default function Council(props: {
         })}
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+      <div className="mt-8 grid items-start gap-6 lg:grid-cols-[1.4fr_1fr]">
         <FramedPanel className="p-6 sm:p-8">
           <h2 className="text-2xl">Council Minutes</h2>
           <p className="text-sm text-mauve">Every line below is a real step from the server, in order.</p>
-          <ol className="scroll-thin mt-4 max-h-[34rem] space-y-2 overflow-auto pr-2 text-sm">
+          <ol className="scroll-thin mt-4 max-h-[22rem] space-y-2 sm:max-h-[34rem] overflow-auto pr-2 text-sm">
             {events.map((e, i) => (
-              <li key={i} className={`flex gap-3 rounded-xl px-3 py-2 ${e.type === "warning" ? "bg-blush/50" : "bg-parchment/60"}`}>
-                <span className="w-24 shrink-0 text-[0.65rem] uppercase tracking-[0.14em] text-gold-deep">{e.agent ?? "system"}</span>
+              <li key={i} className={`flex flex-col gap-0.5 rounded-xl px-3 py-2 sm:flex-row sm:gap-3 ${e.type === "warning" ? "bg-blush/50" : "bg-parchment/60"}`}>
+                <span className="shrink-0 text-[0.65rem] sm:w-24 uppercase tracking-[0.14em] text-gold-deep">{e.agent ?? "system"}</span>
                 <span className="text-burgundy">{e.message}</span>
               </li>
             ))}
@@ -105,7 +105,7 @@ export default function Council(props: {
           </ol>
         </FramedPanel>
 
-        <div className="space-y-6">
+        <div className="order-first space-y-6 lg:order-none">
           {busy && <EnchantedWardrobe />}
           {!busy && error && (
             <div className="rounded-[26px] border border-burgundy/30 bg-blush/40 p-6" role="alert">

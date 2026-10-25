@@ -2,7 +2,7 @@
 import type { CatalogItem, Constraints, Crisis, CrisisId } from "../shared/types";
 import { CRISIS_IDS } from "../shared/types";
 import { getItem, roleOf } from "./catalog";
-import { validateOutfit } from "./rules";
+import { cheapestPossible, validateOutfit } from "./rules";
 
 export const CRISIS_INFO: Record<CrisisId, { title: string; blurb: string }> = {
   sold_out: { title: "The Vanishing Gown", blurb: "Your main piece sells out moments before the ball." },
@@ -78,14 +78,24 @@ export function applyCrisis(id: CrisisId, outfitIds: string[], base: Constraints
 export const crisisBreaksOutfit = (id: CrisisId, ids: string[], base: Constraints) =>
   !validateOutfit(ids, applyCrisis(id, ids, base).constraints).valid;
 
-// Proposal policy: the most realistic crisis that actually threatens THIS outfit.
+const crisisSolvable = (id: CrisisId, ids: string[], base: Constraints) => {
+  const c = applyCrisis(id, ids, base).constraints;
+  return cheapestPossible(c) <= c.budget;
+};
+
+// Proposal policy: the most realistic crisis that threatens THIS outfit and can still be fixed
+// (controlled challenges, not impossible ones). Random mode may still pick unsolvable ones.
 export function proposeCrisis(ids: string[], base: Constraints): CrisisId {
   const shoes = ids.map(getItem).find((i) => i?.category === "shoes");
   const order: CrisisId[] = [];
   if (shoes?.heel === "high") order.push("long_walk", "no_heels");
   if (base.weather === "warm") order.push("rain");
   order.push("sold_out", "budget_cut", "strict_dress_code", "accessory_lost", "cold_snap");
-  return order.find((id) => crisisBreaksOutfit(id, ids, base)) ?? "sold_out";
+  return (
+    order.find((id) => crisisBreaksOutfit(id, ids, base) && crisisSolvable(id, ids, base)) ??
+    order.find((id) => crisisBreaksOutfit(id, ids, base)) ??
+    "sold_out"
+  );
 }
 
 // Seeded random choice among crises that actually break the outfit (reproducible with a seed).

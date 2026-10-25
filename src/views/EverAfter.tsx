@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
+import { useModal } from "../lib/useModal";
+import { money } from "../lib/format";
 import { AnimatePresence, motion } from "framer-motion";
 import { Download, Footprints, Printer, ScrollText, X } from "lucide-react";
 import type { Outfit, Preferences } from "../../shared/types";
@@ -7,7 +9,7 @@ import type { RescueResult } from "../lib/api";
 import { Bow, FlowingRibbon, FramedPanel, Particles, PearlString, WaxSeal } from "../components/Ornaments";
 import { ChecksList, ItemCard, Ring } from "../components/Outfit";
 
-export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver }: { prefs: Preferences; rescue: RescueResult; onAnotherCrisis: () => void; onStartOver: () => void }) {
+export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver, onShop }: { prefs: Preferences; rescue: RescueResult; onAnotherCrisis: () => void; onStartOver: () => void; onShop: () => void }) {
   const [decree, setDecree] = useState(false);
   const p = princessById(prefs.princess);
 
@@ -50,10 +52,10 @@ export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver 
         </p>
       </div>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         <Stat k="Pieces kept" v={`${m.retained.length} of ${rescue.before.items.length}`} sub={m.unnecessary.length ? `${m.unnecessary.length} changed unnecessarily` : "Nothing changed unnecessarily"} />
         <Stat k="Pieces replaced" v={`${m.removed.length} out · ${m.added.length} in`} sub={`${affectedIds.length} broken by the crisis`} />
-        <Stat k="Price change" v={`${delta >= 0 ? "+" : "−"}$${Math.abs(delta).toFixed(0)}`} sub={`$${m.priceAfter} of $${after.validation.budget} budget`} />
+        <Stat k="Price change" v={`${delta >= 0 ? "+" : "−"}${money(Math.abs(delta))}`} sub={`${money(m.priceAfter)} of ${money(after.validation.budget)} budget`} />
         <Stat k="Budget compliance" v={after.validation.total <= after.validation.budget ? "Within budget" : "Over budget"} sub="Checked by deterministic code" />
       </div>
 
@@ -63,7 +65,7 @@ export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver 
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[1.5fr_1fr]">
-        <FramedPanel className="p-6 sm:p-8">
+        <FramedPanel className="min-w-0 p-5 sm:p-8">
           <h2 className="text-3xl">Midnight Survival Score</h2>
           <p className="text-sm text-mauve">Same rubric, three moments. A hard-rule failure caps the overall score at 49.</p>
           <div className="mt-6 overflow-x-auto">
@@ -85,9 +87,9 @@ export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver 
                   ["Overall", "overall"],
                 ] as const).map(([label, k]) => (
                   <tr key={k} className={k === "overall" ? "font-semibold" : ""}>
-                    <td className="py-2.5 pr-3">{label}</td>
+                    <td className="py-2.5 pr-3 text-xs sm:text-sm">{label}</td>
                     <td className="py-2.5 font-serif text-lg">{rescue.before.score[k]}</td>
-                    <td className={`py-2.5 font-serif text-lg ${rescue.underCrisis.score.hardFail ? "text-rose" : ""}`}>{rescue.underCrisis.score[k]}</td>
+                    <td className={`py-2.5 font-serif text-lg ${rescue.underCrisis.score.hardFail ? "text-burgundy/70" : ""}`}>{rescue.underCrisis.score[k]}</td>
                     <td className="py-2.5 font-serif text-lg">{after.score[k]}</td>
                   </tr>
                 ))}
@@ -129,27 +131,33 @@ export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver 
         </div>
       </div>
 
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
-        <button className="btn-royal" onClick={onAnotherCrisis}>Face another crisis</button>
-        <button className="btn-ghost" onClick={onStartOver}>Start a new story</button>
+      <div className="midnight-sky relative mt-10 overflow-hidden rounded-[32px] px-6 py-12 text-center text-ivory">
+        <p className="text-[0.7rem] uppercase tracking-[0.24em] text-gold">Chapter VI</p>
+        <h2 className="mt-2 text-4xl text-ivory">Shop the Royal Look</h2>
+        <p className="mx-auto mt-2 max-w-xl text-ivory/80">Every piece is a real product. See photos, sizes and prices, and shop each one on its retailer's own website.</p>
+        <div className="mt-7 flex flex-wrap justify-center gap-3">
+          <button className="btn-royal" onClick={onShop}>Shop the Royal Look <Bow size={30} className="-my-3 -mr-2" /></button>
+          <button className="btn-ghost" onClick={onAnotherCrisis}>Face another crisis</button>
+        </div>
+        <button className="mt-3 inline-flex min-h-11 items-center px-3 text-sm text-ivory/70 underline-offset-4 hover:underline" onClick={onStartOver}>Start a new story</button>
       </div>
 
       <AnimatePresence>
         {decree && (
-          <motion.div className="fixed inset-0 z-50 grid place-items-center bg-burgundy/40 p-4 backdrop-blur-sm" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} role="dialog" aria-modal="true" aria-label="Royal Decree" onClick={() => setDecree(false)}>
-            <motion.div initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95 }} onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl">
-              <FramedPanel className="parchment relative px-8 py-12 text-center sm:px-14">
-                <button className="no-print absolute right-5 top-5 text-mauve" onClick={() => setDecree(false)} aria-label="Close"><X /></button>
+          <DecreeModal onClose={() => setDecree(false)}>
+            {(closeRef) => (
+              <FramedPanel className="parchment relative px-5 py-10 text-center sm:px-14 sm:py-12">
+                <button ref={closeRef} className="no-print absolute right-3 top-3 grid h-11 w-11 place-items-center rounded-full text-mauve hover:bg-powder" onClick={() => setDecree(false)} aria-label="Close"><X /></button>
                 <Bow size={90} className="absolute -top-10 left-1/2 -translate-x-1/2" />
                 <p className="eyebrow mt-4">By decree of the Royal Wardrobe</p>
-                <h2 className="display mt-3 text-3xl">Midnight-Proof</h2>
+                <h2 className="display mt-3 whitespace-nowrap text-2xl sm:text-3xl">Midnight-Proof</h2>
                 <p className="mt-4 font-serif text-xl italic">this ensemble has been declared fit to survive the night.</p>
                 <PearlString className="my-6" />
                 <dl className="mx-auto grid max-w-md grid-cols-2 gap-x-6 gap-y-2 text-left text-sm">
                   <dt className="text-mauve">Aesthetic</dt><dd>{p.name}, {p.epithet}</dd>
                   <dt className="text-mauve">Occasion</dt><dd>{OCCASION_LABELS[prefs.occasion]}</dd>
                   <dt className="text-mauve">Crisis survived</dt><dd>{rescue.crisis.title}</dd>
-                  <dt className="text-mauve">Total</dt><dd>${after.validation.total} of ${after.validation.budget}</dd>
+                  <dt className="text-mauve">Total</dt><dd>{money(after.validation.total)} of {money(after.validation.budget)}</dd>
                   <dt className="text-mauve">Validation</dt><dd>{after.validation.checks.filter((c) => c.passed).length}/{after.validation.checks.length} checks passed</dd>
                 </dl>
                 <p className="mt-6 text-sm">{after.items.map((i) => i.name).join(" · ")}</p>
@@ -162,8 +170,8 @@ export default function EverAfter({ prefs, rescue, onAnotherCrisis, onStartOver 
                 </div>
                 <button className="btn-ghost no-print mt-8" onClick={() => window.print()}><Printer className="h-4 w-4" /> Print or save as PDF</button>
               </FramedPanel>
-            </motion.div>
-          </motion.div>
+            )}
+          </DecreeModal>
         )}
       </AnimatePresence>
     </section>
@@ -175,10 +183,10 @@ function Column({ title, outfit, badge, note, highlight }: { title: string; outf
     <div className={`rounded-[28px] border p-6 ${highlight ? "border-gold bg-ivory shadow-[0_0_0_3px_rgba(198,166,107,.2)]" : "border-gold/40 bg-parchment/50"}`}>
       <div className="flex items-baseline justify-between">
         <h2 className="text-3xl">{title}</h2>
-        <p className="font-serif text-2xl">${outfit.validation.total}</p>
+        <p className="font-serif text-2xl">{money(outfit.validation.total)}</p>
       </div>
       {note && <p className="mt-1 text-sm text-mauve">{note}</p>}
-      <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
+      <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 [&>*:last-child:nth-child(odd)]:col-span-2 md:[&>*:last-child:nth-child(odd)]:col-span-1">
         {outfit.items.map((i) => <ItemCard key={i.id} item={i} compact badge={badge(i.id)} />)}
       </div>
       {highlight && outfit.items.some((i) => i.reason && !/^Kept/.test(i.reason)) && (
@@ -196,7 +204,7 @@ function Stat({ k, v, sub }: { k: string; v: string; sub: string }) {
   return (
     <div className="rounded-[22px] border border-gold/40 bg-ivory p-5">
       <p className="text-[0.65rem] uppercase tracking-[0.18em] text-mauve">{k}</p>
-      <p className="mt-1 font-serif text-3xl">{v}</p>
+      <p className="mt-1 font-serif text-2xl sm:text-3xl">{v}</p>
       <p className="text-xs text-mauve">{sub}</p>
     </div>
   );
@@ -211,7 +219,7 @@ function exportScrapbook(prefs: Preferences, r: Extract<RescueResult, { ok: true
     before: r.before.items.map(({ id, name, price }) => ({ id, name, price })),
     after: r.rescued.items.map(({ id, name, price }) => ({ id, name, price })),
     scores: { before: r.before.score, atMidnight: r.underCrisis.score, after: r.rescued.score },
-    note: "Demonstration catalog: products and prices are illustrative.",
+    note: "Real products; prices recorded from each retailer's public product data and may have changed.",
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
@@ -219,4 +227,15 @@ function exportScrapbook(prefs: Preferences, r: Extract<RescueResult, { ok: true
   a.download = `royal-scrapbook-${prefs.princess}.json`;
   a.click();
   URL.revokeObjectURL(a.href);
+}
+
+function DecreeModal({ onClose, children }: { onClose: () => void; children: (closeRef: React.RefObject<HTMLButtonElement>) => ReactNode }) {
+  const closeRef = useModal(onClose);
+  return (
+    <motion.div className="fixed inset-0 z-50 overflow-y-auto bg-burgundy/40 p-4 pt-14 backdrop-blur-sm" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} role="dialog" aria-modal="true" aria-label="Royal Decree" onClick={onClose}>
+      <motion.div initial={{ scale: 0.95, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.97 }} onClick={(e) => e.stopPropagation()} className="mx-auto my-6 w-full max-w-2xl">
+        {children(closeRef)}
+      </motion.div>
+    </motion.div>
+  );
 }

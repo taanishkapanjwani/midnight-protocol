@@ -10,6 +10,10 @@ import { rateLimited } from "./safety";
 import { rescueRun, styleRun } from "./orchestrator";
 import { CRISIS_INFO, stepmotherApply, stepmotherPropose, stepmotherRandom } from "./agents/stepmother";
 import { runSafetyTests } from "./selftest";
+import { budgetFloor, findAlternatives, shopConstraints } from "./shop";
+import { checkLive } from "./retailer";
+import { buildOutfit } from "./orchestrator";
+import { getItem } from "./catalog";
 import { CRISIS_IDS, PreferencesSchema, type TraceEvent } from "../shared/types";
 
 const app = express();
@@ -95,6 +99,39 @@ app.post("/api/rescue", async (req, res) => {
     emit({ type: "error", message: (e as Error).message });
   }
   res.end();
+});
+
+// ---------------- Shop the Royal Look ----------------
+const CrisisRef = z.object({ originalIds: z.array(z.string().max(20)).min(1).max(8), crisisId: z.enum(CRISIS_IDS) }).optional();
+
+app.post("/api/budget-floor", (req, res) => {
+  const p = PreferencesSchema.safeParse({ budget: 5000, ...req.body });
+  if (!p.success) return res.status(400).json({ error: "Invalid preferences" });
+  res.json(budgetFloor(p.data));
+});
+
+const AltReq = z.object({ prefs: PreferencesSchema, outfitIds: z.array(z.string().max(20)).min(1).max(8), itemId: z.string().max(20), goal: z.enum(["similar", "cheaper", "comfier"]), crisis: CrisisRef });
+app.post("/api/alternatives", (req, res) => {
+  const p = AltReq.safeParse(req.body);
+  if (!p.success) return res.status(400).json({ error: "Invalid request" });
+  const c = shopConstraints(p.data.prefs, p.data.crisis);
+  res.json(findAlternatives(p.data.prefs, p.data.outfitIds, p.data.itemId, c, p.data.goal));
+});
+
+const ValidateReq = z.object({ prefs: PreferencesSchema, outfitIds: z.array(z.string().max(20)).min(1).max(8), crisis: CrisisRef });
+app.post("/api/validate", (req, res) => {
+  const p = ValidateReq.safeParse(req.body);
+  if (!p.success) return res.status(400).json({ error: "Invalid request" });
+  const c = shopConstraints(p.data.prefs, p.data.crisis);
+  res.json(buildOutfit(p.data.outfitIds, {}, c, p.data.prefs, "Your Royal Look", "", null));
+});
+
+// Live check of price and stock on the retailer's own product data (cached 10 minutes).
+app.post("/api/stock", async (req, res) => {
+  const p = z.object({ ids: z.array(z.string().max(20)).min(1).max(8) }).safeParse(req.body);
+  if (!p.success) return res.status(400).json({ error: "Invalid request" });
+  const items = p.data.ids.map(getItem).filter(Boolean);
+  res.json(await Promise.all(items.map((i) => checkLive(i!.id, i!.url))));
 });
 
 app.get("/api/treasury", (req, res) => res.json(summarize(Number(req.query.runsPerMonth) || 8)));

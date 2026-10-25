@@ -14,8 +14,9 @@ import Midnight from "./views/Midnight";
 import EverAfter from "./views/EverAfter";
 import Laboratory from "./views/Laboratory";
 import Treasury from "./views/Treasury";
+import Shop from "./views/Shop";
 
-export type View = "landing" | "princess" | "invitation" | "council" | "wardrobe" | "midnight" | "ever-after" | "lab" | "treasury";
+export type View = "landing" | "princess" | "invitation" | "council" | "wardrobe" | "midnight" | "ever-after" | "shop" | "lab" | "treasury";
 
 export default function App() {
   const [view, setView] = useState<View>("landing");
@@ -41,6 +42,8 @@ export default function App() {
     document.documentElement.style.setProperty("--accent-soft", p?.accentSoft ?? "#f9eaf0");
   }, [princess]);
 
+  const JOURNEY: View[] = ["princess", "invitation", "council", "wardrobe", "midnight", "ever-after", "shop"];
+  const active = (v: View) => (v === "princess" ? JOURNEY.includes(view) : view === v);
   const go = (v: View) => {
     setView(v);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -116,15 +119,15 @@ export default function App() {
     <div className="min-h-screen">
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-ivory focus:px-4 focus:py-2">Skip to content</a>
       <header className="no-print sticky top-0 z-40 border-b border-gold/30 bg-ivory/85 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3 sm:px-5" aria-label="Main">
+        <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-4 py-2 sm:px-5 sm:py-3" aria-label="Main">
           <button className="flex items-center gap-3 text-left" onClick={() => go("landing")} aria-label="The Midnight Protocol home">
-            <Crest size={38} />
+            <span className="sm:hidden"><Crest size={30} /></span><span className="hidden sm:inline"><Crest size={38} /></span>
             <span>
               <span className="display block whitespace-nowrap text-[0.8rem] leading-none text-burgundy sm:text-[0.95rem]">The Midnight Protocol</span>
-              <span className="script hidden text-sm text-rose sm:block">Est. Once Upon a Time</span>
+              <span className="script hidden text-sm text-rose lg:block">Est. Once Upon a Time</span>
             </span>
           </button>
-          <div className="flex items-center gap-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.14em] sm:gap-2 sm:text-[0.7rem] sm:tracking-[0.2em]">
+          <div className="flex items-center gap-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.14em] sm:gap-1 sm:text-[0.68rem] sm:tracking-[0.14em] lg:gap-2 lg:tracking-[0.2em]">
             {(
               [
                 ["princess", "Atelier"],
@@ -132,7 +135,7 @@ export default function App() {
                 ["treasury", "Treasury"],
               ] as const
             ).map(([v, label]) => (
-              <button key={v} onClick={() => go(v)} className={`rounded-full px-2 py-2 transition hover:bg-powder sm:px-3 ${view === v ? "bg-blush text-burgundy" : "text-mauve"}`} aria-current={view === v ? "page" : undefined}>
+              <button key={v} onClick={() => go(v)} className={`min-h-11 rounded-full px-2.5 transition hover:bg-powder sm:px-3 ${active(v) ? "bg-blush text-burgundy" : "text-mauve"}`} aria-current={active(v) ? "page" : undefined}>
                 {label}
               </button>
             ))}
@@ -162,24 +165,35 @@ export default function App() {
               />
             )}
             {view === "wardrobe" && style?.ok && prefs && (
-              <Wardrobe prefs={prefs} style={style} onMidnight={() => { setCrisis(null); go("midnight"); }} onRestyle={() => go("invitation")} />
+              <Wardrobe prefs={prefs} style={style} onMidnight={() => { setCrisis(null); go("midnight"); }} onRestyle={() => go("invitation")} onShop={() => { setRescue(null); go("shop"); }} />
             )}
             {view === "midnight" && style?.ok && prefs && (
               <Midnight prefs={prefs} outfit={style.outfit} crisis={crisis} onPropose={proposeCrisis} onSummon={summonGuardian} onBack={() => go("wardrobe")} />
             )}
-            {view === "ever-after" && rescue && prefs && <EverAfter prefs={prefs} rescue={rescue} onAnotherCrisis={() => { setCrisis(null); go("midnight"); }} onStartOver={startOver} />}
+            {view === "ever-after" && rescue && prefs && <EverAfter prefs={prefs} rescue={rescue} onAnotherCrisis={() => { setCrisis(null); go("midnight"); }} onStartOver={startOver} onShop={() => go("shop")} />}
+            {view === "shop" && prefs && style?.ok && (
+              <Shop
+                key={rescue?.ok ? `r-${rescue.runId}-${rescue.crisis.id}` : `s-${style.runId}`}
+                prefs={prefs}
+                initial={rescue?.ok ? { ...rescue.rescued, title: style.outfit.title } : style.outfit}
+                crisis={rescue?.ok ? { originalIds: style.outfit.items.map((i) => i.id), crisisId: rescue.crisis.id } : null}
+                onBack={() => go(rescue ? "ever-after" : "wardrobe")}
+                onStartOver={startOver}
+                toast={toast.show}
+              />
+            )}
             {view === "lab" && <Laboratory />}
             {view === "treasury" && <Treasury health={health} />}
-            {(view === "invitation" && !princess) || (view === "wardrobe" && !style?.ok) || (view === "midnight" && !style?.ok) ? (
+            {(view === "invitation" && !princess) || (view === "wardrobe" && !style?.ok) || (view === "midnight" && !style?.ok) || (view === "shop" && !style?.ok) ? (
               <EmptyState onStart={() => go("princess")} />
             ) : null}
           </motion.div>
         </AnimatePresence>
       </main>
 
-      <footer className="no-print mt-20 border-t border-gold/30 bg-parchment/60 py-10 text-center text-sm text-mauve">
+      <footer className="no-print mt-20 border-t border-gold/30 bg-parchment/60 px-6 py-10 text-center text-sm text-mauve">
         <p className="script text-2xl text-rose">and they dressed happily ever after</p>
-        <p className="mt-2">The Midnight Protocol · Demonstration catalog: products and prices are illustrative, not offered by real retailers.</p>
+        <p className="mx-auto mt-2 max-w-3xl px-4">The Midnight Protocol · Real products from independent retailers, with prices and stock recorded from each retailer's public product data. Purchases happen on retailer websites. Not affiliated with any retailer.</p>
       </footer>
       <Toast message={toast.message} />
     </div>
@@ -187,15 +201,15 @@ export default function App() {
 }
 
 function ModeBadge({ health }: { health: Health | null }) {
-  if (!health) return <span className="ml-1 hidden rounded-full border border-gold/40 px-3 py-2 text-mauve sm:inline">Server offline</span>;
+  if (!health) return <span className="ml-1 rounded-full border border-gold/40 px-2 py-2 text-mauve sm:px-3">Offline</span>;
   const live = health.mode === "live";
   return (
     <span
-      className={`ml-1 hidden items-center gap-2 rounded-full border px-3 py-2 sm:inline-flex ${live ? "border-gold/60 bg-ivory text-burgundy" : "border-rose/60 bg-powder text-burgundy"}`}
+      className={`ml-1 inline-flex items-center gap-2 rounded-full border px-2 py-2 sm:px-3 ${live ? "border-gold/60 bg-ivory text-burgundy" : "border-rose/60 bg-powder text-burgundy"}`}
       title={live ? `Live AI via ${health.provider}` : "No API key found: agents run as clearly labeled rule-based demos"}
     >
       <span className={`h-2 w-2 rounded-full ${live ? "bg-emerald-500" : "bg-rose"}`} />
-      {live ? `Live · ${health.model}` : "Demo mode"}
+      {live ? <>Live<span className="hidden sm:inline"> · {health.model}</span></> : <>Demo<span className="hidden sm:inline"> mode</span></>}
     </span>
   );
 }

@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
-import { Crown, Feather, Mail, Shield, Sparkles } from "lucide-react";
+import { Crown, Feather, Mail, Shield, ShoppingBag, Sparkles } from "lucide-react";
 import { AntiqueClock, Bow, FlowingRibbon, Particles, PearlString, RibbonDivider, RosePetal } from "../components/Ornaments";
 import { GildedMirror } from "../components/Art";
 
 const CHAPTERS = [
-  { n: "I", title: "The Royal Invitation", text: "Tell us the occasion, your budget and what comfort means to you.", icon: Mail },
-  { n: "II", title: "Choose Your Princess", text: "Six fairy-tale aesthetics, each with its own palette and spirit.", icon: Crown },
+  { n: "I", title: "Choose Your Princess", text: "Six fairy-tale aesthetics, each with its own palette and spirit.", icon: Crown },
+  { n: "II", title: "The Royal Invitation", text: "Tell us the occasion, your budget and what comfort means to you.", icon: Mail },
   { n: "III", title: "The Fairy Godmother's Atelier", text: "An AI stylist composes your look from a real catalog, and a Treasurer audits every coin.", icon: Sparkles },
   { n: "IV", title: "The Midnight Crisis", text: "The Wicked Stepmother strikes: sold-out gowns, rain, budget cuts, a long walk.", icon: Feather },
   { n: "V", title: "Happily Ever After", text: "The Midnight Guardian repairs only what broke, and proves the magic survived.", icon: Shield },
+  { n: "VI", title: "Shop the Royal Look", text: "Every piece is a real product: see sizes and prices, then shop on the retailer's own site.", icon: ShoppingBag },
 ];
 
 export default function Landing({ onEnter, onDiscover, toast }: { onEnter: () => void; onDiscover: () => void; toast: (m: string) => void }) {
@@ -25,7 +26,7 @@ export default function Landing({ onEnter, onDiscover, toast }: { onEnter: () =>
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 pb-24 pt-20 lg:grid-cols-[1.05fr_1fr] lg:pt-24">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <p className="script text-3xl text-rose">Est. Once Upon a Time</p>
-            <h1 className="display mt-3 text-5xl leading-[1.05] text-burgundy sm:text-6xl lg:text-7xl">
+            <h1 className="display mt-3 text-[clamp(2.1rem,11vw,3rem)] leading-[1.05] text-burgundy sm:text-6xl lg:text-6xl xl:text-7xl">
               The Midnight
               <br />
               <span className="gold-text">Protocol</span>
@@ -58,14 +59,14 @@ export default function Landing({ onEnter, onDiscover, toast }: { onEnter: () =>
       <section id="storybook" className="mx-auto max-w-7xl scroll-mt-20 px-6 py-20">
         <div className="text-center">
           <p className="eyebrow">The enchanted storybook</p>
-          <h2 className="mt-3 text-4xl sm:text-5xl">Five chapters to happily ever after</h2>
+          <h2 className="mt-3 text-4xl sm:text-5xl">Six chapters to happily ever after</h2>
           <p className="mx-auto mt-4 max-w-2xl text-mauve">
-            Behind the fairytale is a real multi-agent AI system: a creative stylist, a deterministic budget auditor, an adversarial tester and a rescue agent that must prove every fix.
+            Behind the fairytale is a real multi-agent AI system: a creative stylist, a deterministic budget auditor, an adversarial tester and a rescue agent that must prove every fix, all choosing from real products you can actually buy.
           </p>
         </div>
         <RibbonDivider />
-        <ol className="relative mt-6 grid gap-6 md:grid-cols-5">
-          <div className="hairline absolute left-0 right-0 top-[52px] hidden md:block" aria-hidden="true" />
+        <ol className="relative mt-6 grid gap-x-6 gap-y-14 pt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          <div className="hairline absolute left-0 right-0 top-[84px] hidden xl:block" aria-hidden="true" />
           {CHAPTERS.map((c, i) => (
             <motion.li
               key={c.n}

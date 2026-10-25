@@ -1,137 +1,28 @@
 {
- "notice": "Demonstration catalog for The Midnight Protocol. Products and prices are illustrative and not offered by any real retailer.",
+ "notice": "Real products from 14 retailers, hand-curated and verified against each retailer's own product data on 2026-10-25. Prices and stock change - the retailer's page is the source of truth. Purchases happen on the retailer's website.",
  "currency": "USD",
+ "checkedAt": "2026-10-25",
  "items": [
   {
-   "id": "MP-D01",
-   "name": "Moonlit Satin Slip Gown",
+   "id": "RP-D01",
+   "name": "The Eden Dress - Powder Blue",
    "category": "dress",
-   "price": 68,
+   "price": 99,
    "color": "Powder blue",
    "colorHex": "#AFC8E0",
    "styleTags": [
-    "minimal",
-    "romantic"
+    "romantic",
+    "vintage"
    ],
    "princessTags": [
     "cinderella"
    ],
    "occasions": [
-    "gala",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": false,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D02",
-   "name": "Glass Ballroom Midi Dress",
-   "category": "dress",
-   "price": 54,
-   "color": "Pearl white",
-   "colorHex": "#F3EEE6",
-   "styleTags": [
-    "romantic",
-    "modern"
-   ],
-   "princessTags": [
-    "cinderella",
-    "ariel"
-   ],
-   "occasions": [
-    "wedding",
     "romantic",
     "birthday",
-    "gala"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D03",
-   "name": "Silver Mist Tulle Gown",
-   "category": "dress",
-   "price": 96,
-   "color": "Silver",
-   "colorHex": "#C9CDD3",
-   "styleTags": [
-    "dramatic",
-    "romantic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "aurora"
-   ],
-   "occasions": [
-    "gala",
-    "wedding"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D04",
-   "name": "Library Gold Tea Dress",
-   "category": "dress",
-   "price": 46,
-   "color": "Champagne",
-   "colorHex": "#EED9A0",
-   "styleTags": [
-    "vintage",
-    "romantic"
-   ],
-   "princessTags": [
-    "belle"
-   ],
-   "occasions": [
+    "wedding",
     "garden",
-    "romantic",
-    "birthday",
-    "college",
-    "wedding"
+    "college"
    ],
    "formality": 3,
    "heel": null,
@@ -142,552 +33,351 @@
    "modest": true,
    "available": true,
    "sizes": [
+    "12",
+    "14"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0932/1794/files/TheEdenDress_PowderBlue0351.jpg?v=1762268602&width=600",
+   "retailer": "Hill House Home",
+   "url": "https://hillhousehome.com/products/the-eden-dress-powder-blue",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D02",
+   "name": "Betina Bow Front Maxi Dress - Pale Blue Floral",
+   "category": "dress",
+   "price": 119,
+   "color": "Pale blue floral",
+   "colorHex": "#BFD3EA",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
     "XS",
     "S",
     "M",
     "L",
     "XL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-betina-bow-front-maxi-dress-pale-blue-floral-1187620068.jpg?v=1779158337&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/betina-bow-front-maxi-dress-pale-blue-floral",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-D05",
-   "name": "Ballroom Gold Off-Shoulder Gown",
+   "id": "RP-D03",
+   "name": "Modern Muse Satin Halter Maxi Dress Pearl",
    "category": "dress",
-   "price": 88,
-   "color": "Warm gold",
+   "price": 79.99,
+   "color": "Pearl",
+   "colorHex": "#EEE9E2",
+   "styleTags": [
+    "minimal",
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0263/6018/4892/files/modern-muse-satin-halter-maxi-dress-pearl-white-ash-08_fid24963918856264.jpg?v=1791766584&width=600",
+   "retailer": "White Fox",
+   "url": "https://whitefoxboutique.com/products/modern-muse-satin-halter-dress-pearl",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D04",
+   "name": "Stay Out Embellished Midi Dress Silver",
+   "category": "dress",
+   "price": 149.99,
+   "color": "Silver",
+   "colorHex": "#C9CDD3",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0263/6018/4892/files/847269887_18636691618050719_6126407223470779521_n_fid24985906872392.jpg?v=1792387284&width=600",
+   "retailer": "White Fox",
+   "url": "https://whitefoxboutique.com/products/stay-out-embellished-midi-dress-silver",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D05",
+   "name": "Liza Pleated Maxi Dress - Gold",
+   "category": "dress",
+   "price": 84.97,
+   "color": "Gold",
    "colorHex": "#D4B26A",
    "styleTags": [
     "dramatic",
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "M"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-liza-pleated-maxi-dress-gold-34118133416113.jpg?v=1696373181&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/liza-pleated-maxi-dress-gold",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D06",
+   "name": "Samantha Plisse Maxi Dress - Burnished Gold",
+   "category": "dress",
+   "price": 79,
+   "color": "Burnished gold",
+   "colorHex": "#C6A15B",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/dresses-samantha-plisse-maxi-dress-burnished-gold-1241404152.jpg?v=1792435285&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/samantha-plisse-maxi-dress-burnished-gold",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D07",
+   "name": "Odyssa Halter Maxi Dress Yellow",
+   "category": "dress",
+   "price": 99,
+   "color": "Yellow",
+   "colorHex": "#EED9A0",
+   "styleTags": [
+    "modern",
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/2-modelinfo-adison-us4_dbb509e7-59c8-4ed4-8c62-3a51965ef49d.jpg?v=1764182056&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/odyssa-halter-maxi-dress-yellow",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D08",
+   "name": "Avenues Long Sleeve Lace Mini Dress Butter",
+   "category": "dress",
+   "price": 85,
+   "color": "Butter",
+   "colorHex": "#F1DFA5",
+   "styleTags": [
+    "romantic",
     "vintage"
    ],
    "princessTags": [
     "belle"
    ],
    "occasions": [
-    "gala",
-    "wedding"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": false,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D06",
-   "name": "Rose Tulle Ballet Midi",
-   "category": "dress",
-   "price": 58,
-   "color": "Dusty pink",
-   "colorHex": "#D9A5B3",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
+    "romantic",
     "birthday",
     "wedding",
     "garden",
-    "romantic",
-    "gala"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D07",
-   "name": "Blush Ribbon-Strap Mini",
-   "category": "dress",
-   "price": 38,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic",
-    "modern"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
-    "birthday",
-    "college",
-    "casual",
-    "romantic"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": false,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D08",
-   "name": "Lilac Floral Wrap Dress",
-   "category": "dress",
-   "price": 42,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "rapunzel"
-   ],
-   "occasions": [
-    "garden",
-    "birthday",
-    "college",
-    "casual",
-    "wedding"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D09",
-   "name": "Lavender Pleated Maxi",
-   "category": "dress",
-   "price": 64,
-   "color": "Lavender",
-   "colorHex": "#C3B1DA",
-   "styleTags": [
-    "romantic",
-    "dramatic"
-   ],
-   "princessTags": [
-    "rapunzel"
-   ],
-   "occasions": [
-    "wedding",
-    "gala",
-    "romantic",
-    "garden"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D10",
-   "name": "Ruby Velvet Fit-and-Flare",
-   "category": "dress",
-   "price": 62,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
-   "styleTags": [
-    "vintage",
-    "dramatic"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
-    "romantic",
-    "wedding",
-    "birthday"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D11",
-   "name": "Navy Collared Shirt Dress",
-   "category": "dress",
-   "price": 44,
-   "color": "Navy",
-   "colorHex": "#283A5E",
-   "styleTags": [
-    "vintage",
-    "minimal"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "birthday",
-    "garden"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D12",
-   "name": "Seafoam Bias-Cut Slip",
-   "category": "dress",
-   "price": 52,
-   "color": "Seafoam",
-   "colorHex": "#A9D8C8",
-   "styleTags": [
-    "minimal",
-    "modern"
-   ],
-   "princessTags": [
-    "ariel"
-   ],
-   "occasions": [
-    "romantic",
-    "wedding",
-    "birthday"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": false,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D13",
-   "name": "Turquoise Draped Column Gown",
-   "category": "dress",
-   "price": 92,
-   "color": "Turquoise",
-   "colorHex": "#4FA7A5",
-   "styleTags": [
-    "dramatic",
-    "modern"
-   ],
-   "princessTags": [
-    "ariel"
-   ],
-   "occasions": [
-    "gala",
-    "wedding"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D14",
-   "name": "Ivory Corset Midi",
-   "category": "dress",
-   "price": 74,
-   "color": "Ivory",
-   "colorHex": "#FFF5EC",
-   "styleTags": [
-    "vintage",
-    "romantic"
-   ],
-   "princessTags": [
-    "snowwhite",
-    "belle",
-    "cinderella"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": false,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D15",
-   "name": "Champagne Pleated Midi",
-   "category": "dress",
-   "price": 36,
-   "color": "Champagne",
-   "colorHex": "#E9D6AE",
-   "styleTags": [
-    "minimal"
-   ],
-   "princessTags": [
-    "belle",
-    "aurora"
-   ],
-   "occasions": [
-    "wedding",
-    "birthday",
-    "garden",
-    "romantic",
     "college"
    ],
    "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
-    "warm"
+    "warm",
+    "cold"
    ],
-   "modest": true,
+   "modest": false,
    "available": true,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-nat-us2_d3bf64bf-9b9e-47e5-a39d-0eef1575ea54.jpg?v=1790137040&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/avenues-long-sleeve-lace-mini-dress-butter",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-D16",
-   "name": "Pearl Knit Day Dress",
+   "id": "RP-D09",
+   "name": "Nights Away Mini Dress Lemon",
    "category": "dress",
-   "price": 29,
-   "color": "Pearl",
-   "colorHex": "#EDE6DD",
+   "price": 59.99,
+   "color": "Lemon",
+   "colorHex": "#F2E08C",
    "styleTags": [
-    "minimal",
     "modern"
    ],
    "princessTags": [
-    "cinderella",
-    "ariel",
     "belle"
    ],
    "occasions": [
-    "casual",
-    "college",
-    "garden"
-   ],
-   "formality": 1,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D17",
-   "name": "Midnight Blue Velvet Gown",
-   "category": "dress",
-   "price": 118,
-   "color": "Midnight blue",
-   "colorHex": "#2E3A66",
-   "styleTags": [
-    "dramatic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-D18",
-   "name": "Sea-Glass Smocked Sundress",
-   "category": "dress",
-   "price": 34,
-   "color": "Sea glass",
-   "colorHex": "#BFE3D8",
-   "styleTags": [
     "romantic",
-    "modern"
-   ],
-   "princessTags": [
-    "ariel",
-    "rapunzel"
-   ],
-   "occasions": [
-    "garden",
-    "casual",
     "birthday",
+    "wedding",
+    "garden",
     "college"
    ],
-   "formality": 2,
+   "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
     "warm"
    ],
-   "modest": true,
+   "modest": false,
    "available": true,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
+    "XXS"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0263/6018/4892/files/white-fox-nights-away-mini-dress-lemon-25.6.25-1.jpg?v=1752111971&width=600",
+   "retailer": "White Fox",
+   "url": "https://whitefoxboutique.com/products/nights-away-mini-dress-lemon",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-D19",
-   "name": "Blush Satin Cocktail Dress",
+   "id": "RP-D10",
+   "name": "Amethyst Midi Dress - Pink",
    "category": "dress",
-   "price": 48,
-   "color": "Blush rose",
+   "price": 109,
+   "color": "Pink",
    "colorHex": "#E7B9C6",
    "styleTags": [
-    "romantic",
-    "dramatic"
+    "romantic"
    ],
    "princessTags": [
-    "aurora",
-    "cinderella"
+    "aurora"
    ],
    "occasions": [
-    "romantic",
-    "birthday",
+    "gala",
     "wedding",
-    "gala"
+    "romantic",
+    "birthday"
    ],
    "formality": 4,
    "heel": null,
@@ -696,7 +386,82 @@
     "warm"
    ],
    "modest": true,
-   "available": false,
+   "available": true,
+   "sizes": [
+    "S"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-amethyst-midi-dress-pink-1153121890.jpg?v=1780532247&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/amethyst-midi-dress-pink",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D11",
+   "name": "Indya Maxi Dress - Pink Floral",
+   "category": "dress",
+   "price": 109,
+   "color": "Pink floral",
+   "colorHex": "#E8B4C4",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "aurora",
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "0",
+    "6",
+    "16"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-indya-maxi-dress-pink-floral-1180657208.jpg?v=1780532089&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/indya-maxi-dress-pink-floral",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D12",
+   "name": "Henny Maxi Dress - Pink Rum Floral",
+   "category": "dress",
+   "price": 89,
+   "color": "Pink floral",
+   "colorHex": "#E9B8C5",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
    "sizes": [
     "XS",
     "S",
@@ -704,31 +469,262 @@
     "L",
     "XL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/dresses-henny-maxi-dress-pink-rum-floral-1241404226.jpg?v=1792435295&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/henny-maxi-dress-pink-rum-floral",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-T01",
-   "name": "Pearl-Button Cardigan",
-   "category": "top",
-   "price": 28,
-   "color": "Pearl",
-   "colorHex": "#EFE7DC",
+   "id": "RP-D13",
+   "name": "Kiss & Tell Mini Dress Soft Pink",
+   "category": "dress",
+   "price": 60,
+   "color": "Soft pink",
+   "colorHex": "#F4D3DC",
    "styleTags": [
-    "vintage",
-    "minimal"
+    "romantic"
    ],
    "princessTags": [
-    "cinderella",
-    "belle",
-    "snowwhite"
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-melita-us2_d59df769-613c-4283-a614-5c2470b02a56.jpg?v=1792711230&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/kiss-tell-mini-dress-soft-pink",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D14",
+   "name": "Elaine Mini Dress - Candy Pink",
+   "category": "dress",
+   "price": 43.97,
+   "color": "Candy pink",
+   "colorHex": "#F2A7C0",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "aurora"
    ],
    "occasions": [
     "college",
-    "casual",
     "garden",
+    "casual",
     "birthday"
    ],
    "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-elaine-mini-dress-candy-pink-1193386011.jpg?v=1780531841&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/elaine-mini-dress-candy-pink",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D15",
+   "name": "Thule Midi Dress - Orchid",
+   "category": "dress",
+   "price": 47.97,
+   "color": "Orchid",
+   "colorHex": "#C9A3D4",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "M"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-thule-midi-dress-orchid-33543063339185.jpg?v=1682362868&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/thule-midi-dress-orchid",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D16",
+   "name": "Landree Wrap Halter Satin Mini Dress Lilac",
+   "category": "dress",
+   "price": 79,
+   "color": "Lilac",
+   "colorHex": "#DCCDEA",
+   "styleTags": [
+    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-phoebe-us2_b2c4b029-9850-4c91-ab2f-41c35847e70f.jpg?v=1788749424&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/landree-wrap-halter-satin-mini-dress-lilac",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D17",
+   "name": "Stephy Maxi Dress - Purple",
+   "category": "dress",
+   "price": 69.97,
+   "color": "Purple",
+   "colorHex": "#A98BC9",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-stephy-maxi-dress-purple-34048889290929.jpg?v=1694111838&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/stephy-maxi-dress-purple",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D18",
+   "name": "Favorite Daughter Chiffon Mini Dress in Purple",
+   "category": "dress",
+   "price": 79.9,
+   "color": "Purple",
+   "colorHex": "#B79BD6",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/SD388125PURPLE1.jpg?v=1790262233&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/favorite-daughter-chiffon-mini-dress-in-purple",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D19",
+   "name": "Magdalena Maxi Dress - Plum Blurred Floral",
+   "category": "dress",
+   "price": 99,
+   "color": "Plum floral",
+   "colorHex": "#B48AAE",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
    "heel": null,
    "walkable": true,
    "weather": [
@@ -738,72 +734,75 @@
    "modest": true,
    "available": true,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
+    "0",
+    "2",
+    "4",
+    "6",
+    "8",
+    "16"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/dresses-magdalena-maxi-dress-plum-blurred-floral-1253817273.jpg?v=1786414713&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/magdalena-maxi-dress-plum-blurred-floral",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-T02",
-   "name": "Puff-Sleeve Blouse",
-   "category": "top",
-   "price": 26,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
+   "id": "RP-D20",
+   "name": "Dali Off Shoulder Velvet Mini Dress - Ruby",
+   "category": "dress",
+   "price": 90,
+   "color": "Ruby",
+   "colorHex": "#9E2B3A",
    "styleTags": [
-    "romantic"
+    "vintage",
+    "dramatic"
    ],
    "princessTags": [
-    "aurora",
-    "rapunzel"
+    "snowwhite"
    ],
    "occasions": [
-    "college",
-    "casual",
-    "birthday",
-    "garden",
-    "romantic"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-T03",
-   "name": "Ballet Wrap Top",
-   "category": "top",
-   "price": 24,
-   "color": "Dusty pink",
-   "colorHex": "#D9A5B3",
-   "styleTags": [
+    "gala",
+    "wedding",
     "romantic",
-    "modern"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
-    "casual",
-    "college",
     "birthday"
    ],
-   "formality": 1,
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-dali-off-shoulder-velvet-mini-dress-ruby-34062608957617.jpg?v=1694634369&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/dali-off-shoulder-velvet-mini-dress-ruby",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D21",
+   "name": "Brea Maxi Dress - Red",
+   "category": "dress",
+   "price": 84.97,
+   "color": "Red",
+   "colorHex": "#B3283A",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
    "heel": null,
    "walkable": true,
    "weather": [
@@ -813,20 +812,104 @@
    "available": true,
    "sizes": [
     "XS",
+    "S"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-brea-maxi-dress-red-hold-for-rack-1174266630.jpg?v=1780537887&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/brea-maxi-dress-red",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D22",
+   "name": "Darlita Lace Maxi Dress - Burgundy",
+   "category": "dress",
+   "price": 89,
+   "color": "Burgundy",
+   "colorHex": "#7A2436",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
     "S",
     "M",
     "L",
-    "XL"
+    "XL",
+    "XXL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/dresses-darlita-lace-maxi-dress-burgundy-1244035944.jpg?v=1792427245&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/darlita-lace-maxi-dress-burgundy",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-T05",
-   "name": "Ruby Bow Blouse",
-   "category": "top",
-   "price": 32,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
+   "id": "RP-D23",
+   "name": "Henrieta Lace Up Maxi Dress Burgundy",
+   "category": "dress",
+   "price": 89,
+   "color": "Burgundy",
+   "colorHex": "#7A2436",
+   "styleTags": [
+    "vintage",
+    "dramatic"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-taneisha-us2_54e14feb-e907-4051-9c56-b0043414621d.jpg?v=1792555480&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/henrieta-lace-up-maxi-dress-burgundy",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D24",
+   "name": "The Elizabeth Nap Dress - Navy Cotton",
+   "category": "dress",
+   "price": 59,
+   "color": "Navy",
+   "colorHex": "#283A5E",
    "styleTags": [
     "vintage"
    ],
@@ -835,11 +918,317 @@
    ],
    "occasions": [
     "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0932/1794/files/TheElizabethNapDressNavyCotton7541.jpg?v=1731283449&width=600",
+   "retailer": "Hill House Home",
+   "url": "https://hillhousehome.com/products/the-elizabeth-nap-dress-navy-cotton",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D25",
+   "name": "The Renata Dress - Ivory Eyelet",
+   "category": "dress",
+   "price": 79,
+   "color": "Ivory eyelet",
+   "colorHex": "#F6EFE6",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "cinderella",
+    "belle"
+   ],
+   "occasions": [
     "romantic",
     "birthday",
-    "casual"
+    "wedding",
+    "garden",
+    "college"
    ],
    "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0932/1794/files/The_Renata_Dress_Ivory_Eyelet_Twill13940_8ba62c84-29ad-44d2-b4c9-5d8786f0b01f.jpg?v=1774532881&width=600",
+   "retailer": "Hill House Home",
+   "url": "https://hillhousehome.com/products/the-renata-dress-ivory",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D26",
+   "name": "Patricia Maxi Dress - Sage",
+   "category": "dress",
+   "price": 44.97,
+   "color": "Sage",
+   "colorHex": "#B7C9A8",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-dresses-patricia-maxi-dress-sage-1141548066.jpg?v=1780533241&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/patricia-maxi-dress-sage",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D27",
+   "name": "Honorable Mentions Chiffon Maxi Dress in Sage",
+   "category": "dress",
+   "price": 89.9,
+   "color": "Sage",
+   "colorHex": "#B7C9A8",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/SD379925-2GREEN1.jpg?v=1790262286&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/honorable-mentions-chiffon-maxi-dress-in-sage",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D28",
+   "name": "Lustie Halter Sequin Mini Dress Aqua",
+   "category": "dress",
+   "price": 89,
+   "color": "Aqua",
+   "colorHex": "#7CCFC8",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-maddison-us2_cb247019-9c37-4eba-b090-153d4bffdee8.jpg?v=1764900917&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/lustie-halter-sequin-mini-dress-aqua",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D29",
+   "name": "Modern Muse Satin Halter Maxi Dress Aqua",
+   "category": "dress",
+   "price": 79.99,
+   "color": "Aqua",
+   "colorHex": "#8FD3CC",
+   "styleTags": [
+    "minimal",
+    "dramatic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0263/6018/4892/files/modern-muse-satin-halter-maxi-dress-aqua-blue-ash-01_fid24963918889032.jpg?v=1791766698&width=600",
+   "retailer": "White Fox",
+   "url": "https://whitefoxboutique.com/products/modern-muse-satin-halter-dress-aqua",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-D30",
+   "name": "Persia Dress - Green",
+   "category": "dress",
+   "price": 67.97,
+   "color": "Green",
+   "colorHex": "#8FBF9F",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/products/petal-and-pup-usa-dresses-persia-dress-green-22728567423153.jpg?v=1628755474&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/persia-dress-green",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-T01",
+   "name": "Kinnedie Puff Sleeve Blouse Top Cream Polka Dot",
+   "category": "top",
+   "price": 55,
+   "color": "Cream polka dot",
+   "colorHex": "#F6EFE6",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-mia-us4_fbc01b09-d71b-4845-b9b0-8bbda8d8ee53.jpg?v=1790653920&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/kinnedie-puff-sleeve-blouse-top-cream-polka-dot",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-T02",
+   "name": "Fiana Knitted Top - Ice Blue",
+   "category": "top",
+   "price": 59,
+   "color": "Ice blue",
+   "colorHex": "#C9DCEB",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
    "heel": null,
    "walkable": true,
    "weather": [
@@ -851,31 +1240,118 @@
    "sizes": [
     "XS",
     "S",
-    "M",
     "L",
     "XL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-tops-fiana-knitted-top-ice-blue-1226816634.jpg?v=1779118681&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/fiana-knitted-top-ice-blue",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-T06",
-   "name": "Lilac Embroidered Peasant Top",
+   "id": "RP-T03",
+   "name": "Christelle Sheer Ruffle Cami Top Butter Yellow",
    "category": "top",
-   "price": 27,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
+   "price": 49,
+   "color": "Butter yellow",
+   "colorHex": "#F1DFA5",
    "styleTags": [
     "romantic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-taneisha-us2_10cda164-1f06-43d6-bb18-6ada60d2cc00.jpg?v=1792555454&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/christelle-sheer-ruffle-cami-top-butter-yellow",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-T04",
+   "name": "Pretty in Pink Blouse",
+   "category": "top",
+   "price": 49.9,
+   "color": "Pink",
+   "colorHex": "#EDB9C9",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "1X",
+    "2X"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/25JWA3280-T1PINK-MULTI1.jpg?v=1791917879&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/pretty-in-pink-blouse-1",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-T05",
+   "name": "Purple Rain Satin Blouse",
+   "category": "top",
+   "price": 51.9,
+   "color": "Purple satin",
+   "colorHex": "#9E80C2",
+   "styleTags": [
+    "minimal"
    ],
    "princessTags": [
     "rapunzel"
    ],
    "occasions": [
-    "casual",
+    "romantic",
+    "birthday",
+    "wedding",
     "garden",
     "college"
    ],
-   "formality": 1,
+   "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
@@ -884,110 +1360,77 @@
    "modest": true,
    "available": true,
    "sizes": [
+    "S/M",
+    "L/XL",
+    "1X/2X"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/JLM7302510-PRINT1PURPLE-MULTI1.jpg?v=1791473358&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/purple-rain-satin-blouse",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-T06",
+   "name": "Braylen Top - Burgundy Plaid",
+   "category": "top",
+   "price": 59,
+   "color": "Burgundy plaid",
+   "colorHex": "#7A2436",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
     "XS",
     "S",
     "M",
     "L",
-    "XL"
+    "XL",
+    "XXL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/tops-braylen-top-burgundy-plaid-1261198148.jpg?v=1792607039&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/braylen-top-burgundy-plaid",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-T07",
-   "name": "Seafoam Silk Shell",
+   "id": "RP-T07",
+   "name": "Brooklyn Eyelet Top - Dusty Sage",
    "category": "top",
-   "price": 30,
-   "color": "Seafoam",
-   "colorHex": "#A9D8C8",
+   "price": 59,
+   "color": "Dusty sage",
+   "colorHex": "#B7C9A8",
    "styleTags": [
-    "minimal",
-    "modern"
+    "romantic"
    ],
    "princessTags": [
     "ariel"
    ],
    "occasions": [
-    "romantic",
     "college",
-    "birthday",
-    "wedding"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-T09",
-   "name": "Powder-Blue Satin Blouse",
-   "category": "top",
-   "price": 34,
-   "color": "Powder blue",
-   "colorHex": "#AFC8E0",
-   "styleTags": [
-    "minimal",
-    "romantic"
-   ],
-   "princessTags": [
-    "cinderella"
-   ],
-   "occasions": [
-    "romantic",
-    "wedding",
-    "birthday",
-    "college"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-S01",
-   "name": "Tulle Ballet Midi Skirt",
-   "category": "skirt",
-   "price": 36,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora",
-    "cinderella"
-   ],
-   "occasions": [
-    "birthday",
     "garden",
-    "romantic",
-    "wedding",
-    "college"
+    "casual",
+    "birthday"
    ],
-   "formality": 3,
+   "formality": 2,
    "heel": null,
    "walkable": true,
    "weather": [
@@ -1002,1537 +1445,482 @@
     "L",
     "XL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-tops-brooklyn-eyelet-top-dusty-sage-1226728847.jpg?v=1779118997&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/brooklyn-eyelet-top-dusty-sage",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-S02",
-   "name": "Champagne Satin Midi Skirt",
+   "id": "RP-S01",
+   "name": "Sidori Sheer Midi Skirt Blue",
    "category": "skirt",
-   "price": 34,
+   "price": 49,
+   "color": "Blue",
+   "colorHex": "#9DB6D8",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": false,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/1-modelinfo-monique-us2_0d84350c-2593-4c50-ba5d-a1ba6aa589a8.jpg?v=1791501917&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/sidori-sheer-midi-skirt-blue",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-S02",
+   "name": "Melrose Maxi Skirt - Champagne",
+   "category": "skirt",
+   "price": 48.97,
    "color": "Champagne",
    "colorHex": "#E9D6AE",
    "styleTags": [
     "minimal",
-    "romantic"
-   ],
-   "princessTags": [
-    "belle",
-    "cinderella"
-   ],
-   "occasions": [
-    "romantic",
-    "wedding",
-    "birthday",
-    "gala"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-S03",
-   "name": "Pleated Navy Skirt",
-   "category": "skirt",
-   "price": 30,
-   "color": "Navy",
-   "colorHex": "#283A5E",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "birthday"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-S04",
-   "name": "Floral Lilac Midi Skirt",
-   "category": "skirt",
-   "price": 32,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "rapunzel"
-   ],
-   "occasions": [
-    "garden",
-    "birthday",
-    "casual",
-    "college"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-S05",
-   "name": "Seafoam Satin Slip Skirt",
-   "category": "skirt",
-   "price": 38,
-   "color": "Seafoam",
-   "colorHex": "#A9D8C8",
-   "styleTags": [
-    "minimal",
-    "modern"
-   ],
-   "princessTags": [
-    "ariel"
-   ],
-   "occasions": [
-    "romantic",
-    "wedding",
-    "birthday"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-S06",
-   "name": "Ruby Velvet Midi Skirt",
-   "category": "skirt",
-   "price": 40,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
-   "styleTags": [
-    "vintage",
     "dramatic"
    ],
    "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
-    "romantic",
-    "birthday"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-P01",
-   "name": "Ivory Wide-Leg Trousers",
-   "category": "trousers",
-   "price": 44,
-   "color": "Ivory",
-   "colorHex": "#FBF3EA",
-   "styleTags": [
-    "minimal",
-    "modern"
-   ],
-   "princessTags": [
-    "cinderella",
-    "ariel",
-    "belle"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "romantic",
-    "birthday"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-P02",
-   "name": "Camel Tailored Trousers",
-   "category": "trousers",
-   "price": 39,
-   "color": "Camel",
-   "colorHex": "#C8A27A",
-   "styleTags": [
-    "vintage",
-    "minimal"
-   ],
-   "princessTags": [
     "belle",
-    "snowwhite"
-   ],
-   "occasions": [
-    "college",
-    "casual"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-P03",
-   "name": "Navy Sailor Trousers",
-   "category": "trousers",
-   "price": 36,
-   "color": "Navy",
-   "colorHex": "#283A5E",
-   "styleTags": [
-    "vintage",
-    "modern"
-   ],
-   "princessTags": [
-    "snowwhite",
-    "ariel"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "garden"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H01",
-   "name": "Crystal Glass Heels",
-   "category": "shoes",
-   "price": 64,
-   "color": "Silver crystal",
-   "colorHex": "#DDE3EA",
-   "styleTags": [
-    "dramatic",
-    "romantic"
-   ],
-   "princessTags": [
     "cinderella"
    ],
    "occasions": [
     "gala",
     "wedding",
-    "romantic"
+    "romantic",
+    "birthday"
    ],
-   "formality": 5,
-   "heel": "high",
-   "walkable": false,
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
    "weather": [
     "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
+    "L"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-bottoms-melrose-maxi-skirt-champagne-34647736778929.jpg?v=1705710310&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/melrose-maxi-skirt-champagne",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-H02",
-   "name": "Silver Ballet Flats",
-   "category": "shoes",
-   "price": 29,
-   "color": "Silver",
-   "colorHex": "#C9CDD3",
+   "id": "RP-S03",
+   "name": "Odiana Lace Tiered Maxi Skirt Cream",
+   "category": "skirt",
+   "price": 75,
+   "color": "Cream",
+   "colorHex": "#F6EFE6",
    "styleTags": [
-    "minimal",
     "romantic"
    ],
    "princessTags": [
     "cinderella",
-    "aurora"
-   ],
-   "occasions": [
-    "wedding",
-    "romantic",
-    "birthday",
-    "college",
-    "casual",
-    "garden"
-   ],
-   "formality": 3,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H03",
-   "name": "Pearl-Embellished Ballet Flats",
-   "category": "shoes",
-   "price": 38,
-   "color": "Pearl",
-   "colorHex": "#F3EEE6",
-   "styleTags": [
-    "romantic",
-    "vintage"
-   ],
-   "princessTags": [
-    "cinderella",
-    "aurora",
-    "ariel",
-    "belle"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic",
-    "birthday",
-    "garden"
-   ],
-   "formality": 4,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H04",
-   "name": "Blush Satin Pointe-Style Flats",
-   "category": "shoes",
-   "price": 34,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
-    "birthday",
-    "wedding",
-    "romantic",
-    "garden",
-    "college"
-   ],
-   "formality": 3,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H05",
-   "name": "Rose Kitten Heels",
-   "category": "shoes",
-   "price": 42,
-   "color": "Rose",
-   "colorHex": "#D9A5B3",
-   "styleTags": [
-    "romantic",
-    "vintage"
-   ],
-   "princessTags": [
-    "aurora",
-    "belle"
-   ],
-   "occasions": [
-    "wedding",
-    "romantic",
-    "gala",
-    "birthday"
-   ],
-   "formality": 4,
-   "heel": "low",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H06",
-   "name": "Gold Block-Heel Mary Janes",
-   "category": "shoes",
-   "price": 46,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "belle",
-    "snowwhite"
-   ],
-   "occasions": [
-    "wedding",
-    "romantic",
-    "gala",
-    "birthday",
-    "college"
-   ],
-   "formality": 4,
-   "heel": "low",
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H07",
-   "name": "Gold Strappy Stilettos",
-   "category": "shoes",
-   "price": 58,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "dramatic"
-   ],
-   "princessTags": [
-    "belle"
-   ],
-   "occasions": [
-    "gala",
-    "romantic",
-    "wedding"
-   ],
-   "formality": 5,
-   "heel": "high",
-   "walkable": false,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H08",
-   "name": "Lilac Embroidered Espadrilles",
-   "category": "shoes",
-   "price": 32,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "rapunzel"
-   ],
-   "occasions": [
-    "garden",
-    "casual",
-    "college",
-    "birthday"
-   ],
-   "formality": 2,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H09",
-   "name": "Ruby Patent Mary Janes",
-   "category": "shoes",
-   "price": 44,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
-    "romantic",
-    "wedding",
-    "birthday",
-    "college"
-   ],
-   "formality": 4,
-   "heel": "low",
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H10",
-   "name": "Navy Pointed Pumps",
-   "category": "shoes",
-   "price": 52,
-   "color": "Navy",
-   "colorHex": "#283A5E",
-   "styleTags": [
-    "minimal",
-    "vintage"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 5,
-   "heel": "high",
-   "walkable": false,
-   "weather": [
-    "warm",
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H11",
-   "name": "Seafoam Strappy Sandals",
-   "category": "shoes",
-   "price": 36,
-   "color": "Seafoam",
-   "colorHex": "#A9D8C8",
-   "styleTags": [
-    "modern"
-   ],
-   "princessTags": [
-    "ariel"
-   ],
-   "occasions": [
-    "wedding",
-    "romantic",
-    "birthday",
-    "garden"
-   ],
-   "formality": 3,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H12",
-   "name": "Pearl Strap Heeled Sandals",
-   "category": "shoes",
-   "price": 49,
-   "color": "Pearl",
-   "colorHex": "#F3EEE6",
-   "styleTags": [
-    "dramatic",
-    "modern"
-   ],
-   "princessTags": [
-    "ariel",
-    "cinderella"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 5,
-   "heel": "high",
-   "walkable": false,
-   "weather": [
-    "warm"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H13",
-   "name": "Ivory Leather Ankle Boots",
-   "category": "shoes",
-   "price": 58,
-   "color": "Ivory",
-   "colorHex": "#EFE4D6",
-   "styleTags": [
-    "minimal",
-    "vintage"
-   ],
-   "princessTags": [
     "snowwhite",
     "belle"
    ],
    "occasions": [
-    "college",
-    "casual",
-    "birthday",
-    "garden",
-    "romantic"
-   ],
-   "formality": 2,
-   "heel": "low",
-   "walkable": true,
-   "weather": [
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H14",
-   "name": "Blush Rain-Ready Ballet Loafers",
-   "category": "shoes",
-   "price": 44,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "minimal",
-    "modern"
-   ],
-   "princessTags": [
-    "aurora",
-    "cinderella",
-    "rapunzel"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "birthday",
-    "garden",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 3,
-   "heel": "flat",
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-H16",
-   "name": "Pearl Satin Weatherproof Flats",
-   "category": "shoes",
-   "price": 56,
-   "color": "Pearl",
-   "colorHex": "#F3EEE6",
-   "styleTags": [
-    "romantic",
-    "dramatic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "aurora",
-    "ariel",
-    "belle"
-   ],
-   "occasions": [
     "gala",
     "wedding",
     "romantic",
     "birthday"
    ],
    "formality": 4,
-   "heel": "flat",
+   "heel": null,
    "walkable": true,
    "weather": [
-    "warm",
-    "cold",
-    "rainy"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-monique-us2_356f83aa-506c-4df7-b00f-ead9c61e6fc9.jpg?v=1791449432&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/odiana-lace-tiered-maxi-skirt-cream",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-H17",
-   "name": "Navy Velvet Block-Heel Boots",
-   "category": "shoes",
-   "price": 68,
-   "color": "Navy",
-   "colorHex": "#283A5E",
+   "id": "RP-S04",
+   "name": "Ali Lace Trim Midi Skirt - Pink Rum Floral",
+   "category": "skirt",
+   "price": 69,
+   "color": "Pink floral",
+   "colorHex": "#E9B8C5",
    "styleTags": [
-    "vintage",
-    "dramatic"
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/bottoms-ali-lace-trim-midi-skirt-pink-rum-floral-1241404173.jpg?v=1792434745&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/ali-lace-trim-midi-skirt-pink-rum-floral",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-S05",
+   "name": "Laena Midi Skirt Purple Floral",
+   "category": "skirt",
+   "price": 55,
+   "color": "Purple floral",
+   "colorHex": "#B79BD6",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-melita-us2_4d02a37f-9f24-4dd5-88d5-f738972ff8c6.jpg?v=1792718550&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/laena-midi-skirt-purple-floral",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-S06",
+   "name": "Zenaide Lace Detail Midi Skirt Red",
+   "category": "skirt",
+   "price": 59,
+   "color": "Red",
+   "colorHex": "#B3283A",
+   "styleTags": [
+    "romantic",
+    "vintage"
    ],
    "princessTags": [
     "snowwhite"
    ],
    "occasions": [
     "gala",
-    "romantic",
     "wedding",
+    "romantic",
     "birthday"
    ],
    "formality": 4,
-   "heel": "low",
+   "heel": null,
    "walkable": true,
    "weather": [
-    "cold",
-    "rainy"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "6",
-    "7",
-    "8",
-    "9",
-    "10"
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-olivia-us2_2153a19d-738f-4732-aed2-e2712cf86b59.jpg?v=1790907057&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/zenaide-lace-detail-midi-skirt-red",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-B01",
-   "name": "Ivory Pearl Mini Bag",
-   "category": "bag",
-   "price": 19,
-   "color": "Ivory",
-   "colorHex": "#FFF5EC",
+   "id": "RP-S07",
+   "name": "Bloise Maxi Skirt - Olive Green Polka Dot",
+   "category": "skirt",
+   "price": 59,
+   "color": "Olive green",
+   "colorHex": "#8FA77A",
    "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
     "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/bottoms-bloise-maxi-skirt-olive-green-polka-dot-1255696209.jpg?v=1788200359&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/bloise-maxi-skirt-olive-green-polka-dot",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-P01",
+   "name": "Syrena Tailored Wide Leg Pant White",
+   "category": "trousers",
+   "price": 65,
+   "color": "White",
+   "colorHex": "#F7F3EC",
+   "styleTags": [
     "minimal"
    ],
    "princessTags": [
     "cinderella",
-    "aurora",
-    "belle",
-    "ariel"
-   ],
-   "occasions": [
-    "gala",
-    "college",
-    "romantic",
-    "wedding",
-    "birthday",
-    "garden",
-    "casual"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B02",
-   "name": "Silver Crystal Clutch",
-   "category": "bag",
-   "price": 34,
-   "color": "Silver",
-   "colorHex": "#C9CDD3",
-   "styleTags": [
-    "dramatic"
-   ],
-   "princessTags": [
-    "cinderella"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B03",
-   "name": "Gold Book Clutch",
-   "category": "bag",
-   "price": 28,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "vintage",
-    "dramatic"
-   ],
-   "princessTags": [
+    "snowwhite",
     "belle"
    ],
    "occasions": [
-    "gala",
-    "wedding",
     "romantic",
-    "birthday"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B04",
-   "name": "Blush Bow Shoulder Bag",
-   "category": "bag",
-   "price": 26,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
     "birthday",
-    "college",
-    "romantic",
+    "wedding",
     "garden",
-    "casual",
-    "wedding"
+    "college"
    ],
    "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
     "warm",
-    "cold",
-    "rainy"
+    "cold"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-guste-us2_4d2d621f-316e-4a26-982b-da14e3e37461.jpg?v=1789606860&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/syrena-tailored-wide-leg-pant-white",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-B05",
-   "name": "Lilac Woven Basket Bag",
-   "category": "bag",
-   "price": 24,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
+   "id": "RP-P02",
+   "name": "Daiana Lace Culotte Pants Cream",
+   "category": "trousers",
+   "price": 55,
+   "color": "Cream lace",
+   "colorHex": "#F3E9D8",
    "styleTags": [
     "romantic"
    ],
    "princessTags": [
-    "rapunzel"
+    "belle"
    ],
    "occasions": [
-    "garden",
-    "casual",
-    "college"
-   ],
-   "formality": 1,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B06",
-   "name": "Ruby Structured Top-Handle Bag",
-   "category": "bag",
-   "price": 38,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
     "romantic",
-    "wedding",
     "birthday",
+    "wedding",
+    "garden",
     "college"
    ],
-   "formality": 4,
+   "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
-    "warm",
-    "cold",
-    "rainy"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-mia-us4_8414c351-8332-47fb-8e55-c16922341b24.jpg?v=1790651600&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/daiana-lace-culotte-pants-cream",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-B07",
-   "name": "Seashell Pearl Clutch",
-   "category": "bag",
-   "price": 32,
-   "color": "Pearl",
-   "colorHex": "#EAF2F0",
+   "id": "RP-P03",
+   "name": "Elisa Wide Leg Plisse Pants - Black",
+   "category": "trousers",
+   "price": 69,
+   "color": "Black",
+   "colorHex": "#2B2B2E",
    "styleTags": [
-    "modern",
-    "dramatic"
-   ],
-   "princessTags": [
-    "ariel"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "romantic",
-    "birthday"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B09",
-   "name": "Satin Ribbon Wristlet",
-   "category": "bag",
-   "price": 16,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic",
     "minimal"
    ],
    "princessTags": [
-    "aurora",
-    "cinderella",
-    "rapunzel"
-   ],
-   "occasions": [
-    "birthday",
-    "wedding",
-    "romantic",
-    "college",
-    "garden"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-B10",
-   "name": "Gilded Mirror Minaudiere",
-   "category": "bag",
-   "price": 72,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "dramatic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "belle"
-   ],
-   "occasions": [
-    "gala"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": false,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J01",
-   "name": "Pearl Drop Earrings",
-   "category": "jewelry",
-   "price": 12,
-   "color": "Pearl",
-   "colorHex": "#F3EEE6",
-   "styleTags": [
-    "minimal",
-    "romantic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "aurora",
-    "ariel",
-    "belle"
-   ],
-   "occasions": [
-    "gala",
-    "college",
-    "romantic",
-    "wedding",
-    "birthday",
-    "garden",
-    "casual"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J02",
-   "name": "Crystal Tiara Headband",
-   "category": "jewelry",
-   "price": 24,
-   "color": "Crystal",
-   "colorHex": "#DDE3EA",
-   "styleTags": [
-    "dramatic",
-    "romantic"
-   ],
-   "princessTags": [
-    "cinderella",
-    "aurora"
-   ],
-   "occasions": [
-    "gala",
-    "wedding",
-    "birthday"
-   ],
-   "formality": 5,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J03",
-   "name": "Gold Rose Pendant",
-   "category": "jewelry",
-   "price": 22,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "romantic",
-    "vintage"
-   ],
-   "princessTags": [
-    "belle",
-    "aurora"
-   ],
-   "occasions": [
-    "romantic",
-    "birthday",
-    "wedding",
-    "garden",
-    "gala"
-   ],
-   "formality": 3,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J04",
-   "name": "Lilac Flower Hair Clips",
-   "category": "jewelry",
-   "price": 10,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "rapunzel"
-   ],
-   "occasions": [
-    "garden",
-    "birthday",
-    "college",
-    "casual"
-   ],
-   "formality": 1,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J05",
-   "name": "Ruby Crystal Studs",
-   "category": "jewelry",
-   "price": 18,
-   "color": "Ruby red",
-   "colorHex": "#9E2B3A",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
     "snowwhite"
    ],
    "occasions": [
-    "gala",
     "romantic",
+    "birthday",
     "wedding",
-    "birthday"
+    "garden",
+    "college"
    ],
-   "formality": 4,
+   "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
     "warm",
-    "cold",
-    "rainy"
+    "cold"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/bottoms-elisa-wide-leg-plisse-pants-black-1241404265.jpg?v=1792427740&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/elisa-wide-leg-plisse-pants-black",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-J06",
-   "name": "Seafoam Shell Necklace",
-   "category": "jewelry",
-   "price": 16,
-   "color": "Seafoam",
-   "colorHex": "#A9D8C8",
+   "id": "RP-P04",
+   "name": "Darla Velvet Wide Leg Pants - Hunter Green",
+   "category": "trousers",
+   "price": 79,
+   "color": "Hunter green",
+   "colorHex": "#3F6B4F",
    "styleTags": [
-    "modern"
+    "vintage"
    ],
    "princessTags": [
     "ariel"
    ],
    "occasions": [
-    "garden",
-    "casual",
-    "birthday",
-    "romantic"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J07",
-   "name": "Blush Satin Hair Bow",
-   "category": "jewelry",
-   "price": 9,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
-   "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora",
-    "cinderella"
-   ],
-   "occasions": [
-    "birthday",
-    "college",
-    "garden",
-    "casual",
-    "romantic"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "warm",
-    "cold",
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "One size"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-J08",
-   "name": "Antique Gold Locket",
-   "category": "jewelry",
-   "price": 28,
-   "color": "Gold",
-   "colorHex": "#C6A66B",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "belle",
-    "snowwhite"
-   ],
-   "occasions": [
     "romantic",
+    "birthday",
     "wedding",
-    "gala",
-    "birthday"
+    "garden",
+    "college"
    ],
-   "formality": 4,
+   "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
     "warm",
-    "cold",
-    "rainy"
+    "cold"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "XS",
+    "S",
+    "M",
+    "L"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/products/petal-and-pup-usa-bottoms-darla-velvet-wide-leg-pants-hunter-green-32673811431601.jpg?v=1666639522&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/darla-velvet-wide-leg-pants-hunter-green",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-J09",
-   "name": "Pearl Collar Necklace",
-   "category": "jewelry",
-   "price": 34,
-   "color": "Pearl",
-   "colorHex": "#F3EEE6",
+   "id": "RP-H01",
+   "name": "Brevel Vinyl Heels Crystal Jelly",
+   "category": "shoes",
+   "price": 69.9,
+   "color": "Clear crystal",
+   "colorHex": "#E4EBF2",
    "styleTags": [
     "dramatic",
-    "vintage"
+    "modern"
    ],
    "princessTags": [
-    "cinderella",
-    "ariel",
-    "snowwhite"
+    "cinderella"
    ],
    "occasions": [
     "gala",
@@ -2540,66 +1928,83 @@
     "romantic"
    ],
    "formality": 5,
-   "heel": null,
-   "walkable": true,
+   "heel": "high",
+   "walkable": false,
    "weather": [
-    "warm",
-    "cold",
-    "rainy"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8.5",
+    "9",
+    "9.5",
+    "10.5",
+    "11"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_BREVELVINYL_CRYSTALJELLY-02.jpg?v=1762188289&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/brevel-vinyl-heels-crystal-jelly",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-J10",
-   "name": "Iridescent Pearl Hair Comb",
-   "category": "jewelry",
-   "price": 14,
-   "color": "Iridescent",
-   "colorHex": "#EAF2F0",
+   "id": "RP-H02",
+   "name": "Kanika Pearl Heels Vanilla Silk",
+   "category": "shoes",
+   "price": 69.99,
+   "color": "Pearl silk",
+   "colorHex": "#F3EEE6",
    "styleTags": [
     "romantic",
-    "modern"
+    "dramatic"
    ],
    "princessTags": [
-    "ariel",
-    "cinderella"
+    "cinderella",
+    "ariel"
    ],
    "occasions": [
-    "wedding",
     "gala",
-    "romantic",
-    "birthday"
+    "wedding",
+    "romantic"
    ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
    "weather": [
-    "warm",
-    "cold",
-    "rainy"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "One size"
+    "7.5",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12",
+    "13"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/DOLCEVITA-HEELS_KANIKA_VANILLASILK-02.jpg?v=1673037992&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/kanika-heels-vanilla-silk",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O01",
-   "name": "Powder-Blue Wool Cape",
-   "category": "outerwear",
-   "price": 72,
-   "color": "Powder blue",
+   "id": "RP-H03",
+   "name": "Bougie Blue Satin",
+   "category": "shoes",
+   "price": 59.99,
+   "color": "Blue satin",
    "colorHex": "#AFC8E0",
    "styleTags": [
-    "dramatic",
-    "vintage"
+    "romantic",
+    "dramatic"
    ],
    "princessTags": [
     "cinderella"
@@ -2610,47 +2015,1165 @@
     "romantic"
    ],
    "formality": 5,
-   "heel": null,
-   "walkable": true,
+   "heel": "high",
+   "walkable": false,
    "weather": [
-    "cold"
+    "warm"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_BLUE-SATIN01.jpg?v=1784840714&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/bougie-blue-satin",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O02",
-   "name": "Ivory Water-Resistant Satin Trench",
-   "category": "outerwear",
-   "price": 68,
-   "color": "Ivory",
-   "colorHex": "#FBF3EA",
+   "id": "RP-H04",
+   "name": "Bougie Ivory Satin",
+   "category": "shoes",
+   "price": 59.99,
+   "color": "Ivory satin",
+   "colorHex": "#F6EFE6",
    "styleTags": [
-    "minimal",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_BOUGIE_IVORY-SATIN01.jpg?v=1784840703&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/bougie-ivory-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H05",
+   "name": "Samary Confetti Heels Silver Satin",
+   "category": "shoes",
+   "price": 99.9,
+   "color": "Silver satin",
+   "colorHex": "#D9DDE3",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5.5",
+    "6",
+    "7.5"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEELS_SAMARYCONFETTI_SILVERSATIN-02.jpg?v=1757426442&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/samary-confetti-heels-silver-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H06",
+   "name": "Tisha Heels Lt Blush Satin",
+   "category": "shoes",
+   "price": 109.9,
+   "color": "Blush satin",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_TISHA_LTBLUSHSATIN-02_6a6b266b-1281-4847-a953-1705aabbda73.jpg?v=1770218295&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/tisha-heels-lt-blush-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H07",
+   "name": "Mania Blush Leather",
+   "category": "shoes",
+   "price": 49.99,
+   "color": "Blush",
+   "colorHex": "#EBC4CE",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6.5",
+    "8",
+    "8.5"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_MANIA_BLUSH-LEATHER_01.jpg?v=1729003058&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/mania-blush-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H08",
+   "name": "Annie Champagne",
+   "category": "shoes",
+   "price": 79.99,
+   "color": "Champagne",
+   "colorHex": "#E3CFA4",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ANNIE_CHAMPAGNE_01.jpg?v=1690986032&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/annie-champagne",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H09",
+   "name": "Riki Heels Lt Gold Leather",
+   "category": "shoes",
+   "price": 135,
+   "color": "Light gold",
+   "colorHex": "#D8BE8A",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-HEEL_RIKI_LTGOLDLEATHER-02.jpg?v=1788364960&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/riki-heels-lt-gold-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H10",
+   "name": "Suzzana Lavender Iridescent",
+   "category": "shoes",
+   "price": 119.95,
+   "color": "Lavender iridescent",
+   "colorHex": "#C9B6E0",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": "high",
+   "walkable": false,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "11"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SUZZANA_LAVENDER-IRIDESCENT01.jpg?v=1791337373&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/suzzana-lavender-iridescent",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H11",
+   "name": "Gibsen Ballet Flats Blush Satin",
+   "category": "shoes",
+   "price": 130,
+   "color": "Blush satin",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "romantic",
+    "minimal"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_GIBSEN_BLUSHSATIN-02_6e4505fd-a57c-481f-8516-7c2173e1263f.jpg?v=1787324966&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/gibsen-ballet-flats-blush-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H12",
+   "name": "Gibsen Ballet Flats True White Satin",
+   "category": "shoes",
+   "price": 130,
+   "color": "White satin",
+   "colorHex": "#F7F3EC",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_GIBSEN_WHITESATIN-02_704b4561-fd66-4d76-b7b0-67a751542872.jpg?v=1787065002&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/gibsen-ballet-flats-true-white-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H13",
+   "name": "Ritla Ballet Flats Silver Crinkle Patent",
+   "category": "shoes",
+   "price": 135,
+   "color": "Silver",
+   "colorHex": "#D9DDE3",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RITLA_SILVERLEATHER-02.jpg?v=1787769567&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/ritla-ballet-flats-silver-crinkle-patent",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H14",
+   "name": "Mavin Rhinestone Ballet Flats Blue Suede",
+   "category": "shoes",
+   "price": 99.9,
+   "color": "Blue suede",
+   "colorHex": "#8FAFD6",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "7"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_MAVIN_BLUESUEDE-02.jpg?v=1768597224&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/mavin-rhinestone-ballet-flats-blue-suede",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H15",
+   "name": "Reyes Crystal Ballet Flats Gold Mesh",
+   "category": "shoes",
+   "price": 135,
+   "color": "Gold crystal",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_REYESCRYSTAL_GOLDMESH-02_5566c697-ec3e-4896-9542-1267abc57adb.jpg?v=1789656968&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/reyes-crystal-ballet-flats-gold-mesh",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H16",
+   "name": "Mikel Velvet Ballet Flats Bordeaux Velvet",
+   "category": "shoes",
+   "price": 130,
+   "color": "Bordeaux velvet",
+   "colorHex": "#6E2233",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_MIKELVELVET_BORDEAUXVELVET-02_d308bd54-90a8-41cd-8c33-a3938837e661.jpg?v=1789656910&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/mikel-velvet-ballet-flats-bordeaux-velvet",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H17",
+   "name": "The Hummingbird - Silver Metal Leather",
+   "category": "shoes",
+   "price": 150,
+   "color": "Silver",
+   "colorHex": "#D9DDE3",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0775/7215/files/HUM-SML_WEB1.png?v=1769550160&width=600",
+   "retailer": "Birdies",
+   "url": "https://birdies.com/products/womens-flats-hummingbird-silver-metal-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H18",
+   "name": "The Heron - Hot Pink Velvet",
+   "category": "shoes",
+   "price": 150,
+   "color": "Hot pink velvet",
+   "colorHex": "#D9708F",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0775/7215/files/HNN-HPV_WEB1.png?v=1751064855&width=600",
+   "retailer": "Birdies",
+   "url": "https://birdies.com/products/womens-flats-heron-hot-pink-velvet",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H19",
+   "name": "The Hummingbird Mary Jane - Gold Woven Satin",
+   "category": "shoes",
+   "price": 165,
+   "color": "Gold satin",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "vintage",
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "9",
+    "9.5",
+    "10",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0775/7215/files/HMJ-GWS_WEB1.png?v=1770401321&width=600",
+   "retailer": "Birdies",
+   "url": "https://birdies.com/products/womens-flats-hummingbird-mary-jane-gold-woven-satin",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H20",
+   "name": "The Hummingbird Mary Jane - Royal Green Velvet",
+   "category": "shoes",
+   "price": 150,
+   "color": "Green velvet",
+   "colorHex": "#2F6B50",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "11"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0775/7215/files/HMJ-RYV_WEB1.png?v=1781104366&width=600",
+   "retailer": "Birdies",
+   "url": "https://birdies.com/products/womens-flats-hummingbird-mary-jane-royal-green-velvet",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H21",
+   "name": "Ronen Ballet Flats Sky Blue Leather",
+   "category": "shoes",
+   "price": 135,
+   "color": "Sky blue",
+   "colorHex": "#AFC8E0",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RONEN_SKYBLUELEATHER-02.jpg?v=1787769686&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/ronen-ballet-flats-sky-blue-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H22",
+   "name": "Ronen Ballet Flats Buttercup Leather",
+   "category": "shoes",
+   "price": 135,
+   "color": "Buttercup",
+   "colorHex": "#F1DFA5",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RONEN_BUTTERCUPLEATHER-02.jpg?v=1787769636&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/ronen-ballet-flats-buttercup-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H23",
+   "name": "Tianna Mesh Ballet Flats Blush Mesh",
+   "category": "shoes",
+   "price": 79.9,
+   "color": "Blush mesh",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12",
+    "13"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLATS_TIANNAMESH_BLUSH-MESH-02.jpg?v=1758815073&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/tianna-mesh-ballet-flats-blush-mesh",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H24",
+   "name": "Eleve Red Leather",
+   "category": "shoes",
+   "price": 49.97,
+   "color": "Red",
+   "colorHex": "#B3283A",
+   "styleTags": [
+    "vintage",
+    "modern"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "8.5"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_ELEVE_RED-LEATHER_01.jpg?v=1783628118&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/eleve-red-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H25",
+   "name": "Austria Gold Leather",
+   "category": "shoes",
+   "price": 69.99,
+   "color": "Gold",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_AUSTRIA_GOLD-LEATHER.jpg?v=1726261317&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/austria-gold-leather",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H26",
+   "name": "Relan Mesh Ballet Flats White Mesh",
+   "category": "shoes",
+   "price": 69.99,
+   "color": "White mesh",
+   "colorHex": "#F7F3EC",
+   "styleTags": [
     "modern"
    ],
    "princessTags": [
     "cinderella",
-    "belle",
-    "ariel",
-    "aurora"
+    "snowwhite"
    ],
    "occasions": [
-    "college",
-    "casual",
     "romantic",
     "birthday",
     "wedding",
-    "gala"
+    "garden",
+    "college"
    ],
-   "formality": 4,
-   "heel": null,
+   "formality": 3,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-FLAT_RELANMESH_ICEWHITEMESH-02.jpg?v=1764867284&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/relan-mesh-ballet-flats-white-mesh",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H27",
+   "name": "Ma Belle Sandals Cream",
+   "category": "shoes",
+   "price": 38,
+   "color": "Cream",
+   "colorHex": "#F3E9D8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "SHOE US 5",
+    "SHOE US 6",
+    "SHOE US 9"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/1_5d701706-699d-4d4f-95ee-af4ea4ad98e7.jpg?v=1770341828&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/recycled-pu-blend-ma-belle-sandals-cream",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H28",
+   "name": "Solita Blue Multi",
+   "category": "shoes",
+   "price": 39.99,
+   "color": "Blue rhinestone",
+   "colorHex": "#8FAFD6",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/2170/8465/files/STEVEMADDEN_SHOES_SOLITA_BLUE-MULTI.jpg?v=1712954136&width=600",
+   "retailer": "Steve Madden",
+   "url": "https://stevemadden.com/products/solita-blue-multi",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H29",
+   "name": "Brooklyn Jelly Sandal - Sage",
+   "category": "shoes",
+   "price": 39,
+   "color": "Sage jelly",
+   "colorHex": "#B7C9A8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": "flat",
+   "walkable": true,
+   "weather": [
+    "warm"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/shoes-brooklyn-jelly-sandal-sage-1259187725.jpg?v=1789690570&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/brooklyn-jelly-sandal-sage",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H30",
+   "name": "Soline H2O Booties Black Leather",
+   "category": "shoes",
+   "price": 160,
+   "color": "Black leather",
+   "colorHex": "#2B2B2E",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": "low",
    "walkable": true,
    "weather": [
     "warm",
@@ -2660,91 +3183,124 @@
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_SOLINEH2O_BLACKLEATHER-02_f52706eb-eb33-4a92-a0bf-9bec7ef80ac6.jpg?v=1788367000&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/soline-h2o-booties-black-leather",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O03",
-   "name": "Blush Cropped Cardigan",
-   "category": "outerwear",
-   "price": 28,
-   "color": "Blush",
-   "colorHex": "#F4DCE4",
+   "id": "RP-H31",
+   "name": "Anders H2O Booties Taupe Suede",
+   "category": "shoes",
+   "price": 160,
+   "color": "Taupe suede",
+   "colorHex": "#B49A80",
    "styleTags": [
-    "romantic"
-   ],
-   "princessTags": [
-    "aurora"
-   ],
-   "occasions": [
-    "college",
-    "casual",
-    "birthday",
-    "garden"
-   ],
-   "formality": 2,
-   "heel": null,
-   "walkable": true,
-   "weather": [
-    "cold"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "S",
-    "M",
-    "L"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-O04",
-   "name": "Camel Wool Coat",
-   "category": "outerwear",
-   "price": 84,
-   "color": "Camel",
-   "colorHex": "#C8A27A",
-   "styleTags": [
-    "minimal",
-    "vintage"
+    "minimal"
    ],
    "princessTags": [
     "belle"
    ],
    "occasions": [
-    "college",
-    "casual",
     "romantic",
-    "gala",
-    "wedding"
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
    ],
-   "formality": 4,
-   "heel": null,
+   "formality": 3,
+   "heel": "low",
    "walkable": true,
    "weather": [
-    "cold"
+    "warm",
+    "cold",
+    "rainy"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0037/3807/5202/files/DOLCEVITA-BOOT_ANDERSH2O_TAUPESUEDEH2O-02_6833c9b6-a90d-434e-b511-81e44495a217.jpg?v=1788367933&width=600",
+   "retailer": "Dolce Vita",
+   "url": "https://dolcevita.com/products/anders-h2o-booties-taupe-suede",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O05",
-   "name": "Lilac Clear Rain Cape",
-   "category": "outerwear",
-   "price": 26,
-   "color": "Lilac",
-   "colorHex": "#DCCDEA",
+   "id": "RP-H32",
+   "name": "Women's Original Chelsea Boots",
+   "category": "shoes",
+   "price": 124.99,
+   "color": "Dark blue",
+   "colorHex": "#2E3A66",
    "styleTags": [
-    "modern",
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "6",
+    "7"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0769/0561/1556/files/HWS2078RMA_DBL02-RZB.jpg?v=1791303333&width=600",
+   "retailer": "Hunter",
+   "url": "https://hunterboots.com/products/womens-original-chelsea-boots-in-dark-blue-w-s2078rma-dbl02",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H33",
+   "name": "Hunter X LoveShackFancy Women’s PLAY™ Short Rain Boots",
+   "category": "shoes",
+   "price": 124.99,
+   "color": "Lavender floral",
+   "colorHex": "#C9B6E0",
+   "styleTags": [
     "romantic"
    ],
    "princessTags": [
@@ -2754,66 +3310,38 @@
    "occasions": [
     "casual",
     "college",
-    "garden",
-    "birthday",
-    "wedding"
+    "garden"
    ],
-   "formality": 2,
-   "heel": null,
+   "formality": 1,
+   "heel": "low",
    "walkable": true,
    "weather": [
-    "rainy"
-   ],
-   "modest": true,
-   "available": true,
-   "sizes": [
-    "S",
-    "M",
-    "L"
-   ],
-   "image": null
-  },
-  {
-   "id": "MP-O06",
-   "name": "Navy Double-Breasted Coat",
-   "category": "outerwear",
-   "price": 78,
-   "color": "Navy",
-   "colorHex": "#283A5E",
-   "styleTags": [
-    "vintage"
-   ],
-   "princessTags": [
-    "snowwhite"
-   ],
-   "occasions": [
-    "gala",
-    "romantic",
-    "wedding",
-    "college"
-   ],
-   "formality": 4,
-   "heel": null,
-   "walkable": true,
-   "weather": [
+    "warm",
     "cold",
     "rainy"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0769/0561/1556/files/1f5cee218ed9d4951e88a809d9b65666ab0dc983.jpg?v=1781534090&width=600",
+   "retailer": "Hunter",
+   "url": "https://hunterboots.com/products/hunter-x-loveshackfancy-women-s-play-short-rain-boots-in-lavendar-floral-print-fhl-w-s2120rma-lpu01",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O07",
-   "name": "Seafoam Light Trench",
-   "category": "outerwear",
-   "price": 48,
-   "color": "Seafoam",
+   "id": "RP-H34",
+   "name": "Women's Original Short Rain Boots",
+   "category": "shoes",
+   "price": 134.99,
+   "color": "Light green",
    "colorHex": "#A9D8C8",
    "styleTags": [
     "modern"
@@ -2824,41 +3352,575 @@
    "occasions": [
     "casual",
     "college",
+    "garden"
+   ],
+   "formality": 1,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "5",
+    "6",
+    "9"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0769/0561/1556/files/HWS1000RMA_LGN01-RZB.jpg?v=1791303822&width=600",
+   "retailer": "Hunter",
+   "url": "https://hunterboots.com/products/womens-original-short-rain-boots-in-light-green-w-s1000rma-lgn01",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-H35",
+   "name": "Women's PLAY™ Tall Rain Boots",
+   "category": "shoes",
+   "price": 114.99,
+   "color": "Light natural",
+   "colorHex": "#E3D5BF",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "casual",
+    "college",
+    "garden"
+   ],
+   "formality": 1,
+   "heel": "low",
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "7"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0769/0561/1556/files/HWT2007RMA_LNA01-RZB.jpg?v=1791307997&width=600",
+   "retailer": "Hunter",
+   "url": "https://hunterboots.com/products/womens-play-tall-rain-boots-in-light-natural-w-t2007rma-lna01",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B01",
+   "name": "Abacus Faux Ostrich Mini Top Handle Bag - White",
+   "category": "bag",
+   "price": 89,
+   "color": "White",
+   "colorHex": "#F7F3EC",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/fzh1vdnkbvh.jpg?v=1790751798&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/abacus-faux-ostrich-mini-top-handle-bag-white",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B02",
+   "name": "Thea Faux Ostrich Top Handle Bag - Pearl White",
+   "category": "bag",
+   "price": 109,
+   "color": "Pearl white",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/o2d4du5s95.jpg?v=1791529329&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/thea-faux-ostrich-top-handle-bag-pearl-white",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B03",
+   "name": "Eva Faux Lizard Shoulder Handbag - Silver",
+   "category": "bag",
+   "price": 99,
+   "color": "Silver",
+   "colorHex": "#D9DDE3",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
     "romantic",
     "birthday",
-    "garden"
+    "wedding",
+    "garden",
+    "college"
    ],
    "formality": 3,
    "heel": null,
    "walkable": true,
    "weather": [
     "warm",
+    "cold",
     "rainy"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "One size"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/ktvsmg5mhy.jpg?v=1792554858&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/eva-faux-lizard-shoulder-handbag-silver",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O08",
-   "name": "Ivory Faux-Fur Stole",
-   "category": "outerwear",
-   "price": 38,
-   "color": "Ivory",
-   "colorHex": "#FFF5EC",
+   "id": "RP-B04",
+   "name": "Abacus Sequin Mini Top Handle Bag - Pink",
+   "category": "bag",
+   "price": 89,
+   "color": "Pink sequin",
+   "colorHex": "#EBA9BF",
    "styleTags": [
     "dramatic"
    ],
    "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/1791968630613-87hoi1xl2iw.jpg?v=1792122165&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/abacus-sequin-mini-top-handle-bag-pink",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B05",
+   "name": "Arlene Artificial Crystal Heart Shaped Crossbody Bag - Light Pink",
+   "category": "bag",
+   "price": 119,
+   "color": "Crystal pink",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "romantic",
+    "dramatic"
+   ],
+   "princessTags": [
+    "aurora",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/1781262792944-il1k8kd6t7.jpg?v=1782369728&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/arlene-artificial-crystal-heart-shaped-crossbody-bag-light-pink",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B06",
+   "name": "Mabel Soft Bow Shoulder Bag - Ivory White",
+   "category": "bag",
+   "price": 129,
+   "color": "Ivory bow",
+   "colorHex": "#F6EFE6",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
     "cinderella",
-    "belle",
     "snowwhite",
+    "belle",
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/5foo8uvctbp.jpg?v=1790750528&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/mabel-soft-bow-shoulder-bag-ivory-white",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B07",
+   "name": "Harlee Shoulder Bag - Light Yellow",
+   "category": "bag",
+   "price": 99,
+   "color": "Light yellow",
+   "colorHex": "#F1DFA5",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/1783585187024-s2j04znx4mb.jpg?v=1783590995&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/harlee-shoulder-bag-light-yellow",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B08",
+   "name": "Virella Quilted Vanity Top Handle Bag - Cherry Red",
+   "category": "bag",
+   "price": 109,
+   "color": "Cherry red",
+   "colorHex": "#B3283A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/1789726036827-qun6ntdzpo.jpg?v=1789892125&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/virella-quilted-vanity-top-handle-bag-cherry-red",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-B09",
+   "name": "Abacus Faux Suede Mini Top Handle Bag - Light Green",
+   "category": "bag",
+   "price": 89,
+   "color": "Light green",
+   "colorHex": "#B7D4B8",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
     "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0150/6292/5412/files/8l5e8nnq9a3.jpg?v=1790749328&width=600",
+   "retailer": "JW PEI",
+   "url": "https://jwpei.com/products/abacus-faux-suede-mini-top-handle-bag-light-green",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J01",
+   "name": "Pearl Studded Headband",
+   "category": "jewelry",
+   "price": 29.99,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "aurora",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika6606d930a109766606d930a128e.132712156606d930a128e.jpg?v=1762443476&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/pearl-studded-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J02",
+   "name": "Mother May Pearl Earrings",
+   "category": "jewelry",
+   "price": 33.99,
+   "color": "Pearl & gold",
+   "colorHex": "#EFE4CF",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b8415107f25164b8415108031.1002705264b8415108031_5b576cbd-2ec8-4ddb-b955-44684abd4b8d.jpg?v=1762443471&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/mother-may-18k-gold-plated-pearl-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J03",
+   "name": "Spotted Pearl Hoop Earrings",
+   "category": "jewelry",
+   "price": 25,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b6d2e535ade464b6d2e535bc2.3933924464b6d2e535bc2.jpg?v=1762442579&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/spotted-pearl-18k-gold-plated-hoop-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J04",
+   "name": "Pearl and Modern Chain Link Collar Necklace",
+   "category": "jewelry",
+   "price": 34,
+   "color": "Pearl",
+   "colorHex": "#F3EEE6",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64ae11fb8cbd0164ae11fb8cc93.7538655064ae11fb8cc93.jpg?v=1762443534&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/pearl-and-18k-gold-plated-modern-chain-link-collar-necklace",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J05",
+   "name": "Crystal Chain Pearl Drop Earrings",
+   "category": "jewelry",
+   "price": 40,
+   "color": "Crystal pearl",
+   "colorHex": "#E4EBF2",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "cinderella"
    ],
    "occasions": [
     "gala",
@@ -2869,31 +3931,70 @@
    "heel": null,
    "walkable": true,
    "weather": [
-    "cold"
+    "warm",
+    "cold",
+    "rainy"
    ],
    "modest": true,
    "available": true,
    "sizes": [
-    "S",
-    "M",
-    "L"
+    "One Size"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b954ed8e2d2664b954ed8e3a8.3153826464b954ed8e3a8.jpg?v=1762444010&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/crystal-chain-pearl-drop-18k-gold-plated-earrings",
+   "checkedAt": "2026-10-25"
   },
   {
-   "id": "MP-O09",
-   "name": "Pearl-Button Velvet Bolero",
-   "category": "outerwear",
-   "price": 42,
-   "color": "Dusty rose",
-   "colorHex": "#B98598",
+   "id": "RP-J06",
+   "name": "Queen of Hearts Crystal Earrings",
+   "category": "jewelry",
+   "price": 25,
+   "color": "Crystal",
+   "colorHex": "#E4EBF2",
    "styleTags": [
-    "vintage",
-    "romantic"
+    "romantic",
+    "dramatic"
    ],
    "princessTags": [
-    "snowwhite",
-    "belle",
+    "cinderella",
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b94f28b3054164b94f28b3113.9796080964b94f28b3113_f3e3e3d1-c6d6-4e1d-bd5a-b48cc67ea984.jpg?v=1762443875&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/queen-of-hearts-crystal-18k-gold-plated-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J07",
+   "name": "Ally Crystal Drop Earrings",
+   "category": "jewelry",
+   "price": 44,
+   "color": "Crystal",
+   "colorHex": "#E4EBF2",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
     "cinderella"
    ],
    "occasions": [
@@ -2901,20 +4002,1347 @@
     "wedding",
     "romantic"
    ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0267/5746/4148/files/155959_SS_01_SQ.jpg?v=1791830407&width=600",
+   "retailer": "BaubleBar",
+   "url": "https://baublebar.com/products/ally-crystal-drop-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J08",
+   "name": "French Blue Jessie Silk Headband",
+   "category": "jewelry",
+   "price": 45,
+   "color": "French blue",
+   "colorHex": "#8FAFD6",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-headbands-french-blue-jessie-silk-headband-38061079953570.jpg?v=1726252783&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/french-blue-jessie-silk-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J09",
+   "name": "Mother of Pearl Lily Claw Clip",
+   "category": "jewelry",
+   "price": 28,
+   "color": "Mother of pearl",
+   "colorHex": "#EEE9E2",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "cinderella",
+    "ariel"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-hair-clips-mother-of-pearl-lily-claw-clip-1247963886.jpg?v=1783369508&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/mother-of-pearl-lily-claw-clip",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J10",
+   "name": "Golden Teardrop Earrings",
+   "category": "jewelry",
+   "price": 35,
+   "color": "Gold",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
    "formality": 4,
    "heel": null,
    "walkable": true,
    "weather": [
-    "cold"
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika6541228e27aa246541228e27b79.839451536541228e27b79.jpg?v=1762444634&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/golden-teardrop-18k-gold-plated-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J11",
+   "name": "Angelina Gold Drop Earrings",
+   "category": "jewelry",
+   "price": 44,
+   "color": "Gold",
+   "colorHex": "#D4B26A",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0267/5746/4148/files/174028_SS_01_SQ.jpg?v=1788386637&width=600",
+   "retailer": "BaubleBar",
+   "url": "https://baublebar.com/products/angelina-gold-drop-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J12",
+   "name": "Blushing Pearl Earrings",
+   "category": "jewelry",
+   "price": 32.99,
+   "color": "Blush pearl",
+   "colorHex": "#F1D9DF",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b18e94438a6964b18e94439bc.3572833564b18e94439bc.jpg?v=1762443361&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/blushing-pearl-18k-gold-plated-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J13",
+   "name": "Nat Stud Earrings - Rose Quartz",
+   "category": "jewelry",
+   "price": 44,
+   "color": "Rose quartz",
+   "colorHex": "#EBC4CE",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0267/5746/4148/files/174025_SS_01_SQ.jpg?v=1787926863&width=600",
+   "retailer": "BaubleBar",
+   "url": "https://baublebar.com/products/nat-stud-earrings-rose-quartz",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J14",
+   "name": "Blush Brigitte Velvet Headband",
+   "category": "jewelry",
+   "price": 49,
+   "color": "Blush velvet",
+   "colorHex": "#EBC4CE",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-headbands-blush-brigitte-velvet-headband-1197079953.jpg?v=1760112646&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/blush-brigitte-velvet-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J15",
+   "name": "Ivory Velvet Antoinette Bow Barrette",
+   "category": "jewelry",
+   "price": 49,
+   "color": "Ivory velvet bow",
+   "colorHex": "#F6EFE6",
+   "styleTags": [
+    "vintage",
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-barrettes-ivory-velvet-antoinette-bow-barrette-38611309592738.jpg?v=1728422684&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/ivory-velvet-antoinette-bowbarrette",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J16",
+   "name": "Indigo Floral Drop Earrings",
+   "category": "jewelry",
+   "price": 40,
+   "color": "Indigo floral",
+   "colorHex": "#7F7AB8",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b1936745590764b193674569f.2137769564b193674569f.jpg?v=1762443907&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/indigo-floral-18k-gold-plated-drop-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J17",
+   "name": "Floral Crest Earrings",
+   "category": "jewelry",
+   "price": 37.99,
+   "color": "Floral gold",
+   "colorHex": "#D8BE8A",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika64b8401fa3fba364b8401fa40da.1728650264b8401fa40da_21d2c73f-f398-4f74-82ad-fa6778fa42cf.jpg?v=1762443467&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/floral-crest-18k-gold-plated-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J18",
+   "name": "Natural Veronica Floral Eyelet Headband",
+   "category": "jewelry",
+   "price": 49,
+   "color": "Floral eyelet",
+   "colorHex": "#F3E9D8",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-headbands-natural-veronica-floral-eyelet-headband-1209866705.jpg?v=1764807646&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/natural-veronica-floral-eyelet-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J19",
+   "name": "Lydia Statement Stud Earrings - Red Jasper",
+   "category": "jewelry",
+   "price": 44,
+   "color": "Red jasper",
+   "colorHex": "#9E2B3A",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0267/5746/4148/files/174058_SS_01_SQ.jpg?v=1789662899&width=600",
+   "retailer": "BaubleBar",
+   "url": "https://baublebar.com/products/lydia-statement-stud-earrings-red-jasper",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J20",
+   "name": "Cherry Single Stud",
+   "category": "jewelry",
+   "price": 30,
+   "color": "Cherry",
+   "colorHex": "#B3283A",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0015/3849/0427/files/225-015-449-G_1_1.jpg?v=1729558457&width=600",
+   "retailer": "Gorjana",
+   "url": "https://gorjana.com/products/cherry-single-stud",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J21",
+   "name": "Burgundy Bessette Velvet Headband",
+   "category": "jewelry",
+   "price": 48,
+   "color": "Burgundy velvet",
+   "colorHex": "#7A2436",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-headbands-ulta-styles-for-lele-burgundy-bessette-velvet-headband-1249353379.png?v=1784233871&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/ulta-styles-for-lele-burgundy-bessette-velvet-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J22",
+   "name": "Turquoise and Pearl Teardrop Earrings",
+   "category": "jewelry",
+   "price": 33.99,
+   "color": "Turquoise & pearl",
+   "colorHex": "#7CCFC8",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One Size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0591/5689/files/Ettika6545f4693de9936545f4693df75.174740676545f4693df75.jpg?v=1762442581&width=600",
+   "retailer": "Ettika",
+   "url": "https://ettika.com/products/turquoise-and-pearl-teardrop-18k-gold-plated-drop-earrings",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J23",
+   "name": "Turquoise Capri Chain Huggies",
+   "category": "jewelry",
+   "price": 52,
+   "color": "Turquoise",
+   "colorHex": "#4FA7A5",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0015/3849/0427/files/255-006-67-G_1_364444f1-8869-409a-b1a6-3ad26c97f0ee.jpg?v=1747052376&width=600",
+   "retailer": "Gorjana",
+   "url": "https://gorjana.com/products/turquoise-capri-chain-huggies",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-J24",
+   "name": "Turquoise Emma Acetate Headband",
+   "category": "jewelry",
+   "price": 39,
+   "color": "Turquoise",
+   "colorHex": "#4FA7A5",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "One size"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/1234/2092/files/lele-sadoughi-headbands-turquoise-emma-acetate-headband-1234019011.jpg?v=1776896529&width=600",
+   "retailer": "Lele Sadoughi",
+   "url": "https://lelesadoughi.com/products/turquoise-emma-acetate-headband",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O01",
+   "name": "Eldora Cropped Trench Coat Sand",
+   "category": "outerwear",
+   "price": 95,
+   "color": "Sand",
+   "colorHex": "#D8C3A5",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-paris-us2_dc0e9301-6939-41d3-9f03-467c9e1733e9.jpg?v=1791501730&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/eldora-cropped-trench-coat-sand",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O02",
+   "name": "Ranique Tie Waist Cropped Trench Coat Beige",
+   "category": "outerwear",
+   "price": 105,
+   "color": "Beige",
+   "colorHex": "#D8C3A5",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-guste-us2_d65c3846-cff2-45b3-a7bd-d2bebb9dd004.jpg?v=1789606881&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/ranique-tie-waist-cropped-trench-coat-beige",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O03",
+   "name": "Blanc Cropped Trench Coat Chocolate",
+   "category": "outerwear",
+   "price": 66,
+   "color": "Chocolate",
+   "colorHex": "#6B4A3A",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0",
+    "US 2",
+    "US 4",
+    "US 6",
+    "US 8",
+    "US 10",
+    "US 12"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-rino-us4_b2b4b51d-b08b-472b-a8ad-33f234012fdc.jpg?v=1781222298&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/blanc-cropped-trench-coat-chocolate",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O04",
+   "name": "Billy Button Front Trench Coat - Navy",
+   "category": "outerwear",
+   "price": 129,
+   "color": "Navy",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite",
+    "cinderella"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-outerwear-billy-button-front-trench-coat-navy-1233030762.jpg?v=1779111969&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/billy-button-front-trench-coat-navy",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O05",
+   "name": "Jules Trench in Khaki",
+   "category": "outerwear",
+   "price": 99.9,
+   "color": "Khaki",
+   "colorHex": "#BFA77F",
+   "styleTags": [
+    "minimal"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold",
+    "rainy"
    ],
    "modest": true,
    "available": true,
    "sizes": [
     "S",
     "M",
+    "L",
+    "XL",
+    "1X"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/JDN4030607-NEW2KHAKI1.jpg?v=1792508000&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/jules-denim-trench-in-khaki",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O06",
+   "name": "Champagne Please Velvet Trench",
+   "category": "outerwear",
+   "price": 129.9,
+   "color": "Champagne velvet",
+   "colorHex": "#E3CFA4",
+   "styleTags": [
+    "dramatic",
+    "vintage"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S/M",
+    "L/XL",
+    "1X/2X"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/SS1081PLUM1.jpg?v=1792508023&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/champagne-please-velvet-trench",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O07",
+   "name": "Stella Wool Blend Faux Fur Light Pink Coat",
+   "category": "outerwear",
+   "price": 169.9,
+   "color": "Light pink",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic"
+   ],
+   "formality": 5,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S/M",
+    "L/XL",
+    "1X/2X"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0850/1329/9515/files/STELLALIGHT-PINK1.jpg?v=1792508024&width=600",
+   "retailer": "Akira",
+   "url": "https://shopakira.com/products/stella-wool-blend-faux-fur",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O08",
+   "name": "Wilde Bow Front Cardigan - Blush",
+   "category": "outerwear",
+   "price": 89,
+   "color": "Blush",
+   "colorHex": "#F1CFD9",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-knitwear-wilde-bow-front-cardigan-blush-1080553821.jpg?v=1780535024&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/wilde-bow-front-cardigan-blush",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O09",
+   "name": "Lillita Puff Sleeve Cardigan - Light Blue",
+   "category": "outerwear",
+   "price": 79,
+   "color": "Light blue",
+   "colorHex": "#C9DCEB",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/knitwear-lillita-puff-sleeve-cardigan-light-blue-1261148922.jpg?v=1791217079&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/lillita-puff-sleeve-cardigan-light-blue",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O10",
+   "name": "Tillie Lace Trim Cardigan - Pale Blue",
+   "category": "outerwear",
+   "price": 79,
+   "color": "Pale blue",
+   "colorHex": "#C9DCEB",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "cinderella"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-knitwear-tillie-lace-trim-cardigan-pale-blue-1226821622.jpg?v=1779118659&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/tillie-lace-trim-cardigan-pale-blue",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O11",
+   "name": "The Kaelie Pointelle Cardigan - White Patchwork Doily Heart",
+   "category": "outerwear",
+   "price": 69,
+   "color": "White doily heart",
+   "colorHex": "#F7F3EC",
+   "styleTags": [
+    "romantic",
+    "vintage"
+   ],
+   "princessTags": [
+    "cinderella",
+    "snowwhite",
+    "aurora"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXXS"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0932/1794/files/The_Sadie_Pointelle_PJ_Set_Patchwork_Doily_Heart_White_13365.jpg?v=1768329132&width=600",
+   "retailer": "Hill House Home",
+   "url": "https://hillhousehome.com/products/the-kaelie-pointelle-cardigan-patchwork-doily-heart-white",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O12",
+   "name": "Arcadia Floral Cardigan - Light Grey",
+   "category": "outerwear",
+   "price": 99,
+   "color": "Floral grey",
+   "colorHex": "#CFCBD3",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "rapunzel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-knitwear-arcadia-floral-cardigan-light-grey-1236649152.jpg?v=1778864731&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/arcadia-floral-cardigan-light-grey",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O13",
+   "name": "Roxanna Quilted Velvet Jacket - Wine",
+   "category": "outerwear",
+   "price": 99,
+   "color": "Wine velvet",
+   "colorHex": "#6E2233",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-outerwear-roxanna-quilted-velvet-jacket-wine-1204629906.jpg?v=1780544532&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/roxanna-quilted-velvet-jacket-wine",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O14",
+   "name": "Clive Velvet Blazer - Navy",
+   "category": "outerwear",
+   "price": 109,
+   "color": "Navy velvet",
+   "colorHex": "#283A5E",
+   "styleTags": [
+    "vintage"
+   ],
+   "princessTags": [
+    "snowwhite"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S",
     "L"
    ],
-   "image": null
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-outerwear-clive-velvet-blazer-navy-1200665115.jpg?v=1781243689&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/clive-velvet-blazer-navy",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O15",
+   "name": "Yelena Knit Cardigan Lemon",
+   "category": "outerwear",
+   "price": 79.99,
+   "color": "Butter",
+   "colorHex": "#F1DFA5",
+   "styleTags": [
+    "modern"
+   ],
+   "princessTags": [
+    "belle"
+   ],
+   "occasions": [
+    "college",
+    "garden",
+    "casual",
+    "birthday"
+   ],
+   "formality": 2,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "XXS/XS",
+    "XS/S",
+    "S/M",
+    "M/L",
+    "L/XL"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0263/6018/4892/files/yelena-knit-caridgan-lemon-delani-01_fid24818733973576.jpg?v=1787894834&width=600",
+   "retailer": "White Fox",
+   "url": "https://whitefoxboutique.com/products/yelena-knit-cardigan-butter",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O16",
+   "name": "Daisy Cardigan - Green",
+   "category": "outerwear",
+   "price": 89,
+   "color": "Green",
+   "colorHex": "#8FBF9F",
+   "styleTags": [
+    "romantic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "romantic",
+    "birthday",
+    "wedding",
+    "garden",
+    "college"
+   ],
+   "formality": 3,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "S/M"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0266/8855/3034/files/petal-and-pup-usa-knitwear-daisy-cardigan-green-34024226128049.jpg?v=1721107871&width=600",
+   "retailer": "Petal & Pup",
+   "url": "https://petalandpup.com/products/daisy-cardigan-green",
+   "checkedAt": "2026-10-25"
+  },
+  {
+   "id": "RP-O17",
+   "name": "Zevvy Faux Fur Collared Jacket Green",
+   "category": "outerwear",
+   "price": 105,
+   "color": "Green",
+   "colorHex": "#3F6B4F",
+   "styleTags": [
+    "dramatic"
+   ],
+   "princessTags": [
+    "ariel"
+   ],
+   "occasions": [
+    "gala",
+    "wedding",
+    "romantic",
+    "birthday"
+   ],
+   "formality": 4,
+   "heel": null,
+   "walkable": true,
+   "weather": [
+    "warm",
+    "cold"
+   ],
+   "modest": true,
+   "available": true,
+   "sizes": [
+    "US 0"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-nat-us2_c4af31fc-17c7-4c72-9e93-6584868ece79.jpg?v=1790137038&width=600",
+   "retailer": "Princess Polly",
+   "url": "https://us.princesspolly.com/products/zevvy-faux-fur-collared-jacket-green",
+   "checkedAt": "2026-10-25"
   }
  ]
 }

@@ -49,17 +49,17 @@ export default function Treasury({ health }: { health: Health | null }) {
             <Tile k="100 users / month" v={usd(s.projection.users100, 2)} sub="Projection from measured average" />
             <Tile k="10,000 users / month" v={usd(s.projection.users10000, 2)} sub="Projection from measured average" />
           </div>
-          <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-mauve">
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 rounded-2xl border border-gold/40 bg-ivory px-5 py-2 text-sm text-mauve">
             <label htmlFor="runs">Journeys per user per month</label>
-            <input id="runs" type="range" min={1} max={30} value={runs} onChange={(e) => setRuns(Number(e.target.value))} className="accent-[#C6A66B]" />
+            <input id="runs" type="range" min={1} max={30} value={runs} onChange={(e) => setRuns(Number(e.target.value))} className="h-11 w-full max-w-xs cursor-pointer accent-[#C6A66B]" />
             <span className="font-serif text-lg text-burgundy">{runs}</span>
           </div>
 
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <FramedPanel className="p-6 sm:p-8">
+            <FramedPanel className="min-w-0 p-5 sm:p-8">
               <h2 className="text-2xl">Per run (measured averages)</h2>
-              <table className="mt-4 w-full text-sm">
-                <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2" /><th className="pb-2">Royal Council</th><th className="pb-2">Baseline</th></tr></thead>
+              <div className="-mx-2 overflow-x-auto px-2"><table className="mt-4 w-full min-w-[19rem] text-sm">
+                <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2 pr-3" /><th className="pb-2 pr-3">Royal Council</th><th className="pb-2 pr-3">Baseline</th></tr></thead>
                 <tbody className="divide-y divide-gold/15">
                   {([
                     ["Runs logged", (x: SystemSummary) => String(x.runs)],
@@ -70,25 +70,25 @@ export default function Treasury({ health }: { health: Health | null }) {
                     ["Cost per run", (x: SystemSummary) => usd(x.avgCost, 5)],
                     ["AI latency per run", (x: SystemSummary) => `${(x.avgLatencyMs / 1000).toFixed(1)} s`],
                   ] as const).map(([k, f]) => (
-                    <tr key={k}><td className="py-2">{k}</td><td className="py-2 font-serif text-lg">{f(s.council)}</td><td className="py-2 font-serif text-lg">{s.baseline.runs ? f(s.baseline) : "-"}</td></tr>
+                    <tr key={k}><td className="py-2 pr-3">{k}</td><td className="py-2 pr-3 font-serif text-lg">{f(s.council)}</td><td className="py-2 pr-3 font-serif text-lg">{s.baseline.runs ? f(s.baseline) : "-"}</td></tr>
                   ))}
                 </tbody>
-              </table>
+              </table></div>
               <p className="mt-3 text-xs text-mauve">A "run" is one request (style or rescue). The cost per full journey adds both.</p>
             </FramedPanel>
 
-            <div className="rounded-[26px] border border-gold/40 bg-ivory p-6 sm:p-8">
+            <div className="min-w-0 rounded-[26px] border border-gold/40 bg-ivory p-5 sm:p-8">
               <h2 className="text-2xl">By agent</h2>
-              <table className="mt-4 w-full text-sm">
-                <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2">Agent</th><th className="pb-2">Calls</th><th className="pb-2">In</th><th className="pb-2">Cached</th><th className="pb-2">Out</th><th className="pb-2">Cost</th></tr></thead>
+              <div className="-mx-2 overflow-x-auto px-2"><table className="mt-4 w-full min-w-[19rem] text-sm">
+                <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2 pr-3">Agent</th><th className="pb-2 pr-3">Calls</th><th className="pb-2 pr-3">In</th><th className="pb-2 pr-3">Cached</th><th className="pb-2 pr-3">Out</th><th className="pb-2 pr-3">Cost</th></tr></thead>
                 <tbody className="divide-y divide-gold/15">
                   {Object.entries({ ...s.council.byAgent, ...s.baseline.byAgent }).map(([a, x]) => (
-                    <tr key={a}><td className="py-2 capitalize">{a}</td><td className="py-2">{x.calls}</td><td className="py-2">{x.input.toLocaleString()}</td><td className="py-2">{x.cached.toLocaleString()}</td><td className="py-2">{x.output.toLocaleString()}</td><td className="py-2">{usd(x.cost, 4)}</td></tr>
+                    <tr key={a}><td className="py-2 pr-3 capitalize">{a}</td><td className="py-2 pr-3">{x.calls}</td><td className="py-2 pr-3">{x.input.toLocaleString()}</td><td className="py-2 pr-3">{x.cached.toLocaleString()}</td><td className="py-2 pr-3">{x.output.toLocaleString()}</td><td className="py-2 pr-3">{usd(x.cost, 4)}</td></tr>
                   ))}
                 </tbody>
-              </table>
+              </table></div>
               <div className="hairline my-5" />
-              <dl className="grid grid-cols-2 gap-2 text-sm">
+              <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm [&>dd]:break-words">
                 <dt className="text-mauve">Model</dt><dd>{s.model}</dd>
                 <dt className="text-mauve">Price / 1M input</dt><dd>${s.pricing.inputPerM}</dd>
                 <dt className="text-mauve">Price / 1M cached input</dt><dd>${s.pricing.cachedInputPerM}</dd>
@@ -101,12 +101,13 @@ export default function Treasury({ health }: { health: Health | null }) {
 
           <div className="mt-8 overflow-x-auto rounded-[24px] border border-gold/40 bg-ivory p-5">
             <h2 className="text-2xl">Recent ledger entries</h2>
+            <p className="text-xs text-mauve sm:hidden">Swipe sideways to see every column.</p>
             <p className="text-xs text-mauve">All values are API-reported usage (measured), not estimates.</p>
             <table className="mt-3 w-full min-w-[720px] text-sm">
-              <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2">Time</th><th className="pb-2">Agent</th><th className="pb-2">Attempt</th><th className="pb-2">In</th><th className="pb-2">Cached</th><th className="pb-2">Out</th><th className="pb-2">Latency</th><th className="pb-2">Cost</th><th className="pb-2">Valid JSON</th></tr></thead>
+              <thead><tr className="text-left text-[0.62rem] uppercase tracking-[0.16em] text-mauve"><th className="pb-2 pr-3">Time</th><th className="pb-2 pr-3">Agent</th><th className="pb-2 pr-3">Attempt</th><th className="pb-2 pr-3">In</th><th className="pb-2 pr-3">Cached</th><th className="pb-2 pr-3">Out</th><th className="pb-2 pr-3">Latency</th><th className="pb-2 pr-3">Cost</th><th className="pb-2 pr-3">Valid JSON</th></tr></thead>
               <tbody className="divide-y divide-gold/15">
                 {s.recent.map((r, i) => (
-                  <tr key={i}><td className="py-1.5">{new Date(r.ts).toLocaleTimeString()}</td><td className="py-1.5 capitalize">{r.agent}</td><td className="py-1.5">{r.attempt}</td><td className="py-1.5">{r.inputTokens}</td><td className="py-1.5">{r.cachedInputTokens}</td><td className="py-1.5">{r.outputTokens}</td><td className="py-1.5">{(r.latencyMs / 1000).toFixed(1)} s</td><td className="py-1.5">{usd(r.costUsd, 5)}</td><td className="py-1.5">{r.ok ? "yes" : "no"}</td></tr>
+                  <tr key={i}><td className="py-1.5 pr-3">{new Date(r.ts).toLocaleTimeString()}</td><td className="py-1.5 pr-3 capitalize">{r.agent}</td><td className="py-1.5 pr-3">{r.attempt}</td><td className="py-1.5 pr-3">{r.inputTokens}</td><td className="py-1.5 pr-3">{r.cachedInputTokens}</td><td className="py-1.5 pr-3">{r.outputTokens}</td><td className="py-1.5 pr-3">{(r.latencyMs / 1000).toFixed(1)} s</td><td className="py-1.5 pr-3">{usd(r.costUsd, 5)}</td><td className="py-1.5 pr-3">{r.ok ? "yes" : "no"}</td></tr>
                 ))}
               </tbody>
             </table>

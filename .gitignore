@@ -4,3 +4,5 @@ dist/
 .env.local
 logs/*.jsonl
 .DS_Store
+.audit-build/
+data/shop/raw.json

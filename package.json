@@ -11,7 +11,9 @@
     "serve": "tsx server/index.ts",
     "eval": "tsx eval/run.ts",
     "test:safety": "tsx eval/safety.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "shop:refresh": "node data/shop/refresh-prices.mjs",
+    "shop:build": "node data/shop/fetch-feeds.mjs && node data/shop/build-catalog.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",
@@ -34,5 +36,7 @@
     "concurrently": "^9.1.2",
     "typescript": "^5.7.2"
   },
-  "engines": { "node": ">=18.18" }
+  "engines": {
+    "node": ">=18.18"
+  }
 }

@@ -2,7 +2,7 @@
 
 **Your Fairytale. Your Wardrobe. Your Happily Ever After.**
 
-A multi-agent AI stylist that builds a princess-inspired outfit within a real budget, lets an adversarial agent throw a realistic problem at it (sold-out gown, rain, a 20-minute walk, a budget cut), and then repairs only what broke. Every number is checked by code before the user sees it.
+A multi-agent AI stylist that builds a princess-inspired outfit from **real products sold by 14 real retailers**, within a real budget. Then it lets an adversarial agent throw a realistic problem at it (sold-out gown, rain, a 20-minute walk, a budget cut), repairs only what broke, and ends in **Shop the Royal Look**, where each piece links to its retailer's product page. Every price and rule is checked by code before the user sees it.
 
 ![The Midnight Protocol](docs/screenshots/01-landing.jpg)
 
@@ -45,9 +45,10 @@ PORTKEY_API_KEY=...        # Portkey gateway key, uses gpt-6-luna
 | `npm run eval` | **Royal Laboratory**: 20 scenarios, Royal Council vs single-agent baseline, writes `eval/results/latest.json` |
 | `npm run eval -- --limit 5` | Quick evaluation on the first 5 scenarios |
 | `npm run test:safety` | Runs the 8 safety-defense tests (no API key needed) |
+| `npm run shop:refresh` | Re-checks every product's price, stock and sizes on the retailer's site and stamps today's date |
+| `npm run shop:build` | Rebuilds the catalog from `data/shop/curation.mjs` (snapshots retailer feeds, then verifies each product live) |
 
 Screenshots of every screen from a live run are in [`docs/screenshots/`](docs/screenshots/).
-| `node data/build-catalog.mjs` | Regenerates `data/catalog.json` from its compact source table |
 
 ---
 
@@ -82,6 +83,16 @@ Budget arithmetic and availability are facts, not opinions. Keeping them in code
 
 ---
 
+## Shop the Royal Look
+
+**Journey:** Choose Your Princess → Enter Preferences → Generate Outfit → Validate Budget → Resolve Fashion Crisis → **Shop the Royal Look**
+
+- **Product cards.** Each card shows the retailer's photo, retailer name, recorded price, in-stock sizes (selectable) and the date they were checked. A **Shop at [Retailer]** button opens the real product page in a new tab.
+- **Check stock & prices now.** This asks each retailer for current price and stock, and flags anything that's sold out or has changed price.
+- **Find My Glass Slipper.** Suggests alternatives (most similar, cheaper, or easier to walk in) when a piece is sold out, unsuitable or over budget. Every suggestion is re-validated, so the whole outfit still passes budget, dress code, comfort and weather. **Swap in** updates the look, and the Treasurer re-checks the total.
+- **Royal Checkout List.** Lists the outfit grouped by retailer with subtotals and the total recorded cost against your budget. You can copy it or download it as a CSV.
+- **Budget guidance.** The invitation shows what the cheapest complete look actually costs from these retailers for your occasion and comfort needs.
+
 ## Midnight Survival Score (rubric)
 
 Each outfit is scored 0–100 on four dimensions at three moments: before the crisis, at midnight, and after the rescue.
@@ -102,7 +113,8 @@ Each outfit is scored 0–100 on four dimensions at three moments: before the cr
 | Risk | Defense | Proof |
 |---|---|---|
 | Prompt injection / data leaks | Free-text wardrobe notes are sanitized, scanned for instruction patterns and withheld if flagged. Notes are passed as delimited *untrusted data*. The API key stays on the server only. | `npm run test:safety`, Laboratory page |
-| Invented products or prices | The LLM outputs only IDs. Prices, names and availability always come from the catalog. Unknown IDs are rejected. | Same |
+| Invented products, prices or links | The LLM outputs only IDs. Names, prices, product links, photos and sizes come from the retailers' own product data, never from the model. Unknown IDs are rejected. | Same |
+| Unsupported stock claims | Prices and stock are shown as **recorded on a date**. "Check stock & prices now" asks the retailer directly but is labeled as no inventory guarantee. Sold-out items are excluded by code. | Shop page, `npm run shop:refresh` |
 | Wrong actions (over budget, sold out) | The deterministic validator gates every outfit, and a failure triggers revision or an honest refusal | Same |
 | Fake success | The Guardian proves infeasibility with an exact cheapest-outfit calculation and shows "Even magic has its limits" | Same |
 | Infinite loops / runaway spending | Max 6 LLM calls per request, ≤ 2 revisions per agent, 60 s timeout per call, daily spend cap (`DAILY_SPEND_CAP_USD`), per-IP rate limit | Same |
@@ -115,8 +127,8 @@ Each outfit is scored 0–100 on four dimensions at three moments: before the cr
 Every LLM call is appended to `logs/usage.jsonl` with the **API-reported** `prompt_tokens`, `cached_tokens` and `completion_tokens`, plus latency and cost. The **Royal Treasury** page shows per-agent costs, cost per journey, per user per month, and projections for 100 and 10,000 users. Prices are configurable in `.env` (`PRICE_*`). Set them to your model's published prices; the page shows where the prices came from.
 
 Cost-cutting built in:
-- **Deterministic shortlist.** The Godmother sees about 30 eligible items in a compact one-line format instead of all 79.
-- **Prompt caching.** Every agent call starts with the same fixed catalog message, about 3,500 tokens, so repeat calls are billed at the cached-input rate. Measured over the 20-scenario run: about 3,400 of 3,800 styling input tokens were cached, and styling cost fell 21%. Turn it off with `PROMPT_CACHE=off` to compare.
+- **Deterministic shortlist.** Code filters the 133-product catalog down to the 30–45 items that fit the user's rules, and the agent only sees those IDs.
+- **Prompt caching.** Every agent call starts with the same fixed catalog message, so repeat calls are billed at the cached-input rate. In the live 20-scenario run, about 5,800 of 6,400 styling input tokens (91%) were cached. The Laboratory and Treasury pages show the measured counts. Turn it off with `PROMPT_CACHE=off` to compare.
 - **Two of four agents cost nothing** because they're code.
 - The Guardian sees **only candidates for the broken roles**.
 - **Infeasible rescues are detected in code**, without spending an LLM call.
@@ -125,28 +137,40 @@ Cost-cutting built in:
 
 ## Data
 
-`data/catalog.json` holds **79 demonstration products** in 8 categories: dresses, tops, skirts, trousers, shoes, bags, jewelry and outerwear. Two of them are deliberately sold out. **Products and prices are illustrative and not sold by any real retailer.** Item images are original SVG illustrations drawn in code, so nothing can fail to load.
+`data/catalog.json` holds **133 real products from 14 retailers**: Princess Polly, Petal & Pup, Hill House Home, Akira, White Fox, Steve Madden, Dolce Vita, Birdies, Hunter, JW PEI, BaubleBar, Ettika, Gorjana and Lele Sadoughi. They cover 8 categories: dresses, tops, skirts, trousers, shoes, bags, jewelry and outerwear.
 
-The catalog is small. To use a different catalog, replace `data/catalog.json` with a file using the same fields, or edit the table in `data/build-catalog.mjs` and run `node data/build-catalog.mjs`.
+**How it was built:**
+1. `data/shop/fetch-feeds.mjs` snapshots each retailer's public Shopify product feed (13,000+ products).
+2. I hand-picked products for each princess palette and occasion in `data/shop/curation.mjs`. That file holds only styling judgments: palette, style, formality, heel height, weather and modesty.
+3. `data/shop/build-catalog.mjs` verifies every product against the retailer's live product data. Name, price, product URL, photo and in-stock sizes are copied from the retailer, never typed by hand, and each item gets the date it was checked. Out-of-stock items are dropped.
+
+**What it does and doesn't claim:**
+- **Prices and stock are recorded on a date, not live.** `npm run shop:refresh` re-checks them.
+- **Purchases happen on the retailers' websites.**
+- **This project is not affiliated with any retailer.**
+- **Photos load from the retailers' own image servers,** with an illustrated fallback if one fails.
+
+**Small test dataset:** to try the app without network access to retailer images, it still works; cards fall back to illustrations. To swap catalogs, replace `data/catalog.json` with a file using the same fields.
 
 ## Project structure
 
 ```
-server/           Express API, agents, rules engine, LLM client, ledger, safety
+server/           Express API, agents, rules engine, LLM client, ledger, safety, shop (alternatives, live stock check)
   agents/         godmother.ts · treasurer.ts · stepmother.ts · guardian.ts · baseline.ts
   rules.ts        validation, survival score, exact solver
   crises.ts       the 8 reproducible crises
   orchestrator.ts the Royal Council workflow
 shared/           zod schemas, types, princess definitions (used by server + UI)
 src/              React + TypeScript + Tailwind + Framer Motion UI
-data/             demo catalog
+data/             real-product catalog + data/shop/ build, curation and refresh scripts
 eval/             scenarios.json, run.ts (Royal Laboratory), safety.test.ts, results/
 ```
 
 ## Limitations
 
-- The catalog is a demonstration dataset, not live retail inventory.
-- Sizes are stored but not yet used as a constraint.
+- **Recorded prices, not a live feed.** Prices and stock are recorded snapshots. There's no partner retailer API or affiliate integration, so checkout happens on each retailer's site.
+- **Hand-labeled styling attributes.** Formality and other styling attributes were assigned by hand from product names and photos.
+- **Sizes aren't a styling constraint.** In-stock sizes are shown and selectable in the shop, but agents don't style by size yet.
 - Aesthetic scoring is rule-based (tags). It doesn't judge real visual harmony.
 - Crises are predefined, not open-ended.
 

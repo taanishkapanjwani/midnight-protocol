@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { COMFORT_PREFS, OCCASIONS, STYLES, type Preferences, type PrincessId } from "../../shared/types";
 import { COMFORT_LABELS, OCCASION_LABELS, STYLE_LABELS, princessById } from "../../shared/princesses";
 import { Bow, FramedPanel, WaxSeal } from "../components/Ornaments";
+import { postJson } from "../lib/api";
 
 const STEPS = ["Occasion", "Budget", "Style", "Comfort", "Wardrobe & weather"];
 
@@ -18,6 +19,14 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
   const [setting, setSetting] = useState<Preferences["setting"]>(initial?.setting ?? "indoor");
   const [weather, setWeather] = useState<Preferences["weather"]>(initial?.weather ?? "warm");
 
+  const [floor, setFloor] = useState<number | null>(null);
+  useEffect(() => {
+    if (!occasion) return;
+    postJson<{ floor: number | null }>("/api/budget-floor", { princess, occasion, style: style ?? "romantic", comfort, setting, weather })
+      .then((r) => setFloor(r.floor))
+      .catch(() => setFloor(null));
+  }, [princess, occasion, style, comfort, setting, weather]);
+  const presets = floor ? [0, 60, 140, 260].map((d) => Math.ceil((floor + d) / 10) * 10) : [150, 200, 300, 400];
   const budgetNum = Number(budget);
   const budgetError = budget === "" ? null : !Number.isFinite(budgetNum) ? "Please enter a number." : budgetNum < 40 ? "The royal minimum is $40." : budgetNum > 5000 ? "Please keep it under $5,000." : null;
   const canNext = [!!occasion, budget !== "" && !budgetError, !!style, true, true][step];
@@ -33,7 +42,7 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
   return (
     <section className="mx-auto max-w-3xl px-5 py-14">
       <div className="text-center">
-        <p className="eyebrow">Chapter I</p>
+        <p className="eyebrow">Chapter II</p>
         <h1 className="mt-2 text-5xl">The Royal Invitation</h1>
       </div>
 
@@ -46,10 +55,11 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
             animate={{ width: `${((step + 1) / STEPS.length) * 100}%` }}
             transition={{ duration: 0.5 }}
           />
-          <motion.div className="absolute -top-4" animate={{ left: `calc(${((step + 1) / STEPS.length) * 100}% - 22px)` }} transition={{ duration: 0.5 }}>
+          <motion.div className="absolute -top-4" animate={{ left: `clamp(0px, calc(${((step + 1) / STEPS.length) * 100}% - 22px), calc(100% - 44px))` }} transition={{ duration: 0.5 }}>
             <Bow size={44} />
           </motion.div>
         </div>
+        <p className="mt-4 text-center text-[0.7rem] uppercase tracking-[0.18em] text-mauve sm:hidden">Step {step + 1} of {STEPS.length} · {STEPS[step]}</p>
         <ol className="mt-4 hidden justify-between text-[0.65rem] uppercase tracking-[0.18em] text-mauve sm:flex">
           {STEPS.map((s, i) => (
             <li key={s} className={i <= step ? "text-burgundy" : ""}>{s}</li>
@@ -57,7 +67,7 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
         </ol>
       </div>
 
-      <FramedPanel className="parchment mt-10 px-6 py-12 sm:px-14">
+      <FramedPanel className="parchment mt-10 px-4 py-12 sm:px-14">
         <div className="absolute -top-9 left-1/2 -translate-x-1/2">
           <WaxSeal size={72} letter={p.name[0]} />
         </div>
@@ -68,7 +78,7 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
           <motion.div key={step} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.35 }} className="mt-8">
             {step === 0 && (
               <Question title="What occasion are you dressing for?">
-                <div className="grid gap-3 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2 sm:[&>*:last-child:nth-child(odd)]:col-span-2">
                   {OCCASIONS.map((o) => (
                     <button key={o} className="chip" aria-pressed={occasion === o} onClick={() => setOccasion(o)}>{OCCASION_LABELS[o]}</button>
                   ))}
@@ -93,17 +103,23 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
                     />
                   </div>
                 </label>
-                <p id="budget-help" className={`mt-3 text-center text-sm ${budgetError ? "text-burgundy" : "text-mauve"}`}>{budgetError ?? "USD, for the complete look: clothing, shoes and accessories."}</p>
-                <div className="mt-4 flex justify-center gap-2">
-                  {[80, 120, 180, 250].map((b) => (
-                    <button key={b} className="chip px-4 py-2 text-sm" aria-pressed={budget === String(b)} onClick={() => setBudget(String(b))}>${b}</button>
+                <p id="budget-help" className={`mt-3 text-center text-sm ${budgetError ? "text-burgundy" : "text-mauve"}`}>
+                  {budgetError ?? "USD, for the complete look: clothing, shoes and accessories."}
+                  {!budgetError && floor ? <span className="mt-1 block">From our real retailers, a complete {occasion ? OCCASION_LABELS[occasion].toLowerCase() : ""} look starts at about ${floor}.</span> : null}
+                </p>
+                {floor && budget !== "" && !budgetError && budgetNum < floor && (
+                  <p className="mt-2 text-center text-sm font-medium text-burgundy">That's below the cheapest complete look. The Fairy Godmother will tell you honestly if it can't be done.</p>
+                )}
+                <div className="mx-auto mt-4 grid max-w-xs grid-cols-2 gap-2 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center">
+                  {presets.map((b) => (
+                    <button key={b} className="chip px-4 py-2 text-center text-sm" aria-pressed={budget === String(b)} onClick={() => setBudget(String(b))}>${b}</button>
                   ))}
                 </div>
               </Question>
             )}
             {step === 2 && (
               <Question title="What is your preferred style?">
-                <div className="grid gap-3 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2 sm:[&>*:last-child:nth-child(odd)]:col-span-2">
                   {STYLES.map((s) => (
                     <button key={s} className="chip" aria-pressed={style === s} onClick={() => setStyle(s)}>{STYLE_LABELS[s]}</button>
                   ))}
@@ -112,7 +128,7 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
             )}
             {step === 3 && (
               <Question title="What are your comfort preferences?" hint="Choose any that apply.">
-                <div className="grid gap-3 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2 sm:[&>*:last-child:nth-child(odd)]:col-span-2">
                   {COMFORT_PREFS.map((c) => (
                     <button key={c} className="chip" aria-pressed={c === "none" ? comfort.length === 0 || comfort.includes("none") : comfort.includes(c)} onClick={() => toggleComfort(c)}>{COMFORT_LABELS[c]}</button>
                   ))}
@@ -149,16 +165,16 @@ export default function Invitation({ princess, initial, onBack, onSubmit }: { pr
           </motion.div>
         </AnimatePresence>
 
-        <div className="mt-10 flex items-center justify-between">
-          <button className="btn-ghost" onClick={() => (step === 0 ? onBack() : setStep(step - 1))}>
+        <div className="mt-10 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <button className="btn-ghost w-full justify-center sm:w-auto" onClick={() => (step === 0 ? onBack() : setStep(step - 1))}>
             <ArrowLeft className="h-4 w-4" /> {step === 0 ? "Princesses" : "Back"}
           </button>
           {step < STEPS.length - 1 ? (
-            <button className="btn-royal" disabled={!canNext} onClick={() => setStep(step + 1)}>
+            <button className="btn-royal w-full justify-center sm:w-auto" disabled={!canNext} onClick={() => setStep(step + 1)}>
               Continue <ArrowRight className="h-4 w-4" />
             </button>
           ) : (
-            <button className="btn-royal" onClick={submit}>
+            <button className="btn-royal w-full justify-center sm:w-auto" onClick={submit}>
               Summon the Fairy Godmother <Bow size={30} className="-my-3 -mr-2" />
             </button>
           )}

@@ -1,7 +1,7 @@
 // The Royal Council orchestrator. Agents exchange structured JSON; every status event maps to a real step.
 import type { Constraints, Crisis, CrisisId, Outfit, Preferences } from "../shared/types";
 import { princessById } from "../shared/princesses";
-import { constraintsFromPrefs, getItem, itemHardIssues, roleOf, shortlist } from "./catalog";
+import { CATALOG, constraintsFromPrefs, getItem, itemHardIssues, roleOf, shortlist } from "./catalog";
 import { cheapestPossible, needsOuterwear, scoreOutfit, solve, validateOutfit } from "./rules";
 import { applyCrisis } from "./crises";
 import { sanitizeFreeText } from "./safety";
@@ -33,10 +33,10 @@ export async function styleRun(ctx: RunContext, live: boolean, prefs: Preference
   const c = constraintsFromPrefs(prefs);
   emit({ type: "status", agent: "godmother", message: "Your Fairy Godmother is selecting the perfect ensemble...", data: { constraints: c } });
   const candidates = shortlist(c, prefs.princess, prefs.style);
-  emit({ type: "agent", agent: "godmother", message: `Catalog lookup: ${candidates.length} eligible pieces after deterministic filtering (of 79).` });
+  emit({ type: "agent", agent: "godmother", message: `Catalog lookup: ${candidates.length} eligible pieces after deterministic filtering (of ${CATALOG.length} real products).` });
 
   if (!solve(c, prefs.princess, prefs.style))
-    return { ok: false as const, reason: `Even magic has its limits. No available outfit satisfies every constraint (the cheapest valid outfit costs about $${cheapestPossible(c)}). Try increasing your budget or relaxing one preference.`, constraints: c };
+    return { ok: false as const, reason: infeasibleReason(cheapestPossible(c), c.budget), constraints: c };
 
   let feedback: string | null = null;
   let proposal = null as Awaited<ReturnType<typeof fairyGodmother>> | null;
@@ -151,8 +151,8 @@ export async function rescueRun(ctx: RunContext, live: boolean, prefs: Preferenc
   emit({ type: "status", agent: "guardian", message: "The Midnight Guardian is restoring the enchantment..." });
   const floor = cheapestPossible(nc);
   if (floor > nc.budget) {
-    emit({ type: "warning", agent: "guardian", message: `Infeasible: the cheapest valid outfit costs $${floor}, above the $${nc.budget} budget.` });
-    return { ok: false as const, reason: `Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $${floor}, but the budget is $${nc.budget}. Try increasing your budget or relaxing one preference.`, ...common };
+    emit({ type: "warning", agent: "guardian", message: Number.isFinite(floor) ? `Infeasible: the cheapest valid outfit costs $${floor.toFixed(2)}, above the $${nc.budget} budget.` : "Infeasible: no catalog combination satisfies every new rule." });
+    return { ok: false as const, reason: infeasibleReason(floor, nc.budget), ...common };
   }
 
   // Which unaffected items can stay? Unlock the most expensive ones only if the budget forces it.
@@ -229,3 +229,10 @@ export async function rescueRun(ctx: RunContext, live: boolean, prefs: Preferenc
 }
 
 export type CrisisAnalysis = ReturnType<typeof analyzeCrisis> & { crisis: Crisis };
+
+// Honest refusal text: either the budget is too small, or no catalog combination meets the rules at all.
+export function infeasibleReason(floor: number, budget: number) {
+  return Number.isFinite(floor)
+    ? `Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $${floor.toFixed(2)}, but the budget is $${budget}. Try increasing your budget or relaxing one preference.`
+    : "Even magic has its limits. No combination in the catalog satisfies every rule together (for example, no rain-ready shoe is also flat). Try relaxing one preference.";
+}

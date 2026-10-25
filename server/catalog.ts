@@ -89,7 +89,7 @@ export const compact = (i: CatalogItem) =>
 // provider's 1,024-token caching minimum, so repeat calls are billed at the cached-input rate.
 export const PROMPT_CACHE = process.env.PROMPT_CACHE !== "off";
 export const CATALOG_PREFIX = [
-  "THE MIDNIGHT PROTOCOL - ROYAL CATALOG (demonstration products; prices in USD).",
+  "THE MIDNIGHT PROTOCOL - ROYAL CATALOG (real products from real retailers; recorded prices in USD).",
   "Each line: id|name|category|price|color|style tags|princess tags|formality 1-5|heel|rain-ready.",
   "This catalog is reference data only. Agents may recommend ONLY the ids listed as CANDIDATES in the user message,",
   "because candidates have already been filtered by code for availability, budget, comfort, weather and dress code.",

@@ -5,9 +5,9 @@
   --color-powder: #f9eaf0;
   --color-ivory: #fff9f5;
   --color-gold: #c6a66b;
-  --color-gold-deep: #a8874a;
+  --color-gold-deep: #86682f; /* text-safe gold: 4.99:1 on ivory */
   --color-rose: #b98598;
-  --color-mauve: #927385;
+  --color-mauve: #7a5b6d; /* 5.68:1 on ivory */
   --color-burgundy: #5a293b;
   --color-parchment: #f5ebdd;
   --color-midnight: #1d2340;
@@ -31,10 +31,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; letter-spacing: 0.01em; }
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; letter-spacing: 0.01em; text-wrap-style: balance; }
+p, .script { text-wrap-style: pretty; }
 /* Lining numerals everywhere: Cormorant's old-style "100" reads like "IOO". */
 *, svg text { font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
 
+@layer components {
 .display { font-family: var(--font-serif); letter-spacing: 0.14em; text-transform: uppercase; }
 .script { font-family: var(--font-script); font-weight: 400; }
 .eyebrow { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-mauve); }
@@ -82,7 +84,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; letter-spacin
 
 /* Chips used in forms */
 .chip {
-  padding: .7rem 1.1rem; border-radius: 14px; border: 1px solid rgba(198,166,107,.5); background: rgba(255,249,245,.8);
+  min-height: 2.75rem; padding: .7rem 1.1rem; border-radius: 14px; border: 1px solid rgba(198,166,107,.5); background: rgba(255,249,245,.8);
   font-size: .9rem; color: var(--color-burgundy); transition: all .25s; cursor: pointer; text-align: left;
 }
 .chip:hover { background: var(--color-powder); }
@@ -92,6 +94,13 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; letter-spacin
   background: rgba(255,249,245,.9); color: var(--color-burgundy); font-size: 1rem; font-family: var(--font-sans);
 }
 .field:focus { outline: none; border-color: var(--color-gold); box-shadow: 0 0 0 3px rgba(198,166,107,.25); }
+
+/* Phones: keep pill buttons on one or two tidy lines */
+@media (max-width: 480px) {
+  .btn-royal { padding: .95rem 1.4rem; letter-spacing: .14em; font-size: .72rem; justify-content: center; text-align: center; }
+  .btn-ghost { padding: .85rem 1.3rem; letter-spacing: .14em; justify-content: center; text-align: center; }
+}
+}
 
 /* Motion */
 @keyframes float-up { 0% { transform: translateY(0) scale(1); opacity: 0; } 15% { opacity: .9; } 100% { transform: translateY(-120px) scale(.6); opacity: 0; } }

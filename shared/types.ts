@@ -32,8 +32,11 @@ export interface CatalogItem {
   weather: ("warm" | "cold" | "rainy")[];
   modest: boolean;
   available: boolean;
-  sizes: string[];
-  image: string | null;
+  sizes: string[]; // in-stock sizes reported by the retailer when last checked
+  image: string | null; // retailer's product photo
+  retailer: string;
+  url: string; // retailer's product page
+  checkedAt: string; // YYYY-MM-DD when price and stock were last verified
 }
 
 // ---------- User preferences ----------
