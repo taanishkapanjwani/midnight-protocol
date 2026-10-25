@@ -15,6 +15,9 @@ import { PreferencesSchema, type CrisisId, type TraceEvent } from "../shared/typ
 const args = process.argv.slice(2);
 const demo = args.includes("--demo") || !isLive();
 const limit = Number(args[args.indexOf("--limit") + 1]) || Infinity;
+// --out <name>: save to eval/results/<name>.json only (leaves latest.json untouched)
+const outName = args.includes("--out") ? args[args.indexOf("--out") + 1] : null;
+const skipBaseline = args.includes("--no-baseline");
 const scenarios = JSON.parse(readFileSync(path.join(ROOT, "eval", "scenarios.json"), "utf8")).slice(0, limit);
 
 interface SystemResult {
@@ -91,7 +94,7 @@ for (const sc of scenarios) {
 
   // Baseline: one LLM call, no shortlist, no validator loop
   let baseline: SystemResult | null = null;
-  if (!demo) {
+  if (!demo && !skipBaseline) {
     const bctx = newRun("baseline", () => {}, `eval-${sc.id}-baseline-${Date.now()}`);
     const t2 = Date.now();
     try {
@@ -150,6 +153,7 @@ const styleRows = done.map((r) => r.style);
 const out = {
   generatedAt: new Date().toISOString(),
   mode: demo ? "demo" : "live",
+  promptCache: process.env.PROMPT_CACHE !== "off",
   model: demo ? "none (rule-based)" : CONFIG.model,
   pricing: CONFIG.pricing,
   scenarios: scenarios.length,
@@ -173,6 +177,9 @@ const out = {
 };
 mkdirSync(path.join(ROOT, "eval", "results"), { recursive: true });
 const stamp = out.generatedAt.replace(/[:.]/g, "-");
-writeFileSync(path.join(ROOT, "eval", "results", `run-${stamp}.json`), JSON.stringify(out, null, 2));
-writeFileSync(path.join(ROOT, "eval", "results", "latest.json"), JSON.stringify(out, null, 2));
-console.log(`\nSaved eval/results/latest.json (${out.mode}). Council recovery ${(out.council!.recoveryRate * 100).toFixed(0)}%${out.baseline ? `, baseline ${(out.baseline.recoveryRate * 100).toFixed(0)}%` : ""}.`);
+if (outName) writeFileSync(path.join(ROOT, "eval", "results", `${outName}.json`), JSON.stringify(out, null, 2));
+else {
+  writeFileSync(path.join(ROOT, "eval", "results", `run-${stamp}.json`), JSON.stringify(out, null, 2));
+  writeFileSync(path.join(ROOT, "eval", "results", "latest.json"), JSON.stringify(out, null, 2));
+}
+console.log(`\nSaved eval/results/${outName ?? "latest"}.json (${out.mode}). Council recovery ${(out.council!.recoveryRate * 100).toFixed(0)}%${out.baseline ? `, baseline ${(out.baseline.recoveryRate * 100).toFixed(0)}%` : ""}.`);

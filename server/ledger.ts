@@ -36,7 +36,8 @@ export function spentToday() {
 }
 
 export function summarize(runsPerUserPerMonth = 8) {
-  const rows = readLedger().filter((r) => r.measured);
+  // Re-price every call from its measured tokens at the current configured prices.
+  const rows = readLedger().filter((r) => r.measured).map((r) => ({ ...r, costUsd: costOf(r.inputTokens, r.cachedInputTokens, r.outputTokens) }));
   const bySystem = (system: string) => {
     const xs = rows.filter((r) => r.system === system);
     const runs = new Map<string, UsageRecord[]>();

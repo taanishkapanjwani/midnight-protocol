@@ -85,9 +85,10 @@ export function shortlist(c: Constraints, princess: string, style: string, perRo
 export const compact = (i: CatalogItem) =>
   `${i.id}|${i.name}|${i.category}|$${i.price}|${i.color}|style:${i.styleTags.join("/")}|princess:${i.princessTags.join("/")}|formality:${i.formality}${i.heel ? `|heel:${i.heel}` : ""}${i.weather.includes("rainy") && ["shoes", "outerwear"].includes(i.category) ? "|rain-ready" : ""}`;
 
-// Static prompt prefix shared by every agent. Identical bytes on every call, and longer than the
-// provider's 1,024-token caching minimum, so repeat calls are billed at the cached-input rate.
-export const PROMPT_CACHE = process.env.PROMPT_CACHE !== "off";
+// Optional static prompt prefix shared by every agent (identical bytes on every call, so repeat calls
+// are billed at the cached-input rate). Measured on the real catalog it cost ~4% MORE per journey than
+// sending only the shortlisted products, so it is off by default. Turn on with PROMPT_CACHE=on.
+export const PROMPT_CACHE = process.env.PROMPT_CACHE === "on";
 export const CATALOG_PREFIX = [
   "THE MIDNIGHT PROTOCOL - ROYAL CATALOG (real products from real retailers; recorded prices in USD).",
   "Each line: id|name|category|price|color|style tags|princess tags|formality 1-5|heel|rain-ready.",

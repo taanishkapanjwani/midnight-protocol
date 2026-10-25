@@ -40,10 +40,11 @@ export const CONFIG = {
     : process.env.OPENAI_BASE_URL || "https://api.openai.com/v1",
   model: process.env.LLM_MODEL || (portkeyKey ? "gpt-6-luna" : "gpt-4o-mini"),
   pricing: {
-    inputPerM: num("PRICE_INPUT_PER_M", 0.25),
-    cachedInputPerM: num("PRICE_CACHED_INPUT_PER_M", 0.025),
-    outputPerM: num("PRICE_OUTPUT_PER_M", 2.0),
-    source: process.env.PRICE_INPUT_PER_M ? "configured in .env" : "default assumption - set PRICE_* in .env",
+    // Defaults: gpt-6-luna list prices reported by third-party pricing trackers (Oct 2026); override in .env.
+    inputPerM: num("PRICE_INPUT_PER_M", 0.1),
+    cachedInputPerM: num("PRICE_CACHED_INPUT_PER_M", 0.01),
+    outputPerM: num("PRICE_OUTPUT_PER_M", 0.5),
+    source: process.env.PRICE_INPUT_PER_M ? "configured in .env" : "gpt-6-luna list price per third-party trackers (Oct 2026)",
   },
   maxCallsPerRun: num("MAX_LLM_CALLS_PER_RUN", 6),
   timeoutMs: num("LLM_TIMEOUT_MS", 60000),

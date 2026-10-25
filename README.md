@@ -128,7 +128,7 @@ Every LLM call is appended to `logs/usage.jsonl` with the **API-reported** `prom
 
 Cost-cutting built in:
 - **Deterministic shortlist.** Code filters the 133-product catalog down to the 30–45 items that fit the user's rules, and the agent only sees those IDs.
-- **Prompt caching.** Every agent call starts with the same fixed catalog message, so repeat calls are billed at the cached-input rate. In the live 20-scenario run, about 5,800 of 6,400 styling input tokens (91%) were cached. The Laboratory and Treasury pages show the measured counts. Turn it off with `PROMPT_CACHE=off` to compare.
+- **Prompt caching: tested, then turned off.** With `PROMPT_CACHE=on`, every call starts with the full catalog, so about 91% of input tokens are cached. But on the same 20 scenarios a full journey cost about 4% more than sending only the shortlisted products, styling was slower, and quality was identical. It's off by default; see `eval/results/live-real-catalog-no-cache.json`.
 - **Two of four agents cost nothing** because they're code.
 - The Guardian sees **only candidates for the broken roles**.
 - **Infeasible rescues are detected in code**, without spending an LLM call.

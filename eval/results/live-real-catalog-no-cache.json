@@ -1,0 +1,964 @@
+{
+  "generatedAt": "2026-10-25T16:48:18.180Z",
+  "mode": "live",
+  "promptCache": false,
+  "model": "gpt-6-luna",
+  "pricing": {
+    "inputPerM": 0.1,
+    "cachedInputPerM": 0.01,
+    "outputPerM": 0.5,
+    "source": "gpt-6-luna list price per third-party trackers (Oct 2026); costs re-priced from measured tokens"
+  },
+  "scenarios": 20,
+  "styled": 20,
+  "styling": {
+    "godmotherFirstTryValidRate": 1,
+    "avgTreasurerRejections": 0,
+    "fallbackRate": 0,
+    "avgCalls": 1,
+    "avgInput": 2174.5,
+    "avgCached": 0,
+    "avgOutput": 411.4,
+    "avgCost": 0.00042315,
+    "avgMs": 4040.4
+  },
+  "council": {
+    "n": 17,
+    "feasible": 17,
+    "impossible": 3,
+    "budgetComplianceRate": 1,
+    "catalogValidityRate": 1,
+    "honestRefusalRate": 1,
+    "recoveryRate": 1,
+    "avgUnnecessaryReplacements": 0,
+    "avgAesthetic": 85.17647058823529,
+    "avgLatencyMs": 4804.882352941177,
+    "avgCalls": 0.9411764705882353,
+    "avgInput": 1150.5294117647059,
+    "avgCached": 0,
+    "avgOutput": 483.7647058823529,
+    "avgCost": 0.00035693529411764713,
+    "costPerSuccessfulRescue": 0.00035693529411764713,
+    "fallbackRate": 0.058823529411764705,
+    "failures": [
+      {
+        "id": "S04",
+        "crisis": "budget_cut",
+        "feasible": false,
+        "reason": "Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $172.97, but the budget is $140. Try increasing your budget or relaxing one preference."
+      },
+      {
+        "id": "S10",
+        "crisis": "rain",
+        "feasible": false,
+        "reason": "Even magic has its limits. No combination in the catalog satisfies every rule together (for example, no rain-ready shoe is also flat). Try relaxing one preference."
+      },
+      {
+        "id": "S19",
+        "crisis": "cold_snap",
+        "feasible": false,
+        "reason": "Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $172.97, but the budget is $150. Try increasing your budget or relaxing one preference."
+      }
+    ]
+  },
+  "baseline": null,
+  "rows": [
+    {
+      "scenario": {
+        "id": "S01",
+        "princess": "cinderella",
+        "occasion": "gala",
+        "budget": 320,
+        "style": "romantic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "long_walk"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 4923,
+        "calls": 1,
+        "input": 1992,
+        "cached": 0,
+        "output": 376,
+        "cost": 0.00038720000000000003,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 89,
+        "failure": null,
+        "latencyMs": 4001,
+        "calls": 1,
+        "input": 955,
+        "cached": 0,
+        "output": 293,
+        "cost": 0.000242,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S02",
+        "princess": "cinderella",
+        "occasion": "wedding",
+        "budget": 420,
+        "style": "minimal",
+        "comfort": [
+          "walking"
+        ],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "rain"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3231,
+        "calls": 1,
+        "input": 2280,
+        "cached": 0,
+        "output": 290,
+        "cost": 0.000373,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 81,
+        "failure": null,
+        "latencyMs": 7644,
+        "calls": 1,
+        "input": 1286,
+        "cached": 0,
+        "output": 741,
+        "cost": 0.0004991,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S03",
+        "princess": "cinderella",
+        "occasion": "romantic",
+        "budget": 260,
+        "style": "modern",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "sold_out"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3878,
+        "calls": 1,
+        "input": 2325,
+        "cached": 0,
+        "output": 425,
+        "cost": 0.000445,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 95,
+        "failure": null,
+        "latencyMs": 3155,
+        "calls": 1,
+        "input": 1362,
+        "cached": 0,
+        "output": 249,
+        "cost": 0.00026070000000000005,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S04",
+        "princess": "belle",
+        "occasion": "college",
+        "budget": 200,
+        "style": "vintage",
+        "comfort": [
+          "walking"
+        ],
+        "weather": "cold",
+        "setting": "outdoor",
+        "crisis": "budget_cut",
+        "note": "Designed to be impossible: after a 30% budget cut no walkable cold-weather look exists"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 8172,
+        "calls": 1,
+        "input": 2340,
+        "cached": 0,
+        "output": 967,
+        "cost": 0.0007175,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": false,
+      "council": {
+        "ok": false,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": false,
+        "unnecessary": 0,
+        "aesthetic": 0,
+        "failure": "Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $172.97, but the budget is $140. Try increasing your budget or relaxing one preference.",
+        "latencyMs": 1,
+        "calls": 0,
+        "input": 0,
+        "cached": 0,
+        "output": 0,
+        "cost": 0,
+        "source": "honest-failure"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S05",
+        "princess": "belle",
+        "occasion": "gala",
+        "budget": 360,
+        "style": "dramatic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "no_heels"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3102,
+        "calls": 1,
+        "input": 1984,
+        "cached": 0,
+        "output": 319,
+        "cost": 0.00035789999999999997,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 96,
+        "failure": null,
+        "latencyMs": 3668,
+        "calls": 1,
+        "input": 928,
+        "cached": 0,
+        "output": 336,
+        "cost": 0.0002608,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S06",
+        "princess": "belle",
+        "occasion": "garden",
+        "budget": 420,
+        "style": "romantic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "rain"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3240,
+        "calls": 1,
+        "input": 2277,
+        "cached": 0,
+        "output": 290,
+        "cost": 0.00037270000000000006,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 80,
+        "failure": null,
+        "latencyMs": 6916,
+        "calls": 1,
+        "input": 1309,
+        "cached": 0,
+        "output": 786,
+        "cost": 0.0005239,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S07",
+        "princess": "aurora",
+        "occasion": "birthday",
+        "budget": 240,
+        "style": "romantic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "accessory_lost"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3570,
+        "calls": 1,
+        "input": 2244,
+        "cached": 0,
+        "output": 413,
+        "cost": 0.00043089999999999996,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 100,
+        "failure": null,
+        "latencyMs": 2331,
+        "calls": 1,
+        "input": 929,
+        "cached": 0,
+        "output": 240,
+        "cost": 0.0002129,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S08",
+        "princess": "aurora",
+        "occasion": "wedding",
+        "budget": 380,
+        "style": "romantic",
+        "comfort": [
+          "modest"
+        ],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "cold_snap"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 5757,
+        "calls": 1,
+        "input": 2150,
+        "cached": 0,
+        "output": 464,
+        "cost": 0.000447,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 96,
+        "failure": null,
+        "latencyMs": 6533,
+        "calls": 1,
+        "input": 1152,
+        "cached": 0,
+        "output": 675,
+        "cost": 0.0004527,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S09",
+        "princess": "aurora",
+        "occasion": "romantic",
+        "budget": 300,
+        "style": "modern",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "strict_dress_code"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 4777,
+        "calls": 1,
+        "input": 2225,
+        "cached": 0,
+        "output": 545,
+        "cost": 0.000495,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 85,
+        "failure": null,
+        "latencyMs": 0,
+        "calls": 0,
+        "input": 0,
+        "cached": 0,
+        "output": 0,
+        "cost": 0,
+        "source": "rules"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S10",
+        "princess": "rapunzel",
+        "occasion": "garden",
+        "budget": 420,
+        "style": "romantic",
+        "comfort": [
+          "noHeels"
+        ],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "rain",
+        "note": "Designed to be impossible: every rain-ready shoe in the catalog has a heel, but the user wants no heels"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 2997,
+        "calls": 1,
+        "input": 2241,
+        "cached": 0,
+        "output": 306,
+        "cost": 0.0003771,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": false,
+      "council": {
+        "ok": false,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": false,
+        "unnecessary": 0,
+        "aesthetic": 0,
+        "failure": "Even magic has its limits. No combination in the catalog satisfies every rule together (for example, no rain-ready shoe is also flat). Try relaxing one preference.",
+        "latencyMs": 1,
+        "calls": 0,
+        "input": 0,
+        "cached": 0,
+        "output": 0,
+        "cost": 0,
+        "source": "honest-failure"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S11",
+        "princess": "rapunzel",
+        "occasion": "college",
+        "budget": 200,
+        "style": "modern",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "sold_out"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3127,
+        "calls": 1,
+        "input": 2231,
+        "cached": 0,
+        "output": 318,
+        "cost": 0.0003821,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 79,
+        "failure": null,
+        "latencyMs": 3372,
+        "calls": 1,
+        "input": 1482,
+        "cached": 0,
+        "output": 349,
+        "cost": 0.00032270000000000004,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S12",
+        "princess": "rapunzel",
+        "occasion": "wedding",
+        "budget": 300,
+        "style": "dramatic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "budget_cut"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3298,
+        "calls": 1,
+        "input": 2256,
+        "cached": 0,
+        "output": 330,
+        "cost": 0.0003906,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 82,
+        "failure": null,
+        "latencyMs": 4558,
+        "calls": 1,
+        "input": 971,
+        "cached": 0,
+        "output": 471,
+        "cost": 0.0003326,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S13",
+        "princess": "snowwhite",
+        "occasion": "gala",
+        "budget": 420,
+        "style": "vintage",
+        "comfort": [],
+        "weather": "cold",
+        "setting": "outdoor",
+        "crisis": "long_walk"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 4706,
+        "calls": 1,
+        "input": 1946,
+        "cached": 0,
+        "output": 583,
+        "cost": 0.0004861,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 83,
+        "failure": null,
+        "latencyMs": 12209,
+        "calls": 1,
+        "input": 1280,
+        "cached": 0,
+        "output": 1433,
+        "cost": 0.0008445,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S14",
+        "princess": "snowwhite",
+        "occasion": "college",
+        "budget": 260,
+        "style": "vintage",
+        "comfort": [
+          "walking"
+        ],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "strict_dress_code"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 4234,
+        "calls": 1,
+        "input": 2270,
+        "cached": 0,
+        "output": 373,
+        "cost": 0.0004135,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 2,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 53,
+        "failure": null,
+        "latencyMs": 10308,
+        "calls": 2,
+        "input": 3081,
+        "cached": 0,
+        "output": 994,
+        "cost": 0.0008051,
+        "source": "fallback"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S15",
+        "princess": "snowwhite",
+        "occasion": "romantic",
+        "budget": 280,
+        "style": "dramatic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "accessory_lost"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3368,
+        "calls": 1,
+        "input": 2304,
+        "cached": 0,
+        "output": 323,
+        "cost": 0.0003919,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 90,
+        "failure": null,
+        "latencyMs": 3417,
+        "calls": 1,
+        "input": 1192,
+        "cached": 0,
+        "output": 335,
+        "cost": 0.0002867,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S16",
+        "princess": "ariel",
+        "occasion": "birthday",
+        "budget": 420,
+        "style": "modern",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "rain"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 2687,
+        "calls": 1,
+        "input": 2220,
+        "cached": 0,
+        "output": 283,
+        "cost": 0.0003635,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 72,
+        "failure": null,
+        "latencyMs": 4379,
+        "calls": 1,
+        "input": 1072,
+        "cached": 0,
+        "output": 441,
+        "cost": 0.0003277,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S17",
+        "princess": "ariel",
+        "occasion": "gala",
+        "budget": 340,
+        "style": "dramatic",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "no_heels"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3228,
+        "calls": 1,
+        "input": 2010,
+        "cached": 0,
+        "output": 325,
+        "cost": 0.0003635,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 83,
+        "failure": null,
+        "latencyMs": 5990,
+        "calls": 1,
+        "input": 1163,
+        "cached": 0,
+        "output": 596,
+        "cost": 0.0004143,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S18",
+        "princess": "ariel",
+        "occasion": "wedding",
+        "budget": 280,
+        "style": "minimal",
+        "comfort": [
+          "modest"
+        ],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "sold_out"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 4847,
+        "calls": 1,
+        "input": 2216,
+        "cached": 0,
+        "output": 530,
+        "cost": 0.0004866,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 1,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 89,
+        "failure": null,
+        "latencyMs": 3202,
+        "calls": 1,
+        "input": 1397,
+        "cached": 0,
+        "output": 285,
+        "cost": 0.00028220000000000003,
+        "source": "llm"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S19",
+        "princess": "cinderella",
+        "occasion": "casual",
+        "budget": 150,
+        "style": "minimal",
+        "comfort": [
+          "noHeels"
+        ],
+        "weather": "warm",
+        "setting": "outdoor",
+        "crisis": "cold_snap",
+        "note": "Designed to be impossible: a cold-weather look costs more than $150"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3813,
+        "calls": 1,
+        "input": 1577,
+        "cached": 0,
+        "output": 360,
+        "cost": 0.0003377,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": false,
+      "council": {
+        "ok": false,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": false,
+        "unnecessary": 0,
+        "aesthetic": 0,
+        "failure": "Even magic has its limits. No available outfit satisfies every constraint - the cheapest valid outfit costs $172.97, but the budget is $150. Try increasing your budget or relaxing one preference.",
+        "latencyMs": 0,
+        "calls": 0,
+        "input": 0,
+        "cached": 0,
+        "output": 0,
+        "cost": 0,
+        "source": "honest-failure"
+      },
+      "baseline": null
+    },
+    {
+      "scenario": {
+        "id": "S20",
+        "princess": "belle",
+        "occasion": "wedding",
+        "budget": 260,
+        "style": "vintage",
+        "comfort": [],
+        "weather": "warm",
+        "setting": "indoor",
+        "crisis": "budget_cut"
+      },
+      "styleOk": true,
+      "style": {
+        "ms": 3853,
+        "calls": 1,
+        "input": 2402,
+        "cached": 0,
+        "output": 408,
+        "cost": 0.00044420000000000006,
+        "treasurerRejections": 0,
+        "firstTryValid": true,
+        "fallbackUsed": false
+      },
+      "affected": 0,
+      "feasibleRepairExists": true,
+      "council": {
+        "ok": true,
+        "catalogValid": true,
+        "budgetCompliant": true,
+        "recovered": true,
+        "unnecessary": 0,
+        "aesthetic": 95,
+        "failure": null,
+        "latencyMs": 0,
+        "calls": 0,
+        "input": 0,
+        "cached": 0,
+        "output": 0,
+        "cost": 0,
+        "source": "rules"
+      },
+      "baseline": null
+    }
+  ]
+}
