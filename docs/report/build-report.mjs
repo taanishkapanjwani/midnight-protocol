@@ -111,9 +111,19 @@ const DIAGRAM = `
 </svg>`;
 
 // ---------- feedback ----------
+const STATUS = { built: ["In the app now", "yes"], validated: ["Confirms the design", "yes"], partly: ["Partly built", ""], next: ["Next step", ""] };
 const feedbackHtml = FEEDBACK
-  ? `<div class="quote"><p>“${FEEDBACK.quote}”</p><p class="who">${FEEDBACK.who}</p>${FEEDBACK.detail ? `<p class="small">${FEEDBACK.detail}</p>` : ""}</div>`
-  : `<div class="todo"><b>To add before submission: real user trial.</b> Ask one person (a classmate dressing for an event works well) to use the live app once, time how long it takes from opening the site to a validated outfit, and note their reaction in one sentence. Then save it in <code>docs/report/user-feedback.json</code> as <code>{"quote": "...", "who": "...", "detail": "..."}</code> and rebuild with <code>node docs/report/build-report.mjs</code>.</div>`;
+  ? (() => {
+      const c = FEEDBACK.comments;
+      const n = (s) => c.filter((x) => x.status === s).length;
+      return `<div class="quote"><p>“${c[4].quote}”</p><p class="who">User tester · on the crisis-and-rescue feature</p></div>
+<p>I collected ${c.length} comments from user testing. ${n("validated")} confirm the core design, ${n("built")} ask for things the app now does, ${n("partly")} is partly covered, and ${n("next")} set the next steps (Section 8).</p>
+<table class="fb">
+<thead><tr><th>What the user said</th><th>Theme</th><th>Status</th></tr></thead>
+<tbody>${c.map((x) => `<tr><td><i>“${x.quote}”</i></td><td>${x.theme}</td><td class="${STATUS[x.status][1]}">${STATUS[x.status][0]}<br><span class="small">${x.note}</span></td></tr>`).join("")}</tbody>
+</table>`;
+    })()
+  : `<div class="todo"><b>To add before submission: real user trial.</b> Save comments in <code>docs/report/user-feedback.json</code> and rebuild.</div>`;
 
 // ---------- document ----------
 const html = `<!doctype html>
@@ -191,6 +201,8 @@ figure.phone{max-width:250px;margin-left:auto;margin-right:auto}
 .quote p:first-child{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;line-height:1.35;margin:0}
 .quote .who{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mauve)}
 .diagram{width:100%;height:auto;display:block}
+table.fb td{font-size:12.2px;padding:5px 8px 5px 0}
+table.fb td:first-child{width:56%}
 ul{padding-left:20px;margin:6px 0}li{margin:3px 0}
 sup a{text-decoration:none;font-size:10.5px;color:var(--goldink)}
 .sources li{font-size:12.5px;word-break:break-word}
@@ -409,7 +421,7 @@ ${section(7, "Impact", "What it changes, measured", `
 <tr><td><b>Cost per successful rescue</b></td><td>${tiny(resOn.costPerSuccessfulRescue)} (same run as the baseline)</td><td>${tiny(base.costPerSuccessfulRescue)} for the baseline: ${(base.costPerSuccessfulRescue / resOn.costPerSuccessfulRescue).toFixed(1)}× more, from fewer successes and larger prompts</td></tr>
 <tr><td><b>New capability</b></td><td>Plans that survive changes, with live stock checks and shop links to ${retailers.length} retailers</td><td>Start over when plans change</td></tr>
 </tbody></table>
-<h3>A real user’s experience</h3>
+<h3>What real users said</h3>
 ${feedbackHtml}
 <p class="small">The app is tested from 320 px phones to 1536 px desktops; phone screenshots are in <code>docs/screenshots/</code> (25–29).</p>
 `, { lead: `<div class="legend"><span><i style="background:var(--council)"></i>Royal Council (this project)</span><span><i style="background:var(--base)"></i>Single general AI call with the full catalog</span></div>
@@ -429,13 +441,17 @@ ${section(8, "Limits and next steps", "What does not work yet, and what I would 
 <li><b>Sizes are shown, not styled.</b> Agents don’t choose by size or body fit yet.</li>
 <li><b>Aesthetic score is rule-based</b> (palette and style tags), not visual harmony.</li>
 <li><b>Eight crises,</b> predefined for reproducibility.</li>
-<li><b>Evidence base is small:</b> ${N.scenarios} scenarios and one user trial.</li>
+<li><b>Evidence base is small:</b> ${N.scenarios} live scenarios and ${FEEDBACK ? FEEDBACK.comments.length : 0} user-testing comments; no timed or large-sample study yet.</li>
+<li><b>Onboarding:</b> a tester was not sure what to click first.</li>
 </ul></div>
 <div class="panel parch"><h3 style="margin-top:0">Next steps</h3><ul>
 <li>Partner or affiliate feeds for real-time stock, then a nightly <code>shop:refresh</code> job.</li>
 <li>Learn style attributes from product photos with a vision model, validated against my labels.</li>
 <li>Size and fit memory per user (from past keeps and returns) to target the 53% fit problem.</li>
-<li>“Bring your own closet”: mix owned pieces with purchases.</li>
+<li>Clearer first step on the landing page (tester feedback).</li>
+<li>“Bring your own closet”: upload a photo of an owned piece and style around it (tester request).</li>
+<li>More aesthetics beyond princesses (old money, dark academia, minimalist) and an everyday casual mode (tester requests).</li>
+<li>Always check the weather, not only when the user asks for it (tester feedback).</li>
 <li>A larger user study measuring time-to-outfit and 30-day return rates.</li>
 </ul></div>
 </div>

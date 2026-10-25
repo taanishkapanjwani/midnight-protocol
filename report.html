@@ -73,6 +73,8 @@ figure.phone{max-width:250px;margin-left:auto;margin-right:auto}
 .quote p:first-child{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;line-height:1.35;margin:0}
 .quote .who{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mauve)}
 .diagram{width:100%;height:auto;display:block}
+table.fb td{font-size:12.2px;padding:5px 8px 5px 0}
+table.fb td:first-child{width:56%}
 ul{padding-left:20px;margin:6px 0}li{margin:3px 0}
 sup a{text-decoration:none;font-size:10.5px;color:var(--goldink)}
 .sources li{font-size:12.5px;word-break:break-word}
@@ -381,8 +383,13 @@ footer{text-align:center;margin-top:44px;color:var(--mauve);font-size:12px}
 <tr><td><b>Cost per successful rescue</b></td><td>$0.000407 (same run as the baseline)</td><td>$0.001291 for the baseline: 3.2× more, from fewer successes and larger prompts</td></tr>
 <tr><td><b>New capability</b></td><td>Plans that survive changes, with live stock checks and shop links to 14 retailers</td><td>Start over when plans change</td></tr>
 </tbody></table>
-<h3>A real user’s experience</h3>
-<div class="todo"><b>To add before submission: real user trial.</b> Ask one person (a classmate dressing for an event works well) to use the live app once, time how long it takes from opening the site to a validated outfit, and note their reaction in one sentence. Then save it in <code>docs/report/user-feedback.json</code> as <code>{"quote": "...", "who": "...", "detail": "..."}</code> and rebuild with <code>node docs/report/build-report.mjs</code>.</div>
+<h3>What real users said</h3>
+<div class="quote"><p>“The crisis feature is my favourite part. I like that it changes only what's necessary instead of giving me a completely new outfit.”</p><p class="who">User tester · on the crisis-and-rescue feature</p></div>
+<p>I collected 10 comments from user testing. 2 confirm the core design, 3 ask for things the app now does, 1 is partly covered, and 4 set the next steps (Section 8).</p>
+<table class="fb">
+<thead><tr><th>What the user said</th><th>Theme</th><th>Status</th></tr></thead>
+<tbody><tr><td><i>“I love the concept! It's actually fun choosing a princess aesthetic instead of just describing what I want to wear.”</i></td><td>Engaging user experience</td><td class="yes">Confirms the design<br><span class="small">Princess-first journey</span></td></tr><tr><td><i>“The website looks really pretty, but I wasn't immediately sure what I was supposed to click first.”</i></td><td>Improve onboarding</td><td class="">Next step<br><span class="small">Clearer first step</span></td></tr><tr><td><i>“I wish I could upload a picture of an outfit I already own and ask the AI to style it.”</i></td><td>Wardrobe upload</td><td class="">Next step<br><span class="small">Bring your own closet</span></td></tr><tr><td><i>“The budget feature is useful, but I want to know whether the prices are actually updated.”</i></td><td>Price transparency</td><td class="yes">In the app now<br><span class="small">Every price shows its check date; “Check stock & prices now” asks the retailer</span></td></tr><tr><td><i>“The crisis feature is my favourite part. I like that it changes only what's necessary instead of giving me a completely new outfit.”</i></td><td>Value of multi-agent repair</td><td class="yes">Confirms the design<br><span class="small">0 unnecessary swaps in testing</span></td></tr><tr><td><i>“Can it show me where to buy the clothes? Otherwise, I still have to search for everything myself.”</i></td><td>Retailer integration</td><td class="yes">In the app now<br><span class="small">Shop the Royal Look links 133 products at 14 retailers</span></td></tr><tr><td><i>“I love the Disney inspiration, but I'd also want aesthetics like old money, dark academia or minimalist.”</i></td><td>Broader style categories</td><td class="">Next step<br><span class="small">More aesthetics</span></td></tr><tr><td><i>“It would be cool if I could compare the original outfit with the repaired one side by side.”</i></td><td>Comparison interface</td><td class="yes">In the app now<br><span class="small">Before Midnight vs After the Rescue view</span></td></tr><tr><td><i>“Sometimes the recommendations look nice together, but I'm not sure they're practical for the weather.”</i></td><td>Real-world constraints</td><td class="">Partly built<br><span class="small">Weather rules apply when weather-friendly or outdoor is chosen; next: always check</span></td></tr><tr><td><i>“I would definitely use this before a themed party, but for everyday outfits I'd want more casual options.”</i></td><td>Use cases</td><td class="">Next step<br><span class="small">Everyday casual mode</span></td></tr></tbody>
+</table>
 <p class="small">The app is tested from 320 px phones to 1536 px desktops; phone screenshots are in <code>docs/screenshots/</code> (25–29).</p>
 
 </section>
@@ -400,13 +407,17 @@ footer{text-align:center;margin-top:44px;color:var(--mauve);font-size:12px}
 <li><b>Sizes are shown, not styled.</b> Agents don’t choose by size or body fit yet.</li>
 <li><b>Aesthetic score is rule-based</b> (palette and style tags), not visual harmony.</li>
 <li><b>Eight crises,</b> predefined for reproducibility.</li>
-<li><b>Evidence base is small:</b> 20 scenarios and one user trial.</li>
+<li><b>Evidence base is small:</b> 20 live scenarios and 10 user-testing comments; no timed or large-sample study yet.</li>
+<li><b>Onboarding:</b> a tester was not sure what to click first.</li>
 </ul></div>
 <div class="panel parch"><h3 style="margin-top:0">Next steps</h3><ul>
 <li>Partner or affiliate feeds for real-time stock, then a nightly <code>shop:refresh</code> job.</li>
 <li>Learn style attributes from product photos with a vision model, validated against my labels.</li>
 <li>Size and fit memory per user (from past keeps and returns) to target the 53% fit problem.</li>
-<li>“Bring your own closet”: mix owned pieces with purchases.</li>
+<li>Clearer first step on the landing page (tester feedback).</li>
+<li>“Bring your own closet”: upload a photo of an owned piece and style around it (tester request).</li>
+<li>More aesthetics beyond princesses (old money, dark academia, minimalist) and an everyday casual mode (tester requests).</li>
+<li>Always check the weather, not only when the user asks for it (tester feedback).</li>
 <li>A larger user study measuring time-to-outfit and 30-day return rates.</li>
 </ul></div>
 </div>

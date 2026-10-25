@@ -1,0 +1,15 @@
+{
+  "source": "User testing comments collected by the author",
+  "comments": [
+    { "quote": "I love the concept! It's actually fun choosing a princess aesthetic instead of just describing what I want to wear.", "theme": "Engaging user experience", "status": "validated", "note": "Princess-first journey" },
+    { "quote": "The website looks really pretty, but I wasn't immediately sure what I was supposed to click first.", "theme": "Improve onboarding", "status": "next", "note": "Clearer first step" },
+    { "quote": "I wish I could upload a picture of an outfit I already own and ask the AI to style it.", "theme": "Wardrobe upload", "status": "next", "note": "Bring your own closet" },
+    { "quote": "The budget feature is useful, but I want to know whether the prices are actually updated.", "theme": "Price transparency", "status": "built", "note": "Every price shows its check date; “Check stock & prices now” asks the retailer" },
+    { "quote": "The crisis feature is my favourite part. I like that it changes only what's necessary instead of giving me a completely new outfit.", "theme": "Value of multi-agent repair", "status": "validated", "note": "0 unnecessary swaps in testing" },
+    { "quote": "Can it show me where to buy the clothes? Otherwise, I still have to search for everything myself.", "theme": "Retailer integration", "status": "built", "note": "Shop the Royal Look links 133 products at 14 retailers" },
+    { "quote": "I love the Disney inspiration, but I'd also want aesthetics like old money, dark academia or minimalist.", "theme": "Broader style categories", "status": "next", "note": "More aesthetics" },
+    { "quote": "It would be cool if I could compare the original outfit with the repaired one side by side.", "theme": "Comparison interface", "status": "built", "note": "Before Midnight vs After the Rescue view" },
+    { "quote": "Sometimes the recommendations look nice together, but I'm not sure they're practical for the weather.", "theme": "Real-world constraints", "status": "partly", "note": "Weather rules apply when weather-friendly or outdoor is chosen; next: always check" },
+    { "quote": "I would definitely use this before a themed party, but for everyday outfits I'd want more casual options.", "theme": "Use cases", "status": "next", "note": "Everyday casual mode" }
+  ]
+}
