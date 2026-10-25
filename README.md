@@ -4,7 +4,7 @@
 
 A multi-agent AI stylist that builds a princess-inspired outfit from **real products sold by 14 real retailers**, within a real budget. Then it lets an adversarial agent throw a realistic problem at it (sold-out gown, rain, a 20-minute walk, a budget cut), repairs only what broke, and ends in **Shop the Royal Look**, where each piece links to its retailer's product page. Every price and rule is checked by code before the user sees it.
 
-![The Midnight Protocol](docs/screenshots/01-landing.jpg)
+![The Midnight Protocol](docs/screenshots/01-landing.png)
 
 **Live app: https://midnight-protocol-jm71.onrender.com**
 (Hosted on Render's free plan. If it has been idle, the first visit takes about 30–60 seconds to wake up.)
