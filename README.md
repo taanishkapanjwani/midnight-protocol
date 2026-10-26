@@ -9,6 +9,8 @@ A multi-agent AI stylist that builds a princess-inspired outfit from **real prod
 **Live app: https://midnight-protocol-jm71.onrender.com**
 (Hosted on Render's free plan. If it has been idle, the first visit takes about 30–60 seconds to wake up.)
 
+**Report:** [`report.html`](report.html) · **Slides:** [`slides.html`](slides.html) (reveal.js; arrow keys to move, `F` for fullscreen). Both are built from the measured results by `node docs/report/build-report.mjs` and `node docs/report/build-slides.mjs`.
+
 ---
 
 ## Run it locally (under 5 minutes)
